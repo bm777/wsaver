@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>popup/cloudy.jpg</file>
+        <file>popup/cloudy2.jpg</file>
+        <file>popup/flood.jpg</file>
+        <file>popup/normal.jpg</file>
+        <file>popup/normal2.jpg</file>
+        <file>popup/rain.jpg</file>
+        <file>popup/rain-max.jpg</file>
+        <file>popup/sunrise.jpg</file>
+        <file>popup/sunset1.jpg</file>
+        <file>popup/sunset2.jpg</file>
+        <file>popup/sunset3.jpg</file>
+        <file>img/stormy-weather.png</file>
+        <file>img/sun-behind.png</file>
+        <file>img/cloudy.jpg</file>
+        <file>img/cloudy2.jpg</file>
+        <file>img/flood.jpg</file>
+        <file>img/normal.jpg</file>
+        <file>img/normal2.jpg</file>
+        <file>img/rain.jpg</file>
+        <file>img/rain-max.jpg</file>
+        <file>img/sunrise.jpg</file>
+        <file>img/sunset1.jpg</file>
+        <file>img/sunset2.jpg</file>
+        <file>img/sunset3.jpg</file>
+    </qresource>
+</RCC>
