@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.12.4, 2021-06-29T14:58:58. -->
+<!-- Written by QtCreator 4.12.4, 2021-07-01T11:21:36. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -245,7 +245,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/movies/wsaver/ui</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default"></value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.2">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>

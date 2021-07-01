@@ -10,9 +10,10 @@ Item {
     property string t: "°C"
     property string lang: "en"
     property string theme: "light"
+    FontLoader {id: comfortaa; source: "../../font/Comfortaa.ttf"}
 
-
-
+    // + + + + + + + + + + + + + + + + +
+    // + + + + + + + + + + + + + + + + +
     // Coverage rectangle glowed
     RectangularGlow {
         anchors.fill: frame
@@ -20,7 +21,6 @@ Item {
         glowRadius: 10
         color: "#a0a9a9a9"
     }
-
     Rectangle {
 
         id: frame
@@ -34,31 +34,33 @@ Item {
             fillMode: Image.PreserveAspectCrop
             smooth: true
             z: parent.z+1
-            source: "../../popup/cloudy2.jpg"
+            source: "../../popup/sunset1.jpg"
         }
     }
 
-    Rectangle {
-        width: parent.width
-        height: parent.height * 0.17
-        y: parent.height - height
-        gradient: Gradient {
-            GradientStop {position: 0.0; color: "transparent"}
-            GradientStop {position: 0.7; color: "#80000000"}
-            GradientStop {position: 1.0; color: "#80ffffff"}
-        }
-    }
-
+    //+ + + + + + + + + + + + + + + + + +
+    //+ + + + + + + + + + + + + + + + + +
     // search bar
     Rectangle {
         id: top_bg_search
         width: parent.width
-        height: parent.height * 0.3 + bg_search.y * 2
-//        gradient: Gradient {
-//            GradientStop {position: 0.0; color: "white"}
-//            GradientStop {position: 0.6; color: "#ffffff"}
-//            GradientStop {position: 1.0; color: "transparent"}
-//        }
+        height: parent.height * 0.1
+        clip: true
+        Rectangle {
+            width: parent.height * 0.5;
+            height: 2;
+            color: "blue";
+            x: parent.width * 0.25
+            rotation: 135
+        }
+        Rectangle {
+            width: parent.height * 0.5;
+            height: 2;
+            color: "blue";
+            x: parent.width * 0.6
+            y: parent.height - height
+            rotation: 135
+        }
     }
 
     RectangularGlow {
@@ -119,12 +121,44 @@ Item {
 
 
 
+    //  + + + + + + ++ + + + + + + + + ++ +
+    // bottom side
+    Rectangle {
+        id: bottom_rect
+        width: parent.width
+        height: parent.height * 0.5
+        y: parent.height - height
+        gradient: Gradient {
+            GradientStop {position: 0.0; color: "transparent"}
+            GradientStop {position: 0.3; color: "#b0ffffff"}
+            GradientStop {position: 1.0; color: "white"}
+        }
+        Rectangle {
+            anchors.horizontalCenter: bottom_rect.horizontalCenter
+            width: bottom_rect.width
+            height: bottom_rect.height * 0.7
+            y: parent.height - height
+            color: "#ffffff"
+
+            Content {
+                id: content
+                anchors.fill: parent
+            }
+        }
+
+    }
 
 
 
 
 
 
+
+
+
+
+    //+ + + + + + + + + + + + + + + + + +
+    // animation
     SequentialAnimation {
         running: root.visible
         loops: Animation.Infinite

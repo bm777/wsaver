@@ -1,3 +1,3 @@
 {
-    "files": ["README.md","qml/side/Side.qml","main.py","qml/Parameter.qml","qml/highlight/Highlight.qml","qml/climate/Climate.qml","qml/main.qml","images.qrc","main.pyproject.user","qml/side/Search.qml"]
+    "files": ["images.qrc","qml/climate/Climate.qml","qml/Parameter.qml","qml/highlight/Highlight.qml","qml/main.qml","qml/side/Side.qml","README.md","main.pyproject.user","qml/side/Search.qml","main.py","qml/side/Content.qml","qml/side/Side.qml","qml/side/Search.qml"]
 }

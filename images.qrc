@@ -24,5 +24,9 @@
         <file>img/sunset1.jpg</file>
         <file>img/sunset2.jpg</file>
         <file>img/sunset3.jpg</file>
+        <file>qml/side/Content.qml</file>
+        <file>qml/side/Side.qml</file>
+        <file>qml/side/Search.qml</file>
+        <file>font/Comfortaa.ttf</file>
     </qresource>
 </RCC>
