@@ -34,5 +34,6 @@
         <file>img/fence-white.png</file>
         <file>img/fence-gray.png</file>
         <file>img/fence.png</file>
+        <file>qml/side/Rain.qml</file>
     </qresource>
 </RCC>

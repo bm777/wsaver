@@ -1,10 +1,14 @@
 import QtQuick 2.0
+import QtGraphicalEffects 1.15
 
 Item {
     property int temperature: 12
     property string unit: "C"
-    property string week_day: "Monday"
+    property string week_day: "January 18, 2018"
     property string hour: "16:00 (GMT+1)"
+    property string condition_cloud: "Mostly cloudy"
+    property string condition_rain: "30%"
+    property string town: "Uyo, Nigeria"
     property string f: "Comfortaa Light"
 
     Text {
@@ -37,6 +41,7 @@ Item {
         y: date.y
         color: "#B9B9B9"
     }
+
     /// + + + + + +  + + + + + + + + + + + + + + + + + + +
     Rectangle {
         id: separator
@@ -46,6 +51,77 @@ Item {
         y: hh.y + hh.height + 15
 //        x: parent.width * 0.07
         anchors.horizontalCenter: parent.horizontalCenter
+    }
+    /// + + + + + +  + + + + + + + + + + + + + + + + + + +
+
+    Rectangle {
+        id: cloud_frame
+        width: parent.width * 0.8
+        height: cloud.height
+        y: separator.y + 13
+//        border.color: "red"
+        anchors.horizontalCenter: parent.horizontalCenter
+        Image {
+            id: cloud
+            source: "../../img/cloud.png"
+            width: 20
+            height: width
+        }
+        Text {
+            text: condition_cloud
+            font {family: "Comfortaa"; pointSize: 8;}
+            x: cloud.width + 10
+            anchors.verticalCenter: parent.verticalCenter
+        }
+    }
+
+    Rectangle {
+        id: rain_frame
+        width: parent.width * 0.8
+        height: cloud.height
+        y: cloud_frame.y + cloud_frame.height + 10
+//        border.color: "red"
+        anchors.horizontalCenter: parent.horizontalCenter
+        Rain {
+            id: rain
+            width: 20
+            height: width
+            anchors.verticalCenter: parent.verticalCenter
+        }
+        Text {
+            text: "Rain - " + condition_rain
+            font {family: "Comfortaa"; pointSize: 8;}
+            x: cloud.width + 10
+            anchors.verticalCenter: parent.verticalCenter
+        }
+    }
+
+    Rectangle {
+        id: sun_frame
+        width: parent.width * 0.8
+        height: sun.height
+        y: rain_frame.y + rain_frame.height + 10
+//        border.color: "red"
+        anchors.horizontalCenter: parent.horizontalCenter
+        RectangularGlow {
+            anchors.fill: sun
+            spread: 0.1
+            glowRadius: 10
+            color: "#50F1C40F"
+        }
+        Image {
+            id: sun
+            source: "../../img/sun.png"
+            width: 20
+            height: width
+        }
+        Text {id: custom
+            text: town
+            font {family: "Comfortaa"; pointSize: 8;}
+            x: sun.width + 10
+            anchors.verticalCenter: parent.verticalCenter
+        }
+
     }
 }
 
