@@ -14,10 +14,12 @@ if __name__ == "__main__":
     app = QGuiApplication(sys.argv)
 
     engine = QQmlApplicationEngine()
-    font_path = os.path.join(CURRENT_DIRECTORY, "font", "Barlow/Barlow-Regular.ttf")
+    font_barlow = os.path.join(CURRENT_DIRECTORY, "font", "Barlow/Barlow-Regular.ttf")
+    font_comfortaa = os.path.join(CURRENT_DIRECTORY, "font", "Comfortaa/Comfortaa-Regular.ttf")
 
-    _id = QFontDatabase.addApplicationFont(font_path)
-    print(QFontDatabase.applicationFontFamilies(_id))
+    _id1 = QFontDatabase.addApplicationFont(font_barlow)
+    _id2 = QFontDatabase.addApplicationFont(font_comfortaa)
+    print(QFontDatabase.applicationFontFamilies(_id2))
     engine.load(os.path.join(os.path.dirname(__file__), "qml/main.qml"))
 
     if not engine.rootObjects():

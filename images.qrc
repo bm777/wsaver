@@ -28,5 +28,11 @@
         <file>qml/side/Side.qml</file>
         <file>qml/side/Search.qml</file>
         <file>font/Comfortaa.ttf</file>
+        <file>img/search-white.png</file>
+        <file>img/search-gray.png</file>
+        <file>img/search.png</file>
+        <file>img/fence-white.png</file>
+        <file>img/fence-gray.png</file>
+        <file>img/fence.png</file>
     </qresource>
 </RCC>

@@ -10,7 +10,7 @@ Item {
     property string t: "°C"
     property string lang: "en"
     property string theme: "light"
-    FontLoader {id: comfortaa; source: "../../font/Comfortaa.ttf"}
+
 
     // + + + + + + + + + + + + + + + + +
     // + + + + + + + + + + + + + + + + +
@@ -34,7 +34,7 @@ Item {
             fillMode: Image.PreserveAspectCrop
             smooth: true
             z: parent.z+1
-            source: "../../popup/sunset1.jpg"
+            source: "../../popup/normal.jpg"
         }
     }
 
