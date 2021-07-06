@@ -76,6 +76,7 @@ Item {
         width: parent.width * 0.9
         height: parent.height * 0.07
         color: "white"
+//        border.color: "red"
         radius: 10
 
         Rectangle {
@@ -101,7 +102,8 @@ Item {
             anchors.centerIn: parent
         }
         Rectangle {
-            color: "#40a9a9a9"
+            id: back_search
+            color: "#20a9a9a9"
             width: 30
             radius: width/2
             height: width
@@ -110,10 +112,22 @@ Item {
 
             Image {
                 id: icon_fence
-                source: "../../img/fence.png"
+                source: "../../img/micro.png"
                 anchors.centerIn: parent
                 width: 15
                 height: width
+            }
+            MouseArea {
+                anchors.fill: parent
+                hoverEnabled: true
+                onEntered: {
+                    back_search.color = "transparent"
+                    back_search.border.color = "#40a9a9a9"
+                }
+                onExited: {
+                    back_search.color = "#20a9a9a9"
+                    back_search.border.color = "transparent"
+                }
             }
         }
 

@@ -9,7 +9,8 @@ TextField {
     hoverEnabled: true
 
     background: Rectangle {
-        color: "transparent"
+//        color: "transparent"
+//        color: "red"
 //        anchors.fill:
     }
 }

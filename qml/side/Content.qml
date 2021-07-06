@@ -2,6 +2,7 @@ import QtQuick 2.0
 import QtGraphicalEffects 1.15
 
 Item {
+    id: root
     property int temperature: 12
     property string unit: "C"
     property string week_day: "January 18, 2018"
@@ -122,6 +123,16 @@ Item {
             anchors.verticalCenter: parent.verticalCenter
         }
 
+    }
+
+
+    RotationAnimation {
+        target: sun
+        running: root.visible
+        from: 0
+        to: 360
+        loops: Animation.Infinite
+        duration: 3000
     }
 }
 
