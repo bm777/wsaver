@@ -7,17 +7,29 @@ import "side"
 Window {
     title: qsTr("wsaver")
     id: root
-    width: Screen.width * 0.7 > 800 ? Screen.width * 0.6 : 800
+    width: Screen.width * 0.7 > 800 ? 1000 : 800
     height: Screen.height * 0.7 > 600 ? 600 : 600
     minimumWidth: 1000
     minimumHeight: 600
     maximumHeight: 600
-    maximumWidth: Screen.width * 0.6
+    maximumWidth: 1000
     visible: true
 
     property real tmp: width * 0.28 // = 322
 
+    Rectangle {
+        anchors.fill: parent
+        color: "#F6F6F8"
+    }
 
+    //////////////////////////////////////////////////////
+    Highlight {
+        id: hl
+        width: parent.width - side.width
+        height: parent.height * 0.65
+        x: side.width
+        y: parent.height - height
+    }
 
     //////////////////////////////////////////////////////
     Side {
@@ -25,5 +37,7 @@ Window {
         width: 322
         height: parent.height
     }
+
+
 
 }
