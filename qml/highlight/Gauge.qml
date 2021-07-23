@@ -15,8 +15,8 @@ Item {
     property bool isPie: false
     property real lineWidth: 20
     property bool showBackground: false
-    property string colorCircle: "#cc3333"
-    property string colorBackground: "#779933"
+    property color colorCircle: "#cc3333"
+    property color colorBackground: "#779933"
 
 
     property alias beginAnimation: animationArcBegin.enabled
