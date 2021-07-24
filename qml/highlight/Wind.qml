@@ -30,16 +30,9 @@ Rectangle {
         width: 40
         height: height
         radius: height/2
-        color: "transparent"
-        border.color: "#4050D2"
-        x:
-        y: parent.height * 0.7
+        color: "red"
 
-        Image {
-            source: "../../img/compass.png"
-            width: 40
-            height: width
-            anchors.centerIn: parent
-        }
+
+
     }
 }
