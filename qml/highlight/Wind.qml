@@ -49,9 +49,9 @@ Rectangle {
 
     Text {
         text: direction
-        font{family: "Comfortaa"; bold: false; pointSize: 12}
+        font{family: "Comfortaa"; bold: false; pointSize: 10}
         y: parent.height * 0.723
-        x: parent.width * 0.3
+        x: parent.width * 0.38
     }
 
 
