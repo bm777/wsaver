@@ -24,7 +24,7 @@ Rectangle {
     Text {
         text: "%"
         font{family: "Comfortaa"; pointSize: 12; bold: false}
-        anchors.verticalCenter: parent.verticalCenter
+        y: value_.y
         x: value_.x + value_.width + 5
     }
 
