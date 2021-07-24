@@ -27,10 +27,10 @@ Rectangle {
         x: value_.x + value_.width + 5
     }
     Rectangle {
-        width: 40
+        width: 50
         height: height
         radius: height/2
-        color: "transparent"
+        color: "red"
         border.color: "#4050D2"
         x: parent.width * 0.1
         y: parent.height * 0.7
