@@ -36,9 +36,9 @@ Rectangle {
             else return "Normal"
         }
 
-        font{family: "Comfortaa"; pointSize: 12; bold: false}
+        font{family: "Comfortaa"; pointSize: 10; bold: false}
         y: parent.height * 0.68
-        x: value_.x + value_.width + 5
+        x: parent.width * 0.2
     }
 
 
