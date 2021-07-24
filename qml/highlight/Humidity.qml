@@ -28,7 +28,7 @@ Rectangle {
         width: 20
         height: parent.width * 0.4
         border.color: "#40ADADAD"
-        anchors.centerIn: parent
+        x: parent.width * 0.75
 
 
 
