@@ -24,11 +24,11 @@ Rectangle {
 
 
         Rectangle {
-            width: 50
-            height: parent.height * 0.7
+            width: 10*
+            height: parent.height * 0.65
             anchors.verticalCenter: parent.verticalCenter
             color: "#4050D2"
-            x: parent.height - height
+            x: (parent.height - height) / 2
             radius: height/2
         }
     }
