@@ -33,14 +33,14 @@ Rectangle {
         width: 25
         height: width
         y: parent.height * 0.68
-        x: parent.width * 0.1
+        x: parent.width * 0.2
 
         Rectangle {
             width: 26
             height: width
             radius: height/2
             color: "transparent"
-            border.color: "#404050D2"
+            border.color: "#40ADADAD"
             anchors.centerIn: parent
         }
     }
