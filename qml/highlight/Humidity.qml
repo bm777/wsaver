@@ -37,7 +37,7 @@ Rectangle {
         }
 
         font{family: "Comfortaa"; pointSize: 10; bold: false}
-        y: parent.height * 0.68
+        y: parent.height * 0.78
         x: parent.width * 0.2
     }
 
