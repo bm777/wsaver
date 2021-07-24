@@ -3,7 +3,7 @@ import QtQuick 2.0
 Rectangle {
     id: root
     property string value: "7.70"
-    property string dataname: "Wind Status (m/s)"
+    property string dataname: "Wind Status"
     radius: 10
 
     Text {
@@ -15,6 +15,12 @@ Rectangle {
     }
     Text {
         text: value
+        font{family: "Comfortaa"; bold: false; pointSize: 25}
+        anchors.verticalCenter: parent.verticalCenter
+        x: parent.width * 0.2
+    }
+    Text {
+        text: "m/s"
         font{family: "Comfortaa"; bold: false; pointSize: 25}
         anchors.verticalCenter: parent.verticalCenter
         x: parent.width * 0.2
