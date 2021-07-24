@@ -32,11 +32,11 @@ Rectangle {
             radius: height/2
         }
 
-        Text {
-            text: "3"
-            font{family: "Comfortaa"; pointSize: 12}
-            anchors.horizontalCenter: parent.horizontalCenter
-            y: parent.height * 0.8
-        }
+    }
+    Text {
+        text: "3"
+        font{family: "Comfortaa"; pointSize: 15; bold: true}
+        anchors.horizontalCenter: parent.horizontalCenter
+        y: parent.height * 0.7
     }
 }
