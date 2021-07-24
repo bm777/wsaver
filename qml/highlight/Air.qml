@@ -27,7 +27,7 @@ Rectangle {
         source: "../../img/air.png"
         width: 27
         height: width
-        y: parent.height * 0.69
+        y: parent.height * 0.73
         x: parent.width * 0.2
 
     }
@@ -39,7 +39,7 @@ Rectangle {
         }
 
         font{family: "Comfortaa"; bold: false; pointSize: 10}
-        y: parent.height * 0.75
+        y: parent.height * 0.78
         x: parent.width * 0.35
     }
 
