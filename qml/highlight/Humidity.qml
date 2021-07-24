@@ -26,7 +26,7 @@ Rectangle {
         id: frame_
         radius: width/2
         width: 30
-        height: parent.width * 0.8
+        height: parent.width * 0.5
         border.color: "#40ADADAD"
         anchors.centerIn: parent
 
