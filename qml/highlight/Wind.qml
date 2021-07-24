@@ -26,19 +26,23 @@ Rectangle {
         y: parent.height * 0.47
         x: value_.x + value_.width + 5
     }
-    Rectangle {
-        width: 26
+
+
+    Image {
+        source: "../../img/compass.png"
+        width: 25
         height: width
-        radius: height/2
-        color: "#804050D2"
         y: parent.height * 0.68
         x: parent.width * 0.1
-        Image {
-            source: "../../img/compass.png"
-            width: 25
+
+        Rectangle {
+            width: 26
             height: width
+            radius: height/2
+            color: "#804050D2"
             anchors.centerIn: parent
         }
     }
+
 
 }
