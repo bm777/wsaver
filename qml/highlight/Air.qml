@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 Rectangle {
     id: root
-    property string value: "50"
+    property real value: 105
     property string dataname: "Air quality"
     radius: 10
 
@@ -21,11 +21,6 @@ Rectangle {
         anchors.verticalCenter: parent.verticalCenter
         x: parent.width * 0.2
     }
-    Text {
-        text: "m/s"
-        font{family: "Comfortaa"; bold: false; pointSize: 12}
-        y: parent.height * 0.47
-        x: value_.x + value_.width + 5
-    }
+
 
 }
