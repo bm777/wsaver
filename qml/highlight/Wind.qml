@@ -50,7 +50,7 @@ Rectangle {
     Text {
         text: direction
         font{family: "Comfortaa"; bold: false; pointSize: 10}
-        y: parent.height * 0.723
+        y: parent.height * 0.727
         x: parent.width * 0.38
     }
 
