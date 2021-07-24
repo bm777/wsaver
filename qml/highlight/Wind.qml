@@ -31,7 +31,7 @@ Rectangle {
         height: width
         radius: height/2
         color: "#804050D2"
-
+        y: parent.height * 0.68
         Image {
             source: "../../img/compass.png"
             width: 40
