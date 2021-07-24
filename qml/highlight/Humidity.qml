@@ -29,7 +29,7 @@ Rectangle {
         height: parent.width * 0.4
         border.color: "#40ADADAD"
         x: parent.width * 0.75
-
+        anchors.verticalCenter: parent.horizontalCenter
 
 
     }
