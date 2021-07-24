@@ -54,15 +54,9 @@ Item {
         id: b2
         x: a1.x + a1.width + 20
         y: a2.y
-        width: height * 1.3
+        width: height * 1.3 * 2 + 19
         height: parent.height * 0.37
     }
-    Box {
-        id: c2
-        x: b1.x + b1.width + 20
-        y: a2.y
-        width: height * 1.3
-        height: parent.height * 0.37
-    }
+
 
 }
