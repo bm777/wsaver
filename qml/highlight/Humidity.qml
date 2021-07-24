@@ -14,4 +14,32 @@ Rectangle {
         color: "#ADADAD"
     }
 
+    Text {
+        text: "3"
+        font{family: "Comfortaa"; pointSize: 15; bold: true}
+        anchors.verticalCenter: parent.verticalCenter
+        x: parent.width * 0.1
+    }
+
+
+    Rectangle {
+        id: frame_
+        radius: height/2
+        width: parent.width * 0.8
+        height: 30
+        border.color: "#40ADADAD"
+        anchors.centerIn: parent
+
+
+        Rectangle {
+            width: height
+            height: parent.height * 0.65
+            anchors.verticalCenter: parent.verticalCenter
+            color: "#4050D2"
+            x: (parent.height - height) / 2
+            radius: height/2
+        }
+
+    }
+
 }
