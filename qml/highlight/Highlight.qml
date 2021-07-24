@@ -57,6 +57,6 @@ Item {
         width: height * 1.3 * 2 + 19
         height: parent.height * 0.37
     }
-
+//
 
 }
