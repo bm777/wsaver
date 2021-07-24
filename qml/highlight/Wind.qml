@@ -23,7 +23,7 @@ Rectangle {
     Text {
         text: "m/s"
         font{family: "Comfortaa"; bold: false; pointSize: 12}
-        y: value_.y + value_.height - height
-        x: parent.width * 0.2
+        y: parent.height * 0.47
+        x: value_.x + value_.width + 5
     }
 }
