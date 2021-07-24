@@ -26,4 +26,11 @@ Rectangle {
         y: parent.height * 0.47
         x: value_.x + value_.width + 5
     }
+    Image {
+        source: "../../img/compass.png"
+        width: 40
+        height: width
+        x: value_.x + value_.width + 5
+        y: parent.height * 0.7
+    }
 }
