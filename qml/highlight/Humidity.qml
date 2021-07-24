@@ -24,7 +24,7 @@ Rectangle {
 
     Rectangle {
         id: frame_
-        radius: height/2
+        radius: width/2
         width: 30
         height: parent.width * 0.8
         border.color: "#40ADADAD"
