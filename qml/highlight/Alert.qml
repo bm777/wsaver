@@ -51,6 +51,6 @@ Rectangle {
         text: "0"
         font{family: "Comfortaa"; pointSize: 11; bold: false}
         y: parent.height * 0.68
-        x: parent.width - width * 2 - frame_.width
+        x: frame_.x + width
     }
 }
