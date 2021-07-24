@@ -23,7 +23,7 @@ Rectangle {
     }
 
     Image {
-        source: "../../img/compass.png"
+        source: "../../img/compass.pn"
         width: 25
         height: width
         y: parent.height * 0.69
