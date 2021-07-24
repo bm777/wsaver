@@ -15,11 +15,19 @@ Rectangle {
     }
 
     Text {
+        id: value_
         text: Math.round(Math.floor(value * 100), 0)
         font{family: "Comfortaa"; pointSize: 25; bold: false}
         anchors.verticalCenter: parent.verticalCenter
         x: parent.width * 0.2
     }
+    Text {
+        text: "%"
+        font{family: "Comfortaa"; pointSize: 12; bold: false}
+        anchors.verticalCenter: parent.verticalCenter
+        x: value_.x + value_.width + 5
+    }
+
 
 
     Rectangle {
