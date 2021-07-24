@@ -26,8 +26,18 @@ Rectangle {
         y: parent.height * 0.47
         x: value_.x + value_.width + 5
     }
-    Text {
-        id: name
-        text: qsTr("text")
+    Rectangle {
+        width: 40
+        height: width
+        radius: height/2
+        color: "red"
+
+        Image {
+            source: "../../img/compass.png"
+            width: 40
+            height: width
+            anchors.centerIn: parent
+        }
     }
+
 }
