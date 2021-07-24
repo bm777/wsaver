@@ -26,13 +26,8 @@ Rectangle {
         y: parent.height * 0.47
         x: value_.x + value_.width + 5
     }
-    Rectangle {
-        width: 40
-        height: height
-        radius: height/2
-        color: "red"
-
-
-
+    Text {
+        id: name
+        text: qsTr("text")
     }
 }
