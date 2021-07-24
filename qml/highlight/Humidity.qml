@@ -33,9 +33,11 @@ Rectangle {
 
 
         Rectangle {
-            width: parent.width * 0.7
+            width: parent.width * 0.65
             height: width
             radius: width / 2
+            color: "#4050D2"
+            anchors.horizontalCenter: parent.horizontalCenter
         }
     }
 
