@@ -31,14 +31,6 @@ Rectangle {
         anchors.centerIn: parent
 
 
-        Rectangle {
-            width: height
-            height: parent.height * 0.65
-            anchors.verticalCenter: parent.verticalCenter
-            color: "#4050D2"
-            x: (parent.height - height) / 2
-            radius: height/2
-        }
 
     }
 
