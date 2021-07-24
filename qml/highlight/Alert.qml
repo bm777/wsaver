@@ -24,7 +24,7 @@ Rectangle {
 
 
         Rectangle {
-            width: 10*
+            width: height
             height: parent.height * 0.65
             anchors.verticalCenter: parent.verticalCenter
             color: "#4050D2"
