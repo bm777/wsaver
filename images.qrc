@@ -39,5 +39,6 @@
         <file>qml/highlight/Gauge.qml</file>
         <file>qml/highlight/Highlight.qml</file>
         <file>qml/climate/Climate.qml</file>
+        <file>qml/highlight/Alert.qml</file>
     </qresource>
 </RCC>
