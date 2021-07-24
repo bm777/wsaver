@@ -15,4 +15,10 @@ Rectangle {
         color: "#ADADAD"
     }
 
+    Rectangle {
+        radius: 10
+        width: parent.width * 0.8
+        height: 10
+        border.color: "red"
+    }
 }
