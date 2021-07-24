@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 Rectangle {
     id: root
-    property real value: 0.5
+    property real value: 0.123
     property string dataname: "Humidity"
     radius: 10
 
