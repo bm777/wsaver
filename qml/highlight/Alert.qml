@@ -49,8 +49,9 @@ Rectangle {
     }
     Text {
         text: "0"
+        color: "red"
         font{family: "Comfortaa"; pointSize: 11; bold: false}
         y: parent.height * 0.68
-        x: frame_.x + width
+        x: frame_.x + frame_.width - width*2
     }
 }
