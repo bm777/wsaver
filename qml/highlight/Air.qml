@@ -4,6 +4,7 @@ Rectangle {
     id: root
     property real value: 105
     property string dataname: "Air quality"
+
     radius: 10
 
     Text {
@@ -32,7 +33,11 @@ Rectangle {
     }
 
     Text {
-        text: direction
+        text: {
+            if(value >= 100) return "Unhealthy"
+            else return "Healhty"
+        }
+
         font{family: "Comfortaa"; bold: false; pointSize: 10}
         y: parent.height * 0.727
         x: parent.width * 0.38
