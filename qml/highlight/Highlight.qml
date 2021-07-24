@@ -43,7 +43,7 @@ Item {
 
     ////////////////////////////////////////////////////////////////
     // second line
-    Box {
+    Wind {
         id: a2
         x: hl_text.x
         y: parent.height * 0.52
