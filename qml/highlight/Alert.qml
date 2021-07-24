@@ -21,5 +21,8 @@ Rectangle {
         height: 30
         border.color: "#40ADADAD"
         anchors.centerIn: parent
+
+
+        Rectangle
     }
 }
