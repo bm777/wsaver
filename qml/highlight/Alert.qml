@@ -29,6 +29,7 @@ Rectangle {
             anchors.verticalCenter: parent.verticalCenter
             color: "#4050D2"
             x: parent.height - height
+            radius: height/2
         }
     }
 }
