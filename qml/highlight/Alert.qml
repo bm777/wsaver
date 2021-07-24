@@ -16,10 +16,10 @@ Rectangle {
     }
 
     Rectangle {
-        radius: 10
+        radius: height/2
         width: parent.width * 0.8
         height: 30
-        border.color: "#ADADAD"
+        border.color: "#80ADADAD"
         anchors.verticalCenter: parent.verticalCenter
     }
 }
