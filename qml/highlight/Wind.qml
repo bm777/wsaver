@@ -14,6 +14,7 @@ Rectangle {
         color: "#ADADAD"
     }
     Text {
+        id: value_
         text: value
         font{family: "Comfortaa"; bold: false; pointSize: 25}
         anchors.verticalCenter: parent.verticalCenter
@@ -21,8 +22,8 @@ Rectangle {
     }
     Text {
         text: "m/s"
-        font{family: "Comfortaa"; bold: false; pointSize: 25}
-        anchors.verticalCenter: parent.verticalCenter
+        font{family: "Comfortaa"; bold: false; pointSize: 12}
+        y: value_.y + value_.height - height
         x: parent.width * 0.2
     }
 }
