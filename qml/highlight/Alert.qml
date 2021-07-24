@@ -24,10 +24,11 @@ Rectangle {
 
 
         Rectangle {
-            width: 10
+            width:
             height: parent.height * 0.7
             anchors.verticalCenter: parent.verticalCenter
             color: "#4050D2"
+            x: parent.height - height
         }
     }
 }
