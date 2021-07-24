@@ -16,6 +16,7 @@ Rectangle {
     }
 
     Rectangle {
+        id: frame_
         radius: height/2
         width: parent.width * 0.8
         height: 30
@@ -45,5 +46,11 @@ Rectangle {
         font{family: "Comfortaa"; pointSize: 11; bold: false}
         y: parent.height * 0.68
         x: flood_cm.x + flood_cm.width + 5
+    }
+    Text {
+        text: "10"
+        font{family: "Comfortaa"; pointSize: 11; bold: false}
+        y: parent.height * 0.68
+        x: parent.width - width * 2 - frame_.width
     }
 }
