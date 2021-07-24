@@ -27,6 +27,19 @@ Rectangle {
         y: value_.y
         x: value_.x + value_.width + 5
     }
+    Text {
+        text: {
+            if(value >= 0.7) return "Bad"
+            else if(value >= 0.5) return "Cold"
+            else if(value >= 0.3) return "Very humide"
+            else if(value >= 0.2) return "Humide"
+            else return "Normal"
+        }
+
+        font{family: "Comfortaa"; pointSize: 12; bold: false}
+        y: value_.y
+        x: value_.x + value_.width + 5
+    }
 
 
 
