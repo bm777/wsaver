@@ -27,7 +27,7 @@ Rectangle {
         x: value_.x + value_.width + 5
     }
     Rectangle {
-        width: 38
+        width: 26
         height: width
         radius: height/2
         color: "#804050D2"
@@ -35,7 +35,7 @@ Rectangle {
         x: parent.width * 0.1
         Image {
             source: "../../img/compass.png"
-            width: 30
+            width: 25
             height: width
             anchors.centerIn: parent
         }
