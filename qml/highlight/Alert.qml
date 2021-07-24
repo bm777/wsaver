@@ -2,8 +2,9 @@ import QtQuick 2.0
 
 Rectangle {
     id: root
-    property string value: "998"
-    property string dataname: "Pressure (mb)"
+    property string alert1: "Flood"
+    property string alert2: "Tornad"
+    property string dataname: "Alert"
     radius: 10
 
     Text {
