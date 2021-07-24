@@ -22,5 +22,21 @@ Rectangle {
         x: parent.width * 0.2
     }
 
+    Image {
+        source: "../../img/compass.png"
+        width: 25
+        height: width
+        y: parent.height * 0.69
+        x: parent.width * 0.2
+
+//        Rectangle {
+//            width: 26
+//            height: width
+//            radius: height/2
+//            color: "transparent"
+//            border.color: "#40ADADAD"
+//            anchors.centerIn: parent
+//        }
+    }
 
 }
