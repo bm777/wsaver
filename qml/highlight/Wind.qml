@@ -13,31 +13,9 @@ Rectangle {
         x: y + 8
         color: "#ADADAD"
     }
-    Gauge {
-        id: gauge
-        y: parent.height * 0.35
-        anchors.horizontalCenter: parent.horizontalCenter
-        size: parent.width * 0.8
-        arcBegin: -90
-        arcEnd: arcBegin + 180
-        lineWidth: 10
-        colorCircle: "#30b6b6b6"
-
-        Text {
-            text: root.value
-            anchors.horizontalCenter: parent.horizontalCenter
-            font {family: "Comfortaa"; pointSize: 25}
-            y: parent.height * 0.3
-        }
-    }
-    Gauge {
-        id: gauge_main
-        y: parent.height * 0.35
-        anchors.horizontalCenter: parent.horizontalCenter
-        size: parent.width * 0.8
-        arcBegin: -90
-        arcEnd: arcBegin + 45
-        lineWidth: 10
-        colorCircle: "#F1C40F"
+    Text {
+        text: value
+        font{family: "Comfortaa"; bold: true; pointSize: 20}
+        anchors.centerIn: parent
     }
 }
