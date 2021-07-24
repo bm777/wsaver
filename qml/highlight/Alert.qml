@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 Rectangle {
     id: root
-    property string alert1: "Flood"
+    property string alert1: "Flood (Low level)"
     property string alert2: "Tornad"
 
     radius: 10
