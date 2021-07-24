@@ -38,5 +38,6 @@
         <file>qml/highlight/Box.qml</file>
         <file>qml/highlight/Gauge.qml</file>
         <file>qml/highlight/Highlight.qml</file>
+        <file>qml/climate/Climate.qml</file>
     </qresource>
 </RCC>
