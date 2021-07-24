@@ -39,11 +39,11 @@ Rectangle {
         anchors.horizontalCenter: parent.horizontalCenter
         y: parent.height * 0.7
 
-        Text {
-            text: "cm"
-            font{family: "Comfortaa"; pointSize: 11; bold: false}
-            y: parent.height * 0.7
-            x: flood_cm.x
-        }
+    }
+    Text {
+        text: "cm"
+        font{family: "Comfortaa"; pointSize: 11; bold: false}
+        y: parent.height * 0.7
+        x: flood_cm.x + flood_cm.width
     }
 }
