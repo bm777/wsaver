@@ -31,5 +31,9 @@ Rectangle {
             x: (parent.height - height) / 2
             radius: height/2
         }
+
+        Text {
+            text: "12"
+        }
     }
 }
