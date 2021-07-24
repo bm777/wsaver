@@ -23,6 +23,9 @@ Rectangle {
         anchors.centerIn: parent
 
 
-        Rectangle
+        Rectangle {
+            width: 10
+            height: parent.height * 0.7
+        }
     }
 }
