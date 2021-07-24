@@ -36,7 +36,7 @@ Rectangle {
             text: "3"
             font{family: "Comfortaa"; pointSize: 12}
             anchors.horizontalCenter: parent.horizontalCenter
-            y: parent.height * 0.67
+            y: parent.height * 0.8
         }
     }
 }
