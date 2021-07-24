@@ -50,7 +50,7 @@ Item {
         width: height * 1.3
         height: parent.height * 0.37
     }
-    Box {
+    Alert {
         id: b2
         x: a1.x + a1.width + 20
         y: a2.y
