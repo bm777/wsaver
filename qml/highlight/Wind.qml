@@ -39,7 +39,8 @@ Rectangle {
             width: 26
             height: width
             radius: height/2
-            color: "#804050D2"
+            color: "transparent"
+            border.color: "#804050D2"
             anchors.centerIn: parent
         }
     }
