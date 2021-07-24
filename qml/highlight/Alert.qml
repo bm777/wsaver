@@ -20,5 +20,6 @@ Rectangle {
         width: parent.width * 0.8
         height: 30
         border.color: "#ADADAD"
+        anchors.verticalCenter: parent.verticalCenter
     }
 }
