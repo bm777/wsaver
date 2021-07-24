@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 Rectangle {
     id: root
-    property string value: "12"
+    property real value: 0.12
     property string dataname: "Humidity"
     radius: 10
 
@@ -38,6 +38,7 @@ Rectangle {
             radius: width / 2
             color: "#4050D2"
             anchors.horizontalCenter: parent.horizontalCenter
+            y: parent.height *
         }
     }
 
