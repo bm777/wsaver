@@ -41,7 +41,6 @@ Rectangle {
             radius: height/2
             color: "transparent"
             border.color: "#404050D2"
-            border.width: 0.5
             anchors.centerIn: parent
         }
     }
