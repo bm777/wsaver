@@ -33,7 +33,8 @@ Rectangle {
         }
 
         Text {
-            text: "12"
+            text: "3"
+            font{family: "Comfortaa"; pointSize: 12}
         }
     }
 }
