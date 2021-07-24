@@ -46,7 +46,7 @@ Rectangle {
             radius: width / 2
             color: "#4050D2"
             anchors.horizontalCenter: parent.horizontalCenter
-            y: parent.height * value
+            y: parent.height * (1 - value)
         }
     }
 
