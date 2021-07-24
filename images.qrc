@@ -41,5 +41,6 @@
         <file>qml/climate/Climate.qml</file>
         <file>qml/highlight/Alert.qml</file>
         <file>qml/highlight/Wind.qml</file>
+        <file>qml/highlight/Humidity.qml</file>
     </qresource>
 </RCC>
