@@ -27,6 +27,7 @@ Rectangle {
             width: 10
             height: parent.height * 0.7
             anchors.verticalCenter: parent.verticalCenter
+            color: "#4050D2"
         }
     }
 }
