@@ -32,9 +32,10 @@ Rectangle {
         radius: height/2
         color: "#804050D2"
         y: parent.height * 0.68
+        x: parent.width * 0.1
         Image {
             source: "../../img/compass.png"
-            width: 40
+            width: 30
             height: width
             anchors.centerIn: parent
         }
