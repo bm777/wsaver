@@ -14,4 +14,18 @@ Rectangle {
         color: "#ADADAD"
     }
 
+    Text {
+        id: value_
+        text: value
+        font{family: "Comfortaa"; bold: false; pointSize: 25}
+        anchors.verticalCenter: parent.verticalCenter
+        x: parent.width * 0.2
+    }
+    Text {
+        text: "m/s"
+        font{family: "Comfortaa"; bold: false; pointSize: 12}
+        y: parent.height * 0.47
+        x: value_.x + value_.width + 5
+    }
+
 }
