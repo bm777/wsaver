@@ -29,14 +29,6 @@ Rectangle {
         y: parent.height * 0.69
         x: parent.width * 0.2
 
-//        Rectangle {
-//            width: 27
-//            height: width
-//            radius: height/2
-//            color: "transparent"
-//            border.color: "#40ADADAD"
-//            anchors.centerIn: parent
-//        }
     }
 
 }
