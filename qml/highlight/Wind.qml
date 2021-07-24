@@ -3,7 +3,9 @@ import QtQuick 2.0
 Rectangle {
     id: root
     property string value: "7.70"
+    property string direction: "WSW"
     property string dataname: "Wind Status"
+
     radius: 10
 
     Text {
@@ -43,6 +45,13 @@ Rectangle {
             border.color: "#40ADADAD"
             anchors.centerIn: parent
         }
+    }
+
+    Text {
+        text: direction
+        font{family: "Comfortaa"; bold: false; pointSize: 12}
+        y: parent.height * 0.47
+        x: value_.x + value_.width + 5
     }
 
 
