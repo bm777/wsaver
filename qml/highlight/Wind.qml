@@ -27,10 +27,10 @@ Rectangle {
         x: value_.x + value_.width + 5
     }
     Rectangle {
-        width: 40
+        width: 38
         height: width
         radius: height/2
-        color: "red"
+        color: "#804050D2"
 
         Image {
             source: "../../img/compass.png"
