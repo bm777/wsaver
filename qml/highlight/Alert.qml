@@ -19,7 +19,7 @@ Rectangle {
         radius: height/2
         width: parent.width * 0.8
         height: 30
-        border.color: "#80ADADAD"
-        anchors.verticalCenter: parent.verticalCenter
+        border.color: "#40ADADAD"
+        anchors.centerIn: parent
     }
 }
