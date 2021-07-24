@@ -43,7 +43,7 @@ Rectangle {
     Text {
         text: "cm"
         font{family: "Comfortaa"; pointSize: 11; bold: false}
-        y: parent.height * 0.7
+        y: parent.height * 0.68
         x: flood_cm.x + flood_cm.width
     }
 }
