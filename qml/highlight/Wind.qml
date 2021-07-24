@@ -32,5 +32,14 @@ Rectangle {
         radius: height/2
         color: "transparent"
         border.color: "#4050D2"
+        x: value_.x + value_.width + 5
+        y: parent.height * 0.7
+
+        Image {
+            source: "../../img/compass.png"
+            width: 40
+            height: width
+            anchors.centerIn: parent
+        }
     }
 }
