@@ -24,7 +24,7 @@ Item {
         width: height * 1.3
         height: parent.height * 0.37
     }
-    Box {
+    Air {
         id: b1
         x: a1.x + a1.width + 20
         y: hl_text.y + hl_text.height * 2

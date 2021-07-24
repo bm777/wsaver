@@ -33,7 +33,7 @@ Rectangle {
             else if(value >= 0.5) return "Cold"
             else if(value >= 0.3) return "Very humide"
             else if(value >= 0.2) return "Humide"
-            else return "Normal 👍"
+            else return "Normal"
         }
 
         font{family: "Comfortaa"; pointSize: 10; bold: false}

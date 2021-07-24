@@ -42,5 +42,6 @@
         <file>qml/highlight/Alert.qml</file>
         <file>qml/highlight/Wind.qml</file>
         <file>qml/highlight/Humidity.qml</file>
+        <file>qml/highlight/Air.qml</file>
     </qresource>
 </RCC>
