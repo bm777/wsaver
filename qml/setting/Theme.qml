@@ -6,5 +6,6 @@ Rectangle {
     color: "#4050D2"
     Text {
         text: "Light"
+        font {family: "Comfortaa"}
     }
 }
