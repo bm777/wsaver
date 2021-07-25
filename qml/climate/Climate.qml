@@ -16,7 +16,7 @@ Item {
 
     DateTumbler {
         id: dt
-        x: hl_text.x
+        x: hl_text.x - 5
         y: parent.height * 0.4
         width: parent.width * 0.2
         height: parent.height * 0.35
