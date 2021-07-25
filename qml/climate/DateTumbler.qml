@@ -10,6 +10,7 @@ Rectangle {
         anchors.fill: parent
         font {family: "Comfortaa"}
         visibleItemCount: 3
+        wrap: true
     }
 
 }
