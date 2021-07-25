@@ -23,6 +23,12 @@ Window {
     }
 
     //////////////////////////////////////////////////////
+    Climate {
+        id: climate
+        width: parent.width - side.width
+        height: parent.height - height
+    }
+
     Highlight {
         id: hl
         width: parent.width - side.width
