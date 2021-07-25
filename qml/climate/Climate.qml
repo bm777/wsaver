@@ -11,9 +11,12 @@ Item {
         text: qsTr("Date's selection")
         font {family: f; pointSize: 12; bold: false}
         x: parent.width * 0.07
+        y:
     }
 
-
+    Rectangle {
+        anchors.fill: parent
+    }
 
     ////////////////////////////////////////////////////////////////
 
