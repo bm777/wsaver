@@ -3,9 +3,10 @@ import QtQuick 2.0
 Rectangle {
     width: 70
     height: 32
-    color: text === "Light" ? "#ffffff" : "#000000"
+    color: t.text === "Light" ? "#ffffff" : "#000000"
     radius: height/2
     Text {
+        id: t
         text: "Dark"
         font {family: "Comfortaa"}
         anchors.centerIn: parent
