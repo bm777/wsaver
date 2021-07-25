@@ -7,8 +7,8 @@ Rectangle {
     radius: height/2
     color: "#000000"
     Text {
-        text: unit
-        font {family: f; pointSize: 15}
+        text: "°" + unit
+        font {family: f; pointSize: 12; bold: true}
         color: "#ffffff"
         anchors.centerIn: parent
     }
