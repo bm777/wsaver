@@ -8,7 +8,7 @@ Item {
     ////////////////////////////////////////////////////////////////
     Text {
         id: hl_text
-        text: qsTr("Today's Highlights")
+        text: qsTr("Highlights")
         font {family: f; pointSize: 12; bold: false}
         x: parent.width * 0.07
     }
