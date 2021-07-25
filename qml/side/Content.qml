@@ -29,7 +29,7 @@ Item {
 
     Text {
         id: date
-        text: week_day + ","
+        text: week_day + ""
         font {family: "Comfortaa"; pointSize: 9;}
         x: temp.x + 5
         y: parent.height * 0.29
