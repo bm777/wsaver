@@ -42,15 +42,15 @@ Item {
         glowRadius: flag.width / 2
         color: "#30000000"
     }
-    Unit {
-        id: unit
-        y: parent.height * 0.37
-        x: parent.width * 0.1
-    }
     Theme {
         id: theme
         y: parent.height * 0.37
-        x: parent.width * 0.25
+        x: parent.width * 0.1
+    }
+    Unit {
+        id: unit
+        y: parent.height * 0.37
+        x: parent.width * 0.35
     }
     Flag {
         id: flag
