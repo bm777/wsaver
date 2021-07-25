@@ -32,18 +32,6 @@ Rectangle {
             id: row
 
             Tumbler {
-                id: hoursTumbler
-                model: 12
-                delegate: delegateComponent
-            }
-
-            Tumbler {
-                id: minutesTumbler
-                model: 60
-                delegate: delegateComponent
-            }
-
-            Tumbler {
                 id: amPmTumbler
                 model: ["AM", "PM"]
                 delegate: delegateComponent
