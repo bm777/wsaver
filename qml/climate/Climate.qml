@@ -8,10 +8,10 @@ Item {
     ////////////////////////////////////////////////////////////////
     Text {
         id: hl_text
-        text: qsTr("Date's selection")
+        text: qsTr("Date")
         font {family: f; pointSize: 12; bold: false}
         x: parent.width * 0.07
-        y: 0
+        y: parent.height * 0.2
     }
 
 
