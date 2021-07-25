@@ -6,6 +6,6 @@ Rectangle {
 
     Image {
         source: "../../img/fr.png"
-
+        anchors.centerIn: parent
     }
 }
