@@ -1,8 +1,9 @@
 import QtQuick 2.0
 
 Rectangle {
-    width: 30
+    width: 32
     height: width
+    color: "transparent"
 
     Image {
         source: "../../img/fr.png"
