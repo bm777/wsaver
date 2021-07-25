@@ -32,7 +32,7 @@ Rectangle {
             id: row
 
             Tumbler {
-                id: amPmTumbler
+                id: dateTumbler
                 model: ["AM", "PM"]
                 delegate: delegateComponent
             }
