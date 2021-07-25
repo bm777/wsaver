@@ -5,7 +5,7 @@ import QtQuick.Controls 2.15
 Rectangle {
     width: frame.implicitWidth + 10
     height: frame.implicitHeight + 10
-
+    color: "transparent"
 
     FontMetrics {
         id: fontMetrics
@@ -23,19 +23,5 @@ Rectangle {
         }
     }
 
-    Frame {
-        id: frame
-        padding: 0
-        anchors.centerIn: parent
 
-        Row {
-            id: row
-
-            Tumbler {
-                id: dateTumbler
-                model: ["AM", "PM"]
-                delegate: delegateComponent
-            }
-        }
-    }
 }
