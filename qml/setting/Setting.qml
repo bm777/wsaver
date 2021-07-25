@@ -47,15 +47,15 @@ Item {
         y: parent.height * 0.37
         x: parent.width * 0.1
     }
-    Flag {
-        id: flag
-        y: parent.height * 0.37
-        x: parent.width * 0.25
-    }
     Theme {
         id: theme
         y: parent.height * 0.37
-        x: parent.width * 0.40
+        x: parent.width * 0.25
+    }
+    Flag {
+        id: flag
+        y: parent.height * 0.37
+        x: parent.width * 0.5
     }
 
 
