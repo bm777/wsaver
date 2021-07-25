@@ -26,7 +26,7 @@ Window {
     Climate {
         id: climate
         width: parent.width - side.width
-        height: parent.height - height
+        height: parent.height * (1 - 0.65)
         x: side.width
         y: 0
     }
