@@ -9,5 +9,6 @@ import QtQuick.Controls 2.15
         font {family: "Comfortaa"; bold: false}
         visibleItemCount: 3
         wrap: true
+
     }
 
