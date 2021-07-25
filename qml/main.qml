@@ -3,6 +3,7 @@ import QtQuick.Window 2.13
 import "climate"
 import "highlight"
 import "side"
+import "setting"
 
 Window {
     title: qsTr("wsaver")
@@ -25,9 +26,17 @@ Window {
     //////////////////////////////////////////////////////
     Climate {
         id: climate
-        width: parent.width - side.width
+        width: parent.width * 0.26
         height: parent.height * (1 - 0.65)
         x: side.width
+        y: 0
+    }
+
+    Setting {
+        id: setting
+        width: parent.width - side.width - climate.width
+        height: parent.height * (1 - 0.65)
+        x: climate.x + climate.width
         y: 0
     }
 

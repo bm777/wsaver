@@ -46,5 +46,6 @@
         <file>qml/main.qml</file>
         <file>qml/Parameter.qml</file>
         <file>qml/climate/DateTumbler.qml</file>
+        <file>qml/setting/Setting.qml</file>
     </qresource>
 </RCC>
