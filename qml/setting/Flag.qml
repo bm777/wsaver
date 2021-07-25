@@ -6,6 +6,8 @@ Rectangle {
 
     Image {
         source: "../../img/uk.png"
+        width: parent.width
+        height: parent.height
         anchors.centerIn: parent
     }
 }
