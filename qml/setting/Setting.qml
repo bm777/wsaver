@@ -26,6 +26,7 @@ Item {
     Unit {
         id: unit
         y: parent.height * 0.37
+        x: parent.width * 0.1
     }
 
 
