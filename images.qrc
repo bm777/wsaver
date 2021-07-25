@@ -49,5 +49,6 @@
         <file>qml/setting/Setting.qml</file>
         <file>qml/setting/Unit.qml</file>
         <file>qml/setting/Flag.qml</file>
+        <file>qml/setting/Theme.qml</file>
     </qresource>
 </RCC>
