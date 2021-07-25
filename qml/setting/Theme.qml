@@ -1,5 +1,7 @@
 import QtQuick 2.0
 
-Item {
-
+Rectangle {
+    width: 70
+    height: 32
+    color: "#4050D2"
 }
