@@ -15,7 +15,7 @@ Rectangle {
         id: delegateComponent
 
         Label {
-            text: formatText(Tumbler.tumbler.count, modelData)
+            text: modelData
             opacity: 1.0 - Math.abs(Tumbler.displacement) / (Tumbler.tumbler.visibleItemCount / 2)
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
