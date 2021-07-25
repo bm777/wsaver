@@ -16,9 +16,9 @@ Item {
 
     Rectangle {
         x: hl_text.x - 5
-        y: parent.height * 0.4
+        y: parent.height * 0.45
         width: height * 1.3
-        height: parent.height * 0.37
+        height: parent.height * 0.38
 
         DateTumbler {
             id: dt
