@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.15
+import QtGraphicalEffects 1.12
 
 
 Item {
@@ -28,7 +29,12 @@ Item {
         y: parent.height * 0.37
         x: parent.width * 0.1
     }
-
+    RectangularGlow {
+        anchors.fill: unit
+        spread: 0.1
+        glowRadius: unit.width / 2
+        color: "#80000000"
+    }
 
 
 }
