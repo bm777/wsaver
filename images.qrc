@@ -45,5 +45,6 @@
         <file>qml/highlight/Air.qml</file>
         <file>qml/main.qml</file>
         <file>qml/Parameter.qml</file>
+        <file>qml/climate/DateTumbler.qml</file>
     </qresource>
 </RCC>
