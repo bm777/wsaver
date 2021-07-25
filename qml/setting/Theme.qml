@@ -7,5 +7,6 @@ Rectangle {
     Text {
         text: "Light"
         font {family: "Comfortaa"}
+        anchors.centerIn: parent
     }
 }
