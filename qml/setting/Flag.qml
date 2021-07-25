@@ -5,7 +5,7 @@ Rectangle {
     height: width
 
     Image {
-        source: "../../img/fr.png"
+        source: "../../img/uk.png"
         anchors.centerIn: parent
     }
 }
