@@ -15,10 +15,10 @@ Item {
     }
 
     Rectangle {
-        x: parent.width * 0.08
+        x: parent.width * 0.07
         y: parent.height * 0.4
-        width: parent.width * 0.3
-        height: parent.height * 0.65
+        width: parent.width * 0.26
+        height: parent.height * 0.6
 
         DateTumbler {
             id: dt
