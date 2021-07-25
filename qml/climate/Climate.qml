@@ -14,6 +14,12 @@ Item {
         y: parent.height * 0.18
     }
 
+    DateTumbler {
+        id: dt
+        x: hl_text.x
+        y: parent.height * 0.3
+    }
+
 
     ////////////////////////////////////////////////////////////////
 
