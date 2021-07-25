@@ -23,5 +23,19 @@ Rectangle {
         }
     }
 
+    Frame {
+        id: frame
+        padding: 0
+        anchors.centerIn: parent
 
+        Row {
+            id: row
+
+            Tumbler {
+                id: dateTumbler
+                model: ["January 18, 2021", "February 7, 2021", "March 9, 2021"]
+                delegate: delegateComponent
+            }
+        }
+    }
 }
