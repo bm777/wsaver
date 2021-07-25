@@ -14,12 +14,16 @@ Item {
         y: parent.height * 0.18
     }
 
-    DateTumbler {
-        id: dt
+    Rectangle {
         x: hl_text.x - 5
         y: parent.height * 0.4
-        width: parent.width * 0.2
-        height: parent.height * 0.35
+
+        DateTumbler {
+            id: dt
+            anchors.centerIn: parent
+            width: root.width * 0.2
+            height: root.height * 0.35
+        }
     }
 
 
