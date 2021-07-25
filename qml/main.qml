@@ -27,6 +27,8 @@ Window {
         id: climate
         width: parent.width - side.width
         height: parent.height - height
+        x: side.width
+        y: 0
     }
 
     Highlight {
