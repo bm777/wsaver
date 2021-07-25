@@ -19,7 +19,7 @@ Item {
         x: hl_text.x
         y: parent.height * 0.3
         width: parent.width * 0.2
-        height: parent.height * 0.6
+        height: parent.height * 0.3
     }
 
 
