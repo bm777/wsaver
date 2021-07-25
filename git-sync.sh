@@ -2,7 +2,7 @@
 declare -i i=1
 while true
 do
-	echo "_______________"+$i+"_________________"
+	echo "_______________"$i"_________________"
 	git add -A
 	git commit -am "Update on wsaver"
 	git push
