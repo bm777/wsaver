@@ -15,8 +15,8 @@ Item {
     }
 
     Rectangle {
-        x: hl_text.x - 5
-        y: parent.height * 0.45
+        x: parent.width * 0.1
+        y: parent.height * 0.4
         width: height * 1.3
         height: parent.height * 0.38
 
