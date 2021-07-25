@@ -18,7 +18,7 @@ Item {
         x: parent.width * 0.1
         y: parent.height * 0.4
         width: height * 1.3
-        height: parent.height * 0.38
+        height: parent.height * 0.8
 
         DateTumbler {
             id: dt
