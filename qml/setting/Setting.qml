@@ -24,17 +24,18 @@ Item {
     }
 
     ////////////////////////////////////////////////////////////////
+    RectangularGlow {
+        anchors.fill: unit
+        spread: 0.1
+        glowRadius: unit.width / 2
+        color: "#40000000"
+    }
     Unit {
         id: unit
         y: parent.height * 0.37
         x: parent.width * 0.1
     }
-    RectangularGlow {
-        anchors.fill: unit
-        spread: 0.1
-        glowRadius: unit.width / 2
-        color: "#80000000"
-    }
+
 
 
 }
