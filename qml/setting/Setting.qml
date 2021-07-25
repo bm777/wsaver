@@ -35,6 +35,11 @@ Item {
         y: parent.height * 0.37
         x: parent.width * 0.1
     }
+    Flag {
+        id: flag
+        y: parent.height * 0.37
+        x: parent.width * 0.3
+    }
 
 
 
