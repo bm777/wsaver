@@ -33,8 +33,8 @@ Item {
     RectangularGlow {
         anchors.fill: flag
         spread: 0.1
-        glowRadius: unit.width / 2
-        color: "#10000000"
+        glowRadius: flag.width / 2
+        color: "#804050D2"
     }
     Unit {
         id: unit
