@@ -28,7 +28,7 @@ Item {
         anchors.fill: unit
         spread: 0.1
         glowRadius: unit.width / 2
-        color: "#40000000"
+        color: "#30000000"
     }
     Unit {
         id: unit
