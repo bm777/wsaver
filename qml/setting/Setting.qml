@@ -36,6 +36,12 @@ Item {
         glowRadius: flag.width / 2
         color: "#204050D2"
     }
+    RectangularGlow {
+        anchors.fill: theme
+        spread: 0.1
+        glowRadius: flag.width / 2
+        color: "#30000000"
+    }
     Unit {
         id: unit
         y: parent.height * 0.37
