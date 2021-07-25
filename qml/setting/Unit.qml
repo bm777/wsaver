@@ -1,5 +1,9 @@
 import QtQuick 2.0
 
-Item {
-
+Rectangle {
+    property string unit: "C"
+    Text {
+        text: unit
+        font {family: f; pointSize: 15}
+    }
 }
