@@ -44,7 +44,7 @@ Item {
     Flag {
         id: flag
         y: parent.height * 0.37
-        x: parent.width * 0.3
+        x: parent.width * 0.25
     }
 
 
