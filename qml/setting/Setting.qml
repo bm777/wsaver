@@ -16,8 +16,11 @@ Item {
         y: parent.height * 0.18
     }
 
-
-
+    Rectangle {
+        anchors.fill: parent
+        border.color: "red"
+        color: "transparent"
+    }
 
     ////////////////////////////////////////////////////////////////
 
