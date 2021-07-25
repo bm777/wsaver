@@ -4,7 +4,7 @@ import QtQuick.Controls 2.15
 
 
     Tumbler {
-        model: ["January 18, 2021", "February 7, 2021", "March 9, 2021"]
+        model: ["January", "February", "March", "April", "May"]
 
         font {family: "Comfortaa"; bold: false}
         visibleItemCount: 3
