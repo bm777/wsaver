@@ -5,6 +5,7 @@ Rectangle {
     property real value: 0.123
     property string dataname: "Humidity"
     radius: 10
+    color: "#ffffff"
 
     Text {
         text: root.dataname
