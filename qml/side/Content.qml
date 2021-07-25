@@ -6,7 +6,7 @@ Item {
     property int temperature: 12
     property string unit: "C"
     property string week_day: "January 18, 2018"
-    property string hour: "(GMT+1)"
+    property string hour: ""
     property string condition_cloud: "Mostly cloudy"
     property string condition_rain: "30%"
     property string town: "Uyo, Nigeria"
