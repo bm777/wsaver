@@ -34,7 +34,7 @@ Item {
         anchors.fill: flag
         spread: 0.1
         glowRadius: flag.width / 2
-        color: "#804050D2"
+        color: "#204050D2"
     }
     Unit {
         id: unit
