@@ -8,10 +8,7 @@ Rectangle {
     Tumbler {
         model: ["January 18, 2021", "February 7, 2021", "March 9, 2021"]
         anchors.fill: parent
-        contentItem: Text {
-            id: name
-            text: modelData
-        }
+        font {family: "Comfortaa"}
     }
 
 }
