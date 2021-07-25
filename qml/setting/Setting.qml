@@ -46,6 +46,11 @@ Item {
         y: parent.height * 0.37
         x: parent.width * 0.25
     }
+    Theme {
+        id: theme
+        y: parent.height * 0.37
+        x: parent.width * 0.40
+    }
 
 
 
