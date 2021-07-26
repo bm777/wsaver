@@ -31,7 +31,11 @@ Rectangle {
         font{family: "Comfortaa"; pointSize: 12; bold: false}
         x: img.x + img.width + 10
     }
-
+    MouseArea {
+        anchors.fill: parent
+//        hoverEnabled: true
+        onExited: frame.visible = false
+    }
     Rectangle {
         id: frame
         width: 130
@@ -110,10 +114,6 @@ Rectangle {
                 }
             }
         }
-    MouseArea {
-        anchors.fill: parent
-//        hoverEnabled: true
-        onExited: frame.visible = false
-    }
+
     }
 }
