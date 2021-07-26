@@ -48,12 +48,18 @@ Rectangle {
             height: width
             y: 0
             x: 10
-            Text {
+            Text {id: tFr
                 text: "Français"
                 anchors.verticalCenter: parent.verticalCenter
                 color: theme === "light" ? "#4050D2" : "#ffffff"
                 font{family: "Comfortaa"; pointSize: 12; bold: false}
                 x: imgFr.x + imgFr.width
+            }
+            MouseArea {
+                anchors.fill: parent
+                hoverEnabled: true
+                onEntered: tFr.font.bold = true
+                onExited: tFr.font.bold = false
             }
         }
         /////////////////////////////////////////////////////////////
