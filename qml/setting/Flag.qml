@@ -26,7 +26,8 @@ Rectangle {
         width: 120
         height: 32 * 3
         color: "#ffffff"
-        border.color: "red"
+//        border.color: "red"
+        radius: 10
         /////////////////////////////////////////////////////////////
         Image {
             id: imgFr
