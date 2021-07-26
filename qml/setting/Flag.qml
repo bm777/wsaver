@@ -89,7 +89,7 @@ Rectangle {
                 x: imgFr.x + imgFr.width
             }
             MouseArea {
-                anchors.fill: parent
+                anchors.fill: imgUk
                 hoverEnabled: true
                 onEntered: tUk.font.bold = true
                 onExited: tUk.font.bold = false
@@ -117,7 +117,7 @@ Rectangle {
                 x: imgFr.x + imgFr.width
             }
             MouseArea {
-                anchors.fill: parent
+                anchors.fill: imgNg
                 hoverEnabled: true
                 onEntered: tNg.font.bold = true
                 onExited: tNg.font.bold = false
