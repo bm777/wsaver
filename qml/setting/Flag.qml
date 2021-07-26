@@ -30,22 +30,23 @@ Rectangle {
         Image {
             id: imgFr
             source: "../../img/fr.png"
-            width: parent.width
-            height: parent.height
-            anchors.centerIn: parent
+            width: 32
+            height: width
+            anchors.horizontalCenter: parent.horizontalCenter
+            y: 0
         }
         Image {
             id: imgUk
             source: "../../img/uk.png"
-            width: parent.width
-            height: parent.height
+            width: 32
+            height: width
             anchors.centerIn: parent
         }
         Image {
             id: imgNg
             source: "../../img/fng.png"
-            width: parent.width
-            height: parent.height
+            width: 32
+            height: width
             anchors.centerIn: parent
         }
     }
