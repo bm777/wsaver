@@ -19,6 +19,6 @@ Rectangle {
         anchors.verticalCenter: parent.verticalCenter
         color: theme === "light" ? "#4050D2" : "#ffffff"
         font{family: "Comfortaa"; pointSize: 12}
-
+        x: img.x + img.width + 10
     }
 }
