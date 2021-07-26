@@ -26,7 +26,7 @@ Item {
         width: parent.width * 0.8
         height: parent.height * 0.5
         radius: {
-            print(month.currentItem)
+            print(month.data)
             return 10
         }
 
