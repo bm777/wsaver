@@ -31,7 +31,7 @@ Rectangle {
         onClicked: {
             if(t.text === "Light" || t.text === "Blanc"){
                 if(lang === "English") t.text = "Dark"
-                if(lang === "Français") t.text = "sombre"
+                if(lang === "Français") t.text = "Noir"
             }else{
                 if(lang === "English") t.text = "Light"
                 if(lang === "Français") t.text = "Blanc"
