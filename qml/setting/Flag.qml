@@ -69,7 +69,7 @@ Rectangle {
                     name_language = "Français"
                     name_source = "../../img/fr.png"
                     frame.visible = false
-                    print(name_language)
+//                    print(name_language)
                 }
             }
         }
@@ -97,7 +97,7 @@ Rectangle {
                     name_language = "English"
                     name_source = "../../img/uk.png"
                     frame.visible = false
-                    print(name_language)
+//                    print(name_language)
                 }
             }
         }
@@ -125,7 +125,7 @@ Rectangle {
                     name_language = "Yoruba"
                     name_source = "../../img/ng.png"
                     frame.visible = false
-                    print(name_language)
+//                    print(name_language)
                 }
             }
         }
