@@ -110,6 +110,7 @@ Rectangle {
                 onExited: tNg.font.bold = false
                 onClicked: {
                     name_language = "ng"
+                    frame.visible = false
                     print(name_language)
                 }
             }
