@@ -28,7 +28,7 @@ Item {
         anchors.fill: unit
         spread: 0.1
         glowRadius: unit.width / 2
-        color: "#30000000"
+        color: "#10000000"
     }
     RectangularGlow {
         anchors.fill: flag
@@ -40,7 +40,7 @@ Item {
         anchors.fill: theme
         spread: 0.1
         glowRadius: flag.width / 2
-        color: "#30000000"
+        color: "#10000000"
     }
     Theme {
         id: theme
