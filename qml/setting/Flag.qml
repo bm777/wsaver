@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import QtQuick.Controls 2.0
 
 Rectangle {
     width: 32
@@ -13,6 +14,10 @@ Rectangle {
         width: parent.width
         height: parent.height
         anchors.centerIn: parent
+    }
+    ComboBox {
+        id: lang
+        model: ["Français", "English", "Yoruba"]
     }
 
 }
