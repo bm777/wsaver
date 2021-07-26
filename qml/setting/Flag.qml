@@ -1,5 +1,4 @@
 import QtQuick 2.0
-import QtQuick.Controls 2.0
 
 Rectangle {
     width: 32
@@ -15,22 +14,11 @@ Rectangle {
         height: parent.height
         anchors.centerIn: parent
     }
-    ComboBox {
-        id: lang
-        x: img.x + img.width + 10
+    Text {
+        text: "Français"
         anchors.verticalCenter: parent.verticalCenter
+        color: theme === "light" ? "#4050D2" : "#ffffff"
         font{family: "Comfortaa"; pointSize: 12; bold: false}
-        model: ["Français", "English", "Yoruba"]
-        background: Rectangle {
-            color: "transparent"
-            border.color: "red"
-            width: 80
-            height: 32
-        }
+        x: img.x + img.width + 10
     }
-//    Text {
-//        text: "Français"
-//        color: theme === "light" ? "#4050D2" : "#ffffff"
-//    }
-
 }
