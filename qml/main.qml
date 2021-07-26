@@ -16,10 +16,10 @@ Window {
     maximumWidth: 1000
     visible: true
 
-    property real tmp: width * 0.28 // = 322
-    property string deg: setting.deg
-    property string lang: setting.lang
-    property string thema: setting.thema
+//    property real tmp: width * 0.28 // = 322
+//    property string deg: setting.deg
+//    property string lang: setting.lang
+//    property string thema: setting.thema
 
     Rectangle {
         anchors.fill: parent
