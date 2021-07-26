@@ -9,6 +9,6 @@ Dashboard to show data in real time from virtual weather radiosonde of Kanda.
  - [x] Brain :)
 
 #### Usage
-How to install requirements so that you can launch the UI.
+How to install requirements so that you can launch the UI. It is justs requests library for Pythonto enable request to dClimate API.
 
 ```pip3 install -r requirements.txt```
