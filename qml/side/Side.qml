@@ -158,6 +158,7 @@ Item {
                 id: content
                 anchors.fill: parent
                 unit: t
+                week_day: date
             }
         }
 
