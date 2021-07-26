@@ -23,7 +23,7 @@ Rectangle {
     }
 
     Rectangle {
-        width: 50
+        width: 32
         height: 100
         color: "transparent"
         border.color: "red"
