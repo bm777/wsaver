@@ -25,10 +25,7 @@ Item {
         y: parent.height * 0.35
         width: parent.width * 0.8
         height: parent.height * 0.5
-        radius: {
-            print(month.contentItem)
-            return 10
-        }
+        radius: 10
 
         Tumbler {
             id: month
