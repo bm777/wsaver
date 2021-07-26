@@ -7,6 +7,7 @@ Item {
     property string f: "Comfortaa"
     property string mm: month.model[month.currentIndex]
     property string dd: day.model[day.currentIndex]
+    property string yy: year.model[year.currentIndex]
 
     ////////////////////////////////////////////////////////////////
     Text {
@@ -52,7 +53,7 @@ Item {
             height: parent.height * 0.8
             x: month.x + month.width
         }
-        Tumbler {
+        Tumbler {id: year
             model: ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"]
             anchors.verticalCenter: parent.verticalCenter
             font {family: "Comfortaa"; bold: false}
