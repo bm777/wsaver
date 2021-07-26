@@ -9,7 +9,7 @@ Rectangle {
     property string lang: "Français"
     onLangChanged: {
         if(lang === "English" && thema === "Light") t.text = "Light"
-        if(lang === "Français") t.text = "Blanc"
+        if(lang === "Français" && thema === "Light") t.text = "Blanc"
     }
 
     radius: height/2
