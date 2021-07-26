@@ -6,12 +6,15 @@ Rectangle {
     color: "transparent"
 
     Image {
+        id: img
         source: "../../img/fr.png"
         width: parent.width
         height: parent.height
         anchors.centerIn: parent
     }
     Text {
-        text: ""
+        text: {
+            if(im)
+        }
     }
 }
