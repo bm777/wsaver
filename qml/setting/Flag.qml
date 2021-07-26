@@ -6,11 +6,15 @@ Rectangle {
     color: "transparent"
     property string name_language: "fr"
     property string theme: "light"
+//    Rectangle {
+//        width: 32 +
+//    }
+
     MouseArea {
         anchors.fill: parent
         hoverEnabled: true
         onEntered: frame.visible = true
-        onExited:  frame.visible = false
+        onExited:  frame.visible = true
     }
 
     Image {
