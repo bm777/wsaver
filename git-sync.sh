@@ -4,7 +4,7 @@ while true
 do
 	echo "_______________"$i"_________________"
 	git add -A
-	git commit -am "Update on wsaver"
+	git commit -am "Update on wsaver/Setting"
 	git push
 	sleep 30
 	echo "Hi, bm7. A update has been done :)"
