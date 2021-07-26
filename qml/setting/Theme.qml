@@ -18,7 +18,7 @@ Rectangle {
 
         font {family: "Comfortaa"}
         anchors.centerIn: parent
-        color: text === "Light" ? "#4050D2" : "#ffffff"
+        color: (text === "Light" || text === "Blanc")? "#4050D2" : "#ffffff"
     }
     MouseArea {
         anchors.fill: parent
