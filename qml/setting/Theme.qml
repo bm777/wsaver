@@ -27,7 +27,8 @@ Rectangle {
                 if(lang === "English") t.text = "Dark"
                 if(lang === "Français") t.text = "sombre"
             }else{
-                t.text = "Light"
+                if(lang === "English") t.text = "Light"
+                if(lang === "Français") t.text = "Blanc"
             }
 //            print(thema)
         }
