@@ -65,6 +65,12 @@ Rectangle {
                 hoverEnabled: true
                 onEntered: tFr.font.bold = true
                 onExited: tFr.font.bold = false
+                onClicked: {
+                    name_language = "Français"
+                    name_source = "../../img/fr.png"
+                    frame.visible = false
+                    print(name_language)
+                }
             }
         }
         /////////////////////////////////////////////////////////////
