@@ -106,6 +106,9 @@ Rectangle {
                 onExited: tNg.font.bold = false
             }
         }
-
+    MouseArea {
+        anchors.fill: parent
+        onExited: frame.visible = false
+    }
     }
 }
