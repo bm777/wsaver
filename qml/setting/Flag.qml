@@ -14,11 +14,5 @@ Rectangle {
         height: parent.height
         anchors.centerIn: parent
     }
-    Text {
-        text: "Français"
-        anchors.verticalCenter: parent.verticalCenter
-        color: theme === "light" ? "#4050D2" : "#ffffff"
-        font{family: "Comfortaa"; pointSize: 12; bold: false}
-        x: img.x + img.width + 10
-    }
+
 }
