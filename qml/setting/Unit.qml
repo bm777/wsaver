@@ -4,7 +4,7 @@ Rectangle {
     width: 30
     height: width
     radius: height/2
-    color: t.text === "°C" ? "#ffffff" : "4050D2"
+    color: t.text === "°C" ? "#ffffff" : "#4050D2"
     property string deg: t.text
     Text {
         id: t
