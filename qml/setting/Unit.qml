@@ -9,7 +9,7 @@ Rectangle {
     Text {
         id: t
         text: "°" + unit
-        font {family: "Comfortaa"; pointSize: 9; bold: true}
+        font {family: "Comfortaa"; pointSize: 9; bold: false}
         color: t.text === "°C" ? "#4050D2" : "#ffffff"
         anchors.horizontalCenter: parent.horizontalCenter
         y: parent.height * 0.3
