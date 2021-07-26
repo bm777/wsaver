@@ -27,5 +27,6 @@ Rectangle {
         height: width * 3
         color: "transparent"
         border.color: "red"
+        
     }
 }
