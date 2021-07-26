@@ -10,6 +10,8 @@ Rectangle {
     onLangChanged: {
         if(lang === "English" && thema === "Light") t.text = "Light"
         if(lang === "Français" && thema === "Light") t.text = "Blanc"
+        if(lang === "English" && thema === "Dark") t.text = "Dark"
+        if(lang === "Français" && thema === "Dark") t.text = "Noir"
     }
 
     radius: height/2
