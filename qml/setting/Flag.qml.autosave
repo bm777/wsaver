@@ -6,7 +6,9 @@ Rectangle {
     color: "transparent"
     property string name_language: "fr"
     property string theme: "light"
-
+    MouseArea {
+        
+    }
 
     Image {
         id: img
