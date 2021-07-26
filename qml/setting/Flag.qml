@@ -35,7 +35,7 @@ Rectangle {
             width: 32
             height: width
             y: 0
-
+            x: 10
             Text {
                 text: "Français"
                 anchors.verticalCenter: parent.verticalCenter
@@ -51,7 +51,7 @@ Rectangle {
             width: 32
             height: width
             y: imgFr.y + imgFr.height
-            x: 5
+            x: 10
             Text {
                 text: "English"
                 anchors.verticalCenter: parent.verticalCenter
@@ -67,7 +67,7 @@ Rectangle {
             width: 32
             height: width
             y: imgUk.y + imgUk.height
-
+            x: 10
             Text {
                 text: "Yoruba"
                 anchors.verticalCenter: parent.verticalCenter
