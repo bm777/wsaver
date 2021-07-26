@@ -70,12 +70,18 @@ Rectangle {
             height: width
             y: imgFr.y + imgFr.height
             x: 10
-            Text {
+            Text {id: tUk
                 text: "English"
                 anchors.verticalCenter: parent.verticalCenter
                 color: theme === "light" ? "#4050D2" : "#ffffff"
                 font{family: "Comfortaa"; pointSize: 12; bold: false}
                 x: imgFr.x + imgFr.width
+            }
+            MouseArea {
+                anchors.fill: parent
+                hoverEnabled: true
+                onEntered: tUk.font.bold = true
+                onExited: tUk.font.bold = false
             }
         }
         /////////////////////////////////////////////////////////////
@@ -86,12 +92,18 @@ Rectangle {
             height: width
             y: imgUk.y + imgUk.height
             x: 10
-            Text {
+            Text {id: tNg
                 text: "Yoruba"
                 anchors.verticalCenter: parent.verticalCenter
                 color: theme === "light" ? "#4050D2" : "#ffffff"
                 font{family: "Comfortaa"; pointSize: 12; bold: false}
                 x: imgFr.x + imgFr.width
+            }
+            MouseArea {
+                anchors.fill: parent
+                hoverEnabled: true
+                onEntered: tNg.font.bold = true
+                onExited: tNg.font.bold = false
             }
         }
 
