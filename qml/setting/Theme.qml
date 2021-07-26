@@ -7,10 +7,6 @@ Rectangle {
     color: (t.text === "Light" || t.text === "Blanc") ? "#ffffff" : "#4050D2"
     property string thema: t.text
     property string lang: "Français"
-    onLangChanged: {
-        if(lang === "English") return "Light"
-        if(lang === "Français") return "Blanc"
-    }
 
     radius: height/2
     Text {
