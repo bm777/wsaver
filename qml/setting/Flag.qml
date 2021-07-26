@@ -11,4 +11,7 @@ Rectangle {
         height: parent.height
         anchors.centerIn: parent
     }
+    Text {
+        text: ""
+    }
 }
