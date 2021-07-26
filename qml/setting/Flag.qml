@@ -24,6 +24,8 @@ Rectangle {
         background: Rectangle {
             color: "transparent"
             border.color: "red"
+            width: 80
+            height: 32
         }
     }
 //    Text {
