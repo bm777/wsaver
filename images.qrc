@@ -50,5 +50,8 @@
         <file>qml/setting/Unit.qml</file>
         <file>qml/setting/Flag.qml</file>
         <file>qml/setting/Theme.qml</file>
+        <file>img/fr.png</file>
+        <file>img/uk.png</file>
+        <file>img/ng.png</file>
     </qresource>
 </RCC>
