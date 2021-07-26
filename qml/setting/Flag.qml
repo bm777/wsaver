@@ -4,7 +4,7 @@ Rectangle {
     width: 32
     height: width
     color: "transparent"
-    property string name_language: "fr"
+    property string name_language: "Fr"
     property string theme: "light"
 //    Rectangle {
 //        width: 32 +
@@ -109,7 +109,7 @@ Rectangle {
                 onEntered: tNg.font.bold = true
                 onExited: tNg.font.bold = false
                 onClicked: {
-                    name_language = "ng"
+                    name_language = "Yo"
                     frame.visible = false
                     print(name_language)
                 }
