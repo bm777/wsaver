@@ -17,6 +17,9 @@ Window {
     visible: true
 
     property real tmp: width * 0.28 // = 322
+    property string deg: setting.deg
+    property string lang: setting.lang
+    property string thema: setting.thema
 
     Rectangle {
         anchors.fill: parent
@@ -53,7 +56,7 @@ Window {
         id: side
         width: 322
         height: parent.height
-        t: setting.deg
+        t: lang
     }
 
 
