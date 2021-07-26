@@ -21,7 +21,7 @@ Item {
     }
     Text {
         id: cf
-        text: "°" +unit
+        text: unit
         font { pointSize: 15; family: f}
         x: temp.x + temp.width
         y: temp.y
