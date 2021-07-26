@@ -54,8 +54,9 @@ Window {
     //////////////////////////////////////////////////////
     property string th: {
         if(climate.dd === "1" || climate.dd === "21" || climate.dd === "31") return "st"
-        if(climate.dd === "2") return "nd"
-        if(climate.dd === "") return "st"
+        if(climate.dd === "2" || climate.dd === "22") return "nd"
+        if(climate.dd === "3" || climate.dd === "23") return "rd"
+        else return "th"
     }
 
     Side {
@@ -63,7 +64,7 @@ Window {
         width: 322
         height: parent.height
         t: setting.deg
-        date: climate.mm + ", " + climate.dd + ""
+        date: climate.mm + ", " + climate.dd + th + " "+ climate.yy
     }
 
 
