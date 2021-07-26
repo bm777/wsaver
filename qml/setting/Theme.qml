@@ -15,11 +15,7 @@ Rectangle {
     radius: height/2
     Text {
         id: t
-        text: {
-            if(lang === "English") return "Light"
-            if(lang === "Français") return "Blanc"
-//            if(lang === "") return "Light"
-        }
+        text: ""
 
         font {family: "Comfortaa"}
         anchors.centerIn: parent
