@@ -12,3 +12,6 @@ Dashboard to show data in real time from virtual weather radiosonde of Kanda.
 How to install requirements so that you can launch the UI. It is just the requests library for Pythonto enable request to dClimate API.
 
 ```pip3 install -r requirements.txt```
+
+You have only have the possibility to launch as a pip3 software.
+I'm preparing the pip file so that you can do easily ```pip3 install wsaver```
