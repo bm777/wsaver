@@ -27,6 +27,7 @@ Rectangle {
         height: width * 3
         color: "transparent"
         border.color: "red"
+        /////////////////////////////////////////////////////////////
         Image {
             id: imgFr
             source: "../../img/fr.png"
@@ -34,7 +35,16 @@ Rectangle {
             height: width
             anchors.horizontalCenter: parent.horizontalCenter
             y: 0
+
+            Text {
+                text: "Français"
+                anchors.verticalCenter: parent.verticalCenter
+                color: theme === "light" ? "#4050D2" : "#ffffff"
+                font{family: "Comfortaa"; pointSize: 12; bold: false}
+                x: imgFr.x + imgFr.width + 10
+            }
         }
+        /////////////////////////////////////////////////////////////
         Image {
             id: imgUk
             source: "../../img/uk.png"
@@ -43,6 +53,7 @@ Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
             y: imgFr.y + imgFr.height
         }
+        /////////////////////////////////////////////////////////////
         Image {
             id: imgNg
             source: "../../img/ng.png"
