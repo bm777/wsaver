@@ -21,4 +21,9 @@ Rectangle {
         font{family: "Comfortaa"; pointSize: 12; bold: false}
         x: img.x + img.width + 10
     }
+
+    Rectangle {
+        width: 50
+        height: 150
+    }
 }
