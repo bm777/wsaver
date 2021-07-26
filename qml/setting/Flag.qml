@@ -40,14 +40,16 @@ Rectangle {
             source: "../../img/uk.png"
             width: 32
             height: width
-            anchors.centerIn: parent
+            anchors.horizontalCenter: parent.horizontalCenter
+            y: imgFr.y + imgFr.height
         }
         Image {
             id: imgNg
             source: "../../img/fng.png"
             width: 32
             height: width
-            anchors.centerIn: parent
+            anchors.horizontalCenter: parent.horizontalCenter
+            y: imgUk.y + imgUk.height
         }
     }
 }
