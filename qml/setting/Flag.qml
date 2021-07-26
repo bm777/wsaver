@@ -23,8 +23,8 @@ Rectangle {
     }
 
     Rectangle {
-        width: 32
-        height: width * 3
+        width: 150
+        height: 32 * 3
         color: "#ffffff"
         border.color: "red"
         /////////////////////////////////////////////////////////////
