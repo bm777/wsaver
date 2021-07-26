@@ -14,7 +14,8 @@ Rectangle {
     }
     Text {
         text: {
-            if(im)
+            if(img.source === "../../img/fr.png")
+                return "Francais"
         }
     }
 }
