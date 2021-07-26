@@ -45,7 +45,7 @@ Rectangle {
         }
         Image {
             id: imgNg
-            source: "../../img/fng.png"
+            source: "../../img/ng.png"
             width: 32
             height: width
             anchors.horizontalCenter: parent.horizontalCenter
