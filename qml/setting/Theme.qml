@@ -4,7 +4,7 @@ Rectangle {
     id: root
     width: 70
     height: 32
-    color: t.text === "Light" ? "#ffffff" : "#4050D2"
+    color: (t.text === "Light" || t.text === "Blanc") ? "#ffffff" : "#4050D2"
     property string thema: t.text
     property string lang: "Français"
     radius: height/2
@@ -18,13 +18,7 @@ Rectangle {
 
         font {family: "Comfortaa"}
         anchors.centerIn: parent
-        color: {
-            if(text === "Light" || text === "Blanc"){
-                return "#4050D2"
-            }else{
-                return "#ffffff"
-            }
-        }
+        color: (text === "Light" || text === "Blanc")? "#4050D2" : "#ffffff"
     }
     MouseArea {
         anchors.fill: parent
