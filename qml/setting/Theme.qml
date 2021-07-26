@@ -24,7 +24,8 @@ Rectangle {
         anchors.fill: parent
         onClicked: {
             if(t.text === "Light" || t.text === "Blanc"){
-                t.text = "Dark"
+                if(lang === "English") t.text = "Dark"
+                if(lang === "Français") t.text = "sombre"
             }else{
                 t.text = "Light"
             }
