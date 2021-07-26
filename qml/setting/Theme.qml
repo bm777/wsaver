@@ -22,7 +22,7 @@ Rectangle {
             }else{
                 t.text = "Light"
             }
-            print(thema)
+//            print(thema)
         }
     }
 }
