@@ -5,6 +5,7 @@ Rectangle {
     height: width
     color: "transparent"
     property string name_language: "Fr"
+    property string name_source: "../../img/fr.png"
     property string theme: "light"
 //    Rectangle {
 //        width: 32 +
@@ -19,7 +20,7 @@ Rectangle {
 
     Image {
         id: img
-        source: "../../img/fr.png"
+        source: name_source
         width: parent.width
         height: parent.height
         anchors.centerIn: parent
@@ -110,6 +111,7 @@ Rectangle {
                 onExited: tNg.font.bold = false
                 onClicked: {
                     name_language = "Yo"
+                    name_source = "../../img/ng.png"
                     frame.visible = false
                     print(name_language)
                 }
