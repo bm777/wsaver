@@ -8,7 +8,7 @@ Rectangle {
     property string thema: t.text
     property string lang: "Français"
     onLangChanged: {
-        if(lang === "English") t.text = "Light"
+        if(lang === "English" && thema === "Light") t.text = "Light"
         if(lang === "Français") t.text = "Blanc"
     }
 
