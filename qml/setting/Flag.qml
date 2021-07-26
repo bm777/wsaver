@@ -108,7 +108,7 @@ Rectangle {
         }
     MouseArea {
         anchors.fill: parent
-        hoverEnabled: true
+//        hoverEnabled: true
         onExited: frame.visible = false
     }
     }
