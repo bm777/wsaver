@@ -24,6 +24,8 @@ Rectangle {
 
     Rectangle {
         width: 50
-        height: 150
+        height: 100
+        color: "transparent"
+        border.color: "red"
     }
 }
