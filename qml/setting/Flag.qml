@@ -6,6 +6,7 @@ Rectangle {
     color: "transparent"
     property string name_language: "fr"
     property string theme: "light"
+    border.color: "red"
 
     Image {
         id: img
