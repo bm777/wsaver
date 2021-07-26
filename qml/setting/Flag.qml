@@ -14,6 +14,7 @@ Rectangle {
     }
     Text {
         text: {
+            print("hello")
             if(img.source === "../../img/fr.png") return "Francais"
             if(img.source === "../../img/ng/png") return "Yoruba"
             if(img.source === "../../img/uk.png") return "English"
