@@ -8,8 +8,8 @@ Item {
     property real humidity: 0
     property string f: "Comfortaa"
     property string lang: flag.name_language
-    property string thema: ""
-    property string deg: ""
+    property string thema: theme.thema
+    property string deg: unit.deg
 
     ////////////////////////////////////////////////////////////////
     Text {
