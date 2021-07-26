@@ -104,6 +104,10 @@ Rectangle {
                 hoverEnabled: true
                 onEntered: tNg.font.bold = true
                 onExited: tNg.font.bold = false
+                onClicked: {
+                    name_language = "ng"
+                    print(name_language)
+                }
             }
         }
     MouseArea {
