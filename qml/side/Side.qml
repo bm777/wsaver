@@ -7,7 +7,7 @@ Item {
     property real temperature: 15 // change for global
     property string date:"Monday, 17th 2021"
     property string time: "4:00 PM (GMT+1)"
-    property string t: "°"
+    property string t: "°C"
     property string lang: "en"
     property string theme: "light"
 
