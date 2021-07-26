@@ -87,6 +87,12 @@ Rectangle {
                 hoverEnabled: true
                 onEntered: tUk.font.bold = true
                 onExited: tUk.font.bold = false
+                onClicked: {
+                    name_language = "English"
+                    name_source = "../../img/uk.png"
+                    frame.visible = false
+                    print(name_language)
+                }
             }
         }
         /////////////////////////////////////////////////////////////
