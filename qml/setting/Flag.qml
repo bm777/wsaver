@@ -6,7 +6,12 @@ Rectangle {
     color: "transparent"
     property string name_language: "fr"
     property string theme: "light"
-
+    MouseArea {
+        anchors.fill: parent
+        hoverEnabled: true
+        onEntered: frame.visible = true
+        onExited:  frame.visible = false
+    }
 
     Image {
         id: img
@@ -24,6 +29,7 @@ Rectangle {
     }
 
     Rectangle {
+        id: frame
         width: 130
         height: 32 * 3
         color: "#ffffff"
