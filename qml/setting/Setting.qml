@@ -49,7 +49,7 @@ Item {
         id: theme
         y: parent.height * 0.37
         x: parent.width * 0.1
-        lang: lang
+        lang: root.lang
     }
     Unit {
         id: unit
