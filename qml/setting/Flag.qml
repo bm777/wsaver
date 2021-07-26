@@ -14,7 +14,7 @@ Rectangle {
         anchors.fill: parent
         hoverEnabled: true
         onEntered: frame.visible = true
-        onExited:  frame.visible = true
+//        onExited:  frame.visible = true
     }
 
     Image {
