@@ -110,7 +110,7 @@ Rectangle {
                 onEntered: tNg.font.bold = true
                 onExited: tNg.font.bold = false
                 onClicked: {
-                    name_language = "Yo"
+                    name_language = "Yoruba"
                     name_source = "../../img/ng.png"
                     frame.visible = false
                     print(name_language)
