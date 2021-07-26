@@ -8,8 +8,8 @@ Item {
     property string date:"Monday, 17th 2021"
     property string time: "4:00 PM (GMT+1)"
     property string t: "°C"
-    property string lang: "en"
-    property string theme: "light"
+    property string lang: "Français"
+    property string theme: "Light"
 
 
     // + + + + + + + + + + + + + + + + +
@@ -157,6 +157,7 @@ Item {
             Content {
                 id: content
                 anchors.fill: parent
+                unit: t
             }
         }
 
