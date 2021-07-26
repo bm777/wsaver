@@ -50,6 +50,14 @@ Rectangle {
             width: 32
             height: width
             y: imgFr.y + imgFr.height
+
+            Text {
+                text: "English"
+                anchors.verticalCenter: parent.verticalCenter
+                color: theme === "light" ? "#4050D2" : "#ffffff"
+                font{family: "Comfortaa"; pointSize: 12; bold: false}
+                x: imgFr.x + imgFr.width + 10
+            }
         }
         /////////////////////////////////////////////////////////////
         Image {
@@ -58,6 +66,14 @@ Rectangle {
             width: 32
             height: width
             y: imgUk.y + imgUk.height
+
+            Text {
+                text: "Yoruba"
+                anchors.verticalCenter: parent.verticalCenter
+                color: theme === "light" ? "#4050D2" : "#ffffff"
+                font{family: "Comfortaa"; pointSize: 12; bold: false}
+                x: imgFr.x + imgFr.width + 10
+            }
         }
     }
 }
