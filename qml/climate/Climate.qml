@@ -26,7 +26,7 @@ Item {
         width: parent.width * 0.8
         height: parent.height * 0.5
         radius: {
-            print(month.data)
+            print(month.contentItem)
             return 10
         }
 
