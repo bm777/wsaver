@@ -23,7 +23,7 @@ Rectangle {
     }
 
     Rectangle {
-        width: 150
+        width: 120
         height: 32 * 3
         color: "#ffffff"
         border.color: "red"
@@ -33,7 +33,6 @@ Rectangle {
             source: "../../img/fr.png"
             width: 32
             height: width
-            anchors.horizontalCenter: parent.horizontalCenter
             y: 0
 
             Text {
@@ -50,7 +49,6 @@ Rectangle {
             source: "../../img/uk.png"
             width: 32
             height: width
-            anchors.horizontalCenter: parent.horizontalCenter
             y: imgFr.y + imgFr.height
         }
         /////////////////////////////////////////////////////////////
@@ -59,7 +57,6 @@ Rectangle {
             source: "../../img/ng.png"
             width: 32
             height: width
-            anchors.horizontalCenter: parent.horizontalCenter
             y: imgUk.y + imgUk.height
         }
     }
