@@ -56,7 +56,7 @@ Window {
         id: side
         width: 322
         height: parent.height
-        t: lang
+        t: setting.deg
     }
 
 
