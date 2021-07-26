@@ -32,7 +32,11 @@ Item {
             model: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
             anchors.verticalCenter: parent.verticalCenter
             font {family: "Comfortaa"; bold: false}
-            visibleItemCount: 3
+            visibleItemCount: {
+                print(modelData)
+                return 3
+            }
+
             wrap: true
             width: parent.width * 0.5
             height: parent.height * 0.8
