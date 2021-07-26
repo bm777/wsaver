@@ -27,5 +27,26 @@ Rectangle {
         height: width * 3
         color: "transparent"
         border.color: "red"
+        Image {
+            id: imgFr
+            source: "../../img/fr.png"
+            width: parent.width
+            height: parent.height
+            anchors.centerIn: parent
+        }
+        Image {
+            id: imgUk
+            source: "../../img/uk.png"
+            width: parent.width
+            height: parent.height
+            anchors.centerIn: parent
+        }
+        Image {
+            id: imgNg
+            source: "../../img/fng.png"
+            width: parent.width
+            height: parent.height
+            anchors.centerIn: parent
+        }
     }
 }
