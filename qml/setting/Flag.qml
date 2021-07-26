@@ -4,7 +4,7 @@ Rectangle {
     width: 32
     height: width
     color: "transparent"
-    property string name_language: "Fr"
+    property string name_language: "Français"
     property string name_source: "../../img/fr.png"
     property string theme: "light"
 //    Rectangle {
@@ -61,7 +61,7 @@ Rectangle {
                 x: imgFr.x + imgFr.width
             }
             MouseArea {
-                anchors.fill: parent
+                anchors.fill: tFr
                 hoverEnabled: true
                 onEntered: tFr.font.bold = true
                 onExited: tFr.font.bold = false
