@@ -88,5 +88,6 @@ Rectangle {
                 x: imgFr.x + imgFr.width
             }
         }
+
     }
 }
