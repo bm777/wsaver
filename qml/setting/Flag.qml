@@ -25,7 +25,7 @@ Rectangle {
     Rectangle {
         width: 32
         height: width * 3
-        color: "transparent"
+        color: "#ffffff"
         border.color: "red"
         /////////////////////////////////////////////////////////////
         Image {
