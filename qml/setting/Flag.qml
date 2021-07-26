@@ -28,6 +28,7 @@ Rectangle {
         color: "#ffffff"
 //        border.color: "red"
         radius: 10
+        visible: false
         /////////////////////////////////////////////////////////////
         Image {
             id: imgFr
