@@ -23,7 +23,7 @@ Rectangle {
     }
 
     Rectangle {
-        width: 120
+        width: 130
         height: 32 * 3
         color: "#ffffff"
 //        border.color: "red"
@@ -51,7 +51,7 @@ Rectangle {
             width: 32
             height: width
             y: imgFr.y + imgFr.height
-
+            x: 5
             Text {
                 text: "English"
                 anchors.verticalCenter: parent.verticalCenter
