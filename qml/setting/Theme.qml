@@ -5,6 +5,7 @@ Rectangle {
     width: 70
     height: 32
     color: t.text === "Light" ? "#ffffff" : "#4050D2"
+    property string thema: t.text
     radius: height/2
     Text {
         id: t
@@ -21,6 +22,7 @@ Rectangle {
             }else{
                 t.text = "Light"
             }
+            print(thema)
         }
     }
 }
