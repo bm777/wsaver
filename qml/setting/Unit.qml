@@ -14,4 +14,15 @@ Rectangle {
         anchors.horizontalCenter: parent.horizontalCenter
         y: parent.height * 0.3
     }
+    MouseArea {
+        anchors.fill: parent
+        onClicked: {
+            if(t.text === "°C"){
+                t.text = "°F"
+            }else{
+                t.text = "°C"
+            }
+//            print(thema)
+        }
+    }
 }
