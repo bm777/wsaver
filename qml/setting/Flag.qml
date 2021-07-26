@@ -14,5 +14,8 @@ Rectangle {
     }
     Text {
         text: "Francais"
+        anchors.verticalCenter: parent.verticalCenter
+        color: "red"
+        font{family: "Comfortaa"; pointSize: 12}
     }
 }
