@@ -25,7 +25,7 @@ Rectangle {
         anchors.centerIn: parent
     }
     Text {
-        text: "Français"
+        text: name_language
         anchors.verticalCenter: parent.verticalCenter
         color: theme === "light" ? "#4050D2" : "#ffffff"
         font{family: "Comfortaa"; pointSize: 12; bold: false}
