@@ -137,7 +137,7 @@ Item {
 
 
 
-    //  + + + + + + ++ + + + + + + + + ++ +
+    //  + + + + + + + + + + + + + + + + + + +
     // bottom side
     Rectangle {
         id: bottom_rect
