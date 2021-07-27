@@ -9,6 +9,7 @@ Rectangle {
         text: "Text"
         x: parent.width * 0.3
         anchors.verticalCenter: parent.verticalCenter
+        font{family: "Comfortaa"; pointSize: 12}
     }
 
 }
