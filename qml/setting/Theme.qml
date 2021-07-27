@@ -4,11 +4,10 @@ Rectangle {
     id: root
     width: 70
     height: 32
-    color: (t.text === "Light" || t.text === "Blanc") ? "#ffffff" : "#4050D2"
+    color: (t.text === "Light") ? "#ffffff" : "#4050D2"
     property string thema: t.text
     property string lang: "Français"
     onLangChanged: {
-//        if()
 
     }
 
@@ -19,20 +18,11 @@ Rectangle {
 
         font {family: "Comfortaa"}
         anchors.centerIn: parent
-        color: (text === "Light" || text === "Blanc")? "#4050D2" : "#ffffff"
+        color: (text === "Light")? "#4050D2" : "#ffffff"
     }
     MouseArea {
         anchors.fill: parent
-        onClicked: {
-            if(t.text === "Light" || t.text === "Blanc"){
-                if(lang === "English") t.text = "Dark"
-                if(lang === "Français") t.text = "Noir"
-            }else{
-                if(lang === "English") t.text = "Light"
-                if(lang === "Français") t.text = "Blanc"
-            }
-//            print(thema)
-        }
+        onClicked: t.text === "Light" ? "#4050D2" : "#ffffff"
     }
 //    Timer {
 //       interval: 10
