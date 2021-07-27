@@ -142,6 +142,12 @@ Item {
         color: "#ffffff"
         border.color: "red"
         y: parent.height * 0.1
+
+        Row {
+            spacing: 5
+            anchors.horizontalCenter: parent.horizontalCenter
+
+        }
     }
 
     ///////////////////////////////////////////////////////////////////////
