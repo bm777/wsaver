@@ -3,7 +3,7 @@ import QtQuick 2.0
 Rectangle {
     id: root
 
-    property real value: 9
+    property real value: 1
     property string level: {
         if(lang === "Français") {
             if(value > 6) return "risque élevé"
@@ -48,7 +48,7 @@ Rectangle {
             height: parent.height * 0.65
             anchors.verticalCenter: parent.verticalCenter
             color: "#4050D2"
-            x: parent.width * value/10 - width / 2
+            x: (parent.width * value/10 - width / 2) * 0.95
             radius: height/2
         }
 
