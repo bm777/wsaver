@@ -37,13 +37,23 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
         onClicked: {
+            if(lang === "English"){
+                if(t.text === "Light" ){
+                    t.text = "Dark"
+                }
+                else {
+                    t.text = "Light"
+                }
+            }
+            if(lang === "Français"){
+                if(t.text === "Blanc" ){
+                    t.text = "Noir"
+                }
+                else {
+                    t.text = "Blanc"
+                }
+            }
 
-            if(t.text === "Light" || t.text === "Blanc"){
-                t.text = "Dark"
-            }
-            else {
-                t.text = "Light"
-            }
         }
     }
 
