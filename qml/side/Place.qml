@@ -34,8 +34,8 @@ Rectangle {
             t.font.bold = false
             root.border.color = "transparent"
         }
-        onPressed: {
-
+        onClicked: {
+            root.clicked = true
         }
     }
 
