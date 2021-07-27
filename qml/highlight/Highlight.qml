@@ -57,6 +57,7 @@ Item {
         y: parent.height * 0.52
         width: height * 1.3
         height: parent.height * 0.37
+        lang: root.lang
     }
     Alert {
         id: b2
