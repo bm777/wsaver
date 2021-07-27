@@ -7,7 +7,7 @@ Rectangle {
     property string level: "low risk"
     property string lang: ""
     property string alert1: {
-        if(lang === "Français") return "Innondation ()" + level + ")"
+        if(lang === "Français") return "Innondation (" + level + ")"
         if(lang === "English") return "Flood (" + level + ")"
     }
 
