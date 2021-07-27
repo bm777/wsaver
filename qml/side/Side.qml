@@ -155,6 +155,11 @@ Item {
                     height: 30
                     anchors.horizontalCenter: row.horizontalCenter
                 }
+                Place {
+                    width: row.width * 0.9
+                    height: 30
+                    anchors.horizontalCenter: row.horizontalCenter
+                }
             }
 
         }
