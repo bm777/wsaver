@@ -8,6 +8,8 @@ Item {
     property string mm: month.model[month.currentIndex]
     property string dd: day.model[day.currentIndex]
     property string yy: year.model[year.currentIndex]
+    property string lang: ""
+    property string thema: ""
 
     ////////////////////////////////////////////////////////////////
     Text {
@@ -32,7 +34,17 @@ Item {
 
         Tumbler {
             id: month
-            model: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+            model: {
+                if(lang === "English")
+                    return ["January", "February", "March", "April", "May", "June",
+                            "July", "August", "September", "October", "November",
+                            "December"]
+                if(lang === "Français")
+                    return ["January", "February", "March", "April", "May", "June",
+                            "July", "August", "September", "October", "November",
+                            "December"]
+            }
+
             anchors.verticalCenter: parent.verticalCenter
             font {family: "Comfortaa"; bold: false}
             visibleItemCount: 3
