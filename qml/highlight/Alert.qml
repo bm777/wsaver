@@ -8,7 +8,7 @@ Rectangle {
         if(lang === "Français") {
             if(level > 6) return "risque élevé"
             else if(level > 3) return "risque moyen"
-            else return "risque élevé"
+            else return "faible risque"
         }
 
         if(lang === "English") return "Flood (" + level + ")"
