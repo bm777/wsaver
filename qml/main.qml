@@ -66,6 +66,8 @@ Window {
         height: parent.height
         t: setting.deg
         date: climate.mm + ", " + climate.dd + th + " "+ climate.yy
+        lang: setting.lang
+        theme: setting.thema
     }
 
 
