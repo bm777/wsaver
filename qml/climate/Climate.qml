@@ -43,7 +43,7 @@ Item {
                             "December"]
                 if(lang === "Français")
                     return ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
-                            "Juillet", "Août", "Septemrer", "Octobre", "Novembre",
+                            "Juillet", "Août", "Septembre", "Octobre", "Novembre",
                             "Décembre"]
             }
 
@@ -53,7 +53,7 @@ Item {
             wrap: true
             width: parent.width * 0.5
             height: parent.height * 0.8
-//            currentIndex: 5
+
         }
         Tumbler {
             id: day
