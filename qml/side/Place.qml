@@ -7,7 +7,7 @@ Rectangle {
     color: "transparent"
 //    border.color: "transparent"
     Text {
-        text: "Text"
+        text: place
         x: parent.width * 0.3
         anchors.verticalCenter: parent.verticalCenter
         font{family: "Comfortaa"; pointSize: 10}
