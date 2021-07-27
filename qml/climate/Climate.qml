@@ -40,9 +40,9 @@ Item {
                             "July", "August", "September", "October", "November",
                             "December"]
                 if(lang === "Français")
-                    return ["January", "February", "March", "April", "May", "June",
-                            "July", "August", "September", "October", "November",
-                            "December"]
+                    return ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+                            "Juillet", "Aoùt", "Septemrer", "Octobre", "Novembre",
+                            "Décembre"]
             }
 
             anchors.verticalCenter: parent.verticalCenter
