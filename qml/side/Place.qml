@@ -10,12 +10,13 @@ Rectangle {
         text: "Text"
         x: parent.width * 0.3
         anchors.verticalCenter: parent.verticalCenter
-        font{family: "Comfortaa"; pointSize: 12}
+        font{family: "Comfortaa"; pointSize: 10}
     }
     MouseArea {
         anchors.fill: parent
         hoverEnabled: true
         onEntered: root.border.color = "#4050D2"
+        onExited: root.border.color = "transparent"
     }
 
 }
