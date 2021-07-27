@@ -9,7 +9,7 @@ Rectangle {
         if(t.text === "Dark") return "#4050D2"
 
     }
-    property string tmp: "Light"
+
     property string thema: t.text
     property string lang: "Français"
     onLangChanged: {
@@ -19,7 +19,7 @@ Rectangle {
     radius: height/2
     Text {
         id: t
-        text: tmp
+        text: "Light"
         font {family: "Comfortaa"}
         anchors.centerIn: parent
         color: {
@@ -31,12 +31,12 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
         onClicked: {
-            print("inside")
+
             if(t.text === "Light"){
-                tmp = "Dark"
+                t.text = "Dark"
             }
             else {
-                tmp = "Light"
+                t.text = "Light"
             }
         }
     }
