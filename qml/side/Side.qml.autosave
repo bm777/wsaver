@@ -145,6 +145,7 @@ Item {
         height: parent.height * 0.55
         width: parent.width
 
+
         Column {
             id: col
             spacing: 5
