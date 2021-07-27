@@ -30,6 +30,7 @@ Item {
     onLangChanged: {
         indexMonth = month.currentIndex
         print(indexMonth)
+        month.currentIndex = indexMonth
     }
 
     Rectangle {
