@@ -48,7 +48,7 @@ Rectangle {
             height: parent.height * 0.65
             anchors.verticalCenter: parent.verticalCenter
             color: "#4050D2"
-            x: 0
+            x: parent.width * value/10 - width / 2
             radius: height/2
         }
 
