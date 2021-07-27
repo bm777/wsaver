@@ -144,7 +144,7 @@ Item {
         border.color: "red"
         y: parent.height * 0.1
 
-        Row {
+        Column {
             spacing: 5
 //            anchors.fill: parent
 
