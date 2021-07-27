@@ -4,7 +4,7 @@ Rectangle {
     id: root
 
     property string alert2: "Tornad"
-    property string level: {
+    property real level: {
         if(lang === "Français") {
             if(level > 6) return "risque élevé"
             else if(level > 3) return "risque moyen"
