@@ -3,6 +3,7 @@ import QtQuick 2.0
 Rectangle {
     id: root
     property string place: "Uyo, Nigeria"
+    property bool clicked: false
     radius: 5
     color: "transparent"
 //    border.color: "transparent"
@@ -34,7 +35,7 @@ Rectangle {
             root.border.color = "transparent"
         }
         onPressed: {
-            root.color = "#80000000"
+
         }
     }
 
