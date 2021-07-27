@@ -71,7 +71,13 @@ Item {
             height: width
         }
         Text {
-            text: condition_cloud
+            text: {
+                if(lang === "Français") {
+                    if(condition_cloud === "Cloudy") return "Nuageux"
+                    if(condition_cloud === "Sunny") return "Nuageux"
+                }
+            }
+
             font {family: "Comfortaa"; pointSize: 8;}
             x: cloud.width + 10
             anchors.verticalCenter: parent.verticalCenter
