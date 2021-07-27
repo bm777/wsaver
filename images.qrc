@@ -53,5 +53,6 @@
         <file>img/fr.png</file>
         <file>img/uk.png</file>
         <file>img/ng.png</file>
+        <file>qml/side/Place.qml</file>
     </qresource>
 </RCC>
