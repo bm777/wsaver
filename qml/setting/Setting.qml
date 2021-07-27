@@ -14,7 +14,11 @@ Item {
     ////////////////////////////////////////////////////////////////
     Text {
         id: hl_text
-        text: qsTr("Setting")
+        text: {
+            if(flag.name_language === "Français") return "Paramètres"
+            if(flag.name_language === "English") return "Settings"
+        }
+
         font {family: f; pointSize: 12; bold: false}
         x: parent.width * 0.07
         y: parent.height * 0.18
