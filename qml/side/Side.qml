@@ -63,6 +63,7 @@ Item {
         }
     }
 
+
     RectangularGlow {
         anchors.fill: bg_search
         spread: 0.1
