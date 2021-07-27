@@ -4,6 +4,7 @@ Item {
     id: root
     property real humidity: 0
     property string f: "Comfortaa"
+    property string lang: ""
 
     ////////////////////////////////////////////////////////////////
     Text {
