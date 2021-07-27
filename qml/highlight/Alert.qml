@@ -3,7 +3,7 @@ import QtQuick 2.0
 Rectangle {
     id: root
 
-    property real value: 10
+    property real value: 5
     property string level: {
         if(lang === "Français") {
             if(value > 6) return "risque élevé"
