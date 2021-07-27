@@ -43,8 +43,8 @@ Rectangle {
                 else return "Healhty"
             }
             if(lang === "Français"){
-                if(value >= 100) return "Unhealthy"
-                else return "Healhty"
+                if(value >= 100) return "Mauvais état"
+                else return "Bon état"
             }
 
 
