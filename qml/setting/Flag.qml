@@ -6,7 +6,7 @@ Rectangle {
     color: "transparent"
     property string name_language: "English"
     property string name_source: "../../img/uk.png"
-    property string theme: "Light"
+    property string theme: "light"
 //    Rectangle {
 //        width: 32 +
 //    }
