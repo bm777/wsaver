@@ -4,7 +4,11 @@ Rectangle {
     id: root
     property string value: "7.70"
     property string direction: "WSW"
-    property string dataname: "Wind Status"
+    property string lang: ""
+    property string dataname: {
+        if(lang === "Français") return "Status du vent"
+        if(lang === "English") return "Wind Status"
+    }
 
     radius: 10
 
