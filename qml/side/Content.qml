@@ -7,7 +7,7 @@ Item {
     property string unit: "C"
     property string week_day: "January 18, 2018"
     property string hour: ""
-    property string condition_cloud: "Mostly cloudy"
+    property string condition_cloud: "Partly cloudy"
     property string condition_rain: "30%"
     property string town: "Uyo, Nigeria"
     property string f: "Comfortaa Light"
@@ -75,8 +75,9 @@ Item {
                 if(lang === "Français") {
                     if(condition_cloud === "Cloudy") return "Nuageux"
                     if(condition_cloud === "Sunny") return "Ensoleillé"
-                    if(condition_cloud === "Partly Cloudy") return "Partiellement nuageux"
+                    if(condition_cloud === "Partly cloudy") return "Partiellement nuageux"
                 }
+                return condition_cloud
             }
 
             font {family: "Comfortaa"; pointSize: 8;}
