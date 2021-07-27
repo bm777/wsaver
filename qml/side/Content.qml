@@ -11,6 +11,8 @@ Item {
     property string condition_rain: "30%"
     property string town: "Uyo, Nigeria"
     property string f: "Comfortaa Light"
+    property string lang: ""
+    property string thema: ""
 
     Text {
         id: temp
