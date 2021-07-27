@@ -7,9 +7,10 @@ Rectangle {
     color: "transparent"
 //    border.color: "transparent"
     Rectangle {
-        width: 5
+        width: 10
         height: width
-        color: "green"
+        color: "grey"
+        radius: width/2
         anchors.verticalCenter: parent.verticalCenter
         x: parent.width * 0.1
     }
