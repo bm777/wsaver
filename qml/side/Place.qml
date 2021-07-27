@@ -3,8 +3,8 @@ import QtQuick 2.0
 Rectangle {
     property string place: "Uyo, Nigeria"
 
-    color: "red"
-    border.color: "red"
+    color: "transparent"
+//    border.color: "transparent"
     Text {
         text: "Text"
         x: parent.width * 0.3
