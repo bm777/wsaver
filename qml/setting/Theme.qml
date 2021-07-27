@@ -17,7 +17,10 @@ Rectangle {
             if(t.text === "Light") t.text = "Blanc"
             if(t.text === "Dark") t.text = "Noir"
         }
-    }
+        if(lang === "English") {
+            if(t.text === "Light") t.text = "Blanc"
+            if(t.text === "Dark") t.text = "Noir"
+        }}
 
     radius: height/2
     Text {
