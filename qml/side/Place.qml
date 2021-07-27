@@ -3,7 +3,7 @@ import QtQuick 2.0
 Rectangle {
     id: root
     property string place: "Uyo, Nigeria"
-
+    radius: 5
     color: "transparent"
 //    border.color: "transparent"
     Text {
