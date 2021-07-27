@@ -134,6 +134,8 @@ Item {
         }
 
     }
+    ///////////////////////////////////////////////////////////////////////
+    // Adding search bottom side
     Rectangle {
         width: parent.width
         height: parent.height * 0.55
@@ -141,6 +143,8 @@ Item {
         border.color: "red"
         y: parent.height * 0.1
     }
+
+    ///////////////////////////////////////////////////////////////////////
 
 
 
