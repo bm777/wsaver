@@ -18,7 +18,7 @@ Rectangle {
 
     Text {id: t
         text: place
-        x: parent.width * 0.3
+        x: parent.width * 0.25
         anchors.verticalCenter: parent.verticalCenter
         font{family: "Comfortaa"; pointSize: 10}
     }
