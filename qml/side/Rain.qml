@@ -3,6 +3,8 @@ import QtQuick 2.0
 Rectangle {
     id: root
     color: "transparent"
+    property string lang: ""
+    property string thema: ""
     Row {
         spacing: 2
         anchors.horizontalCenter: root.horizontalCenter
