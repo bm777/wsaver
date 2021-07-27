@@ -33,6 +33,9 @@ Rectangle {
             t.font.bold = false
             root.border.color = "transparent"
         }
+        onClicked: {
+            root.border.color = "#80000000"
+        }
     }
 
 }
