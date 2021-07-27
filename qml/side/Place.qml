@@ -34,7 +34,7 @@ Rectangle {
             root.border.color = "transparent"
         }
         onClicked: {
-            root.border.color = "#80000000"
+            root.color = "#80000000"
         }
     }
 
