@@ -4,8 +4,8 @@ Rectangle {
     width: 32
     height: width
     color: "transparent"
-    property string name_language: "Français"
-    property string name_source: "../../img/fr.png"
+    property string name_language: "English"
+    property string name_source: "../../img/uk.png"
     property string theme: "light"
 //    Rectangle {
 //        width: 32 +
