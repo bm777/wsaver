@@ -74,7 +74,8 @@ Item {
             text: {
                 if(lang === "Français") {
                     if(condition_cloud === "Cloudy") return "Nuageux"
-                    if(condition_cloud === "Sunny") return "Nuageux"
+                    if(condition_cloud === "Sunny") return "Ensoleillé"
+                    if(condition_cloud === "Partly Cloudy") return "Partiellement nuageux"
                 }
             }
 
