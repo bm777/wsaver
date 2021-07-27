@@ -27,9 +27,9 @@ Item {
 //        color: "transparent"
 //    }
     ////////////////////////////////////////////////////////
-//    onLangChanged: {
-//        indexMonth = month.currentIndex
-//    }
+    onLangChanged: {
+        indexMonth = month.currentIndex
+    }
 
     Rectangle {
         x: parent.width * 0.18
