@@ -2,7 +2,11 @@ import QtQuick.Controls 2.0
 import QtQuick 2.0
 
 TextField {
-    placeholderText: "Search for places ..."
+    placeholderText: {
+        if(lang === "English") return "Search for places ..."
+        if(lang === "Français") return "Rechercher des places ..."
+    }
+
     property string lang: ""
     property string thema: ""
     color: "#80000000"
