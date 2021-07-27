@@ -10,6 +10,11 @@ Rectangle {
             else if(value > 3) return "risque moyen"
             else return "faible risque"
         }
+        if(lang === "English") {
+            if(value >= 6) return "high risk"
+            else if(value >= 3) return "average risk"
+            else return "low risk"
+        }
 
         if(lang === "English") return "Flood (" + level + ")"
     }
