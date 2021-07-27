@@ -98,6 +98,8 @@ Item {
             width: 20
             height: width
             anchors.verticalCenter: parent.verticalCenter
+            lang: root.lang
+            thema: root.thema
         }
         Text {
             text: "Rain - " + condition_rain
