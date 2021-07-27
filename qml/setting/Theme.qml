@@ -33,7 +33,7 @@ Rectangle {
         onClicked: {
             print("inside")
             if(t.text === "Light") tmp = "Dark"
-            if(t.text === "Dark") tmp = "Light"
+            else tmp = "Light"
         }
     }
 //    Timer {
