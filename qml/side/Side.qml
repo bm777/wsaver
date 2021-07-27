@@ -100,6 +100,8 @@ Item {
             id: search
             width: parent.width * 0.8
             anchors.centerIn: parent
+            lang: root.lang
+            thema: root.theme
         }
         Rectangle {
             id: back_search
