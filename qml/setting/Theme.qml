@@ -14,7 +14,7 @@ Rectangle {
     radius: height/2
     Text {
         id: t
-        text: thema
+        text: "Light"
 
         font {family: "Comfortaa"}
         anchors.centerIn: parent
