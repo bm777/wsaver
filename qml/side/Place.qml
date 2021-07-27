@@ -1,5 +1,6 @@
 import QtQuick 2.0
 
-Item {
+Rectangle {
+    property string place: "Uyo, Nigeria"
 
 }
