@@ -22,7 +22,9 @@ Rectangle {
     }
     MouseArea {
         anchors.fill: parent
-        onClicked: t.text === "Light" ? "#4050D2" : "#ffffff"
+        onClicked: {
+            t.text = "Dark"
+        }
     }
 //    Timer {
 //       interval: 10
