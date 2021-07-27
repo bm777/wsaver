@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import QtQuick.Controls 2.15
 import QtGraphicalEffects 1.15
 
 Item {
@@ -137,6 +138,7 @@ Item {
     }
     ///////////////////////////////////////////////////////////////////////
     // Adding search bottom side
+    Scro
     Rectangle {
         id: row
         width: parent.width
