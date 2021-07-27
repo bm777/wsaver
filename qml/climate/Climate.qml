@@ -11,7 +11,7 @@ Item {
     property string lang: "English"
     property string thema: ""
 
-    property int indexMonth: month.currentIndex
+    property int indexMonth: 0
 
     ////////////////////////////////////////////////////////////////
     Text {
@@ -28,7 +28,7 @@ Item {
 //    }
     ////////////////////////////////////////////////////////
     onLangChanged: {
-        month.currentIndex = indexMonth
+        indexMonth = month.currentIndex
     }
 
     Rectangle {
