@@ -24,7 +24,7 @@ Rectangle {
         anchors.centerIn: parent
         color: {
             if(text === "Light") return "#4050D2"
-            if(text === "Dark") return "#4050D2"
+            if(text === "Dark") return "#ffffff"
         }
     }
     MouseArea {
