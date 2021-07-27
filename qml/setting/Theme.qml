@@ -13,6 +13,7 @@ Rectangle {
     property string thema: t.text
     property string lang: "Français"
     onLangChanged: {
+        print("Change")
         if(lang === "Français") {
             if(t.text === "Light") t.text = "Blanc"
             if(t.text === "Dark") t.text = "Noir"
