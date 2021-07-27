@@ -4,7 +4,7 @@ Rectangle {
     id: root
 
     property real value: 5
-    property level level: {
+    property string level: {
         if(lang === "Français") {
             if(value > 6) return "risque élevé"
             else if(value > 3) return "risque moyen"
@@ -16,7 +16,6 @@ Rectangle {
             else return "low risk"
         }
 
-        if(lang === "English") return "Flood (" + level + ")"
     }
 
     property string lang: ""
