@@ -144,6 +144,10 @@ Item {
         contentHeight: col.height
         height: parent.height * 0.55
         width: parent.width
+        Rectangle {
+            anchors.fill: parent
+
+        }
 
         Column {
             id: col
