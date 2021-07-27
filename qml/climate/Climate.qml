@@ -11,6 +11,8 @@ Item {
     property string lang: ""
     property string thema: ""
 
+    property int indexMonth: month.currentIndex
+
     ////////////////////////////////////////////////////////////////
     Text {
         id: hl_text
