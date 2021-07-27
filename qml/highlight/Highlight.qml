@@ -9,7 +9,11 @@ Item {
     ////////////////////////////////////////////////////////////////
     Text {
         id: hl_text
-        text: qsTr("Highlights")
+        text: {
+            if(lang === "Français") return "Titre"
+            if(lang === "English") return "Highlights"
+        }
+
         font {family: f; pointSize: 12; bold: false}
         x: parent.width * 0.07
     }
