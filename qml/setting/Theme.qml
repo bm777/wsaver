@@ -27,6 +27,16 @@ Rectangle {
             if(text === "Dark") return "#ffffff"
         }
     }
+    Text {
+        id: t2
+        text: tmp
+        font {family: "Comfortaa"}
+        anchors.centerIn: parent
+        color: {
+            if(text === "Light") return "#4050D2"
+            if(text === "Dark") return "#ffffff"
+        }
+    }
     MouseArea {
         anchors.fill: parent
         onClicked: {
