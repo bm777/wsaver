@@ -38,8 +38,16 @@ Rectangle {
 
     Text {
         text: {
-            if(value >= 100) return "Unhealthy"
-            else return "Healhty"
+            if(lang === "English"){
+                if(value >= 100) return "Unhealthy"
+                else return "Healhty"
+            }
+            if(lang === "Français"){
+                if(value >= 100) return "Unhealthy"
+                else return "Healhty"
+            }
+
+
         }
 
         font{family: "Comfortaa"; bold: false; pointSize: 10}
