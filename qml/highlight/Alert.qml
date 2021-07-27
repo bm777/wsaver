@@ -6,7 +6,9 @@ Rectangle {
     property string alert2: "Tornad"
     property string level: {
         if(lang === "Français") {
-            if(level > 6)
+            if(level > 6) return "risque élevé"
+            else if(level > 3) return "risque moyen"
+            else return "risque élevé"
         }
 
         if(lang === "English") return "Flood (" + level + ")"
