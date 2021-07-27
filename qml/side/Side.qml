@@ -137,6 +137,7 @@ Item {
     ///////////////////////////////////////////////////////////////////////
     // Adding search bottom side
     Rectangle {
+        id: row
         width: parent.width
         height: parent.height * 0.55
         color: "#ffffff"
@@ -144,9 +145,8 @@ Item {
         y: parent.height * 0.1
 
         Row {
-            id: row
             spacing: 5
-            anchors.fill: parent
+//            anchors.fill: parent
 
             Repeater {
                 model: 5
