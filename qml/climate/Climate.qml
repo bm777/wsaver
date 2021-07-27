@@ -29,8 +29,6 @@ Item {
     ////////////////////////////////////////////////////////
     onLangChanged: {
         indexMonth = month.currentIndex
-        print(indexMonth)
-        month.currentIndex = indexMonth
     }
 
     Rectangle {
@@ -59,7 +57,7 @@ Item {
             wrap: true
             width: parent.width * 0.5
             height: parent.height * 0.8
-
+            currentIndex: indexMonth
         }
         Tumbler {
             id: day
