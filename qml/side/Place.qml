@@ -6,5 +6,9 @@ Rectangle {
     height: 30
     color: "red"
     border.color: "red"
+    Text {
+        text: "Text"
+        x: parent.width * 0.2
+    }
 
 }
