@@ -136,7 +136,7 @@ Item {
     }
     Rectangle {
         width: parent.width
-        height: parent.height * 0.5
+        height: parent.height * 0.55
         color: "transparent"
         border.color: "red"
         y: parent.height * 0.1
