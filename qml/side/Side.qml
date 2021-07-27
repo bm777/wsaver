@@ -146,7 +146,7 @@ Item {
 
         Column {
             spacing: 5
-//            anchors.fill: parent
+            anchors.horizontalCenter: parent.horizontalCenter
 
             Repeater {
                 model: 5

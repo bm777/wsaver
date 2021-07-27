@@ -7,7 +7,8 @@ Rectangle {
     border.color: "red"
     Text {
         text: "Text"
-        x: parent.width * 0.2
+        x: parent.width * 0.3
+        anchors.verticalCenter: parent.verticalCenter
     }
 
 }
