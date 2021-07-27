@@ -5,7 +5,7 @@ Rectangle {
     property string value: "998"
     property string lang: ""
     property string dataname: {
-        if(lang === "Français") return "Pression A. (mb)"
+        if(lang === "Français") return "Pression (mb)"
         if(lang === "English") return "Pressure (mb)"
     }
 
