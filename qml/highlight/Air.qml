@@ -4,6 +4,7 @@ Rectangle {
     id: root
     property real value: 105
     property string dataname: "Air quality"
+    property string lang: ""
 
     radius: 10
 
