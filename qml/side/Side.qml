@@ -144,13 +144,14 @@ Item {
         y: parent.height * 0.1
 
         Row {
+            id: row
             spacing: 5
             anchors.horizontalCenter: parent.horizontalCenter
 
             Repeater {
                 model: 5
                 Place {
-
+                    anchors.horizontalCenter: row.horizontalCenter
                 }
             }
 

@@ -4,7 +4,7 @@ Rectangle {
     property string place: "Uyo, Nigeria"
     width: parent.width * 0.9
     height: 30
-    color: "transparent"
+    color: "red"
     border.color: "red"
 
 }
