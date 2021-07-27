@@ -4,6 +4,12 @@ Rectangle {
     id: root
     property string alert1: "Flood (Low risk)"
     property string alert2: "Tornad"
+    property string level: value
+    property string lang: ""
+    property string dataname: {
+        if(lang === "Français") return "Innondation()"
+        if(lang === "English") return "Flood (" + level + ")"
+    }
 
     radius: 10
 
