@@ -134,6 +134,12 @@ Item {
         }
 
     }
+    Rectangle {
+        width: parent.width
+        height: parent.height * 0.5
+        color: "transparent"
+        border.color: "red"
+    }
 
 
 
