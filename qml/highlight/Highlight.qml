@@ -28,6 +28,7 @@ Item {
         y: hl_text.y + hl_text.height * 2
         width: height * 1.3
         height: parent.height * 0.37
+        lang: lang
     }
     Air {
         id: b1

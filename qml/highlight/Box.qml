@@ -3,12 +3,13 @@ import QtQuick 2.0
 Rectangle {
     id: root //
     property string value: "998"
+    property string lang: ""
     property string dataname: {
         if(lang === "Français") return "Pression A. (mb)"
         if(lang === "English") return "Pressure (mb)"
     }
 
-    property string lang: ""
+
     radius: 10
 
     Text {
