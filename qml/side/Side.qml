@@ -147,6 +147,13 @@ Item {
             spacing: 5
             anchors.horizontalCenter: parent.horizontalCenter
 
+            Repeater {
+                model: 5
+                Place {
+
+                }
+            }
+
         }
     }
 
