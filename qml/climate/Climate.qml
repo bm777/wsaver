@@ -27,9 +27,9 @@ Item {
 //        color: "transparent"
 //    }
     ////////////////////////////////////////////////////////
-    onLangChanged: {
-        indexMonth = month.currentIndex
-    }
+//    onLangChanged: {
+//        indexMonth = month.currentIndex
+//    }
 
     Rectangle {
         x: parent.width * 0.18
@@ -57,7 +57,7 @@ Item {
             wrap: true
             width: parent.width * 0.5
             height: parent.height * 0.8
-            currentIndex: indexMonth
+//            currentIndex: indexMonth
         }
         Tumbler {
             id: day
