@@ -8,7 +8,7 @@ Item {
     property string mm: month.model[month.currentIndex]
     property string dd: day.model[day.currentIndex]
     property string yy: year.model[year.currentIndex]
-    property string lang: ""
+    property string lang: "English"
     property string thema: ""
 
     property int indexMonth: month.currentIndex
