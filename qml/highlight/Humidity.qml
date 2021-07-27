@@ -35,7 +35,7 @@ Rectangle {
     Text {
         text: {
             if(lang === "English"){
-                if(value >= 0.7) return "Mauvais"
+                if(value >= 0.7) return "Bad"
                 else if(value >= 0.5) return "Cold"
                 else if(value >= 0.3) return "Very humide"
                 else if(value >= 0.2) return "Humide"
