@@ -28,7 +28,7 @@ Item {
 //    }
     ////////////////////////////////////////////////////////
     onLangChanged: {
-        month.currentIndex = indexMonth
+//        month.currentIndex = indexMonth
     }
 
     Rectangle {
