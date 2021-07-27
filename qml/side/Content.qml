@@ -103,6 +103,10 @@ Item {
         }
         Text {
             text: "Rain - " + condition_rain
+            text: {
+                if(lang === "Français") return "Pluies" + condition_rain
+            }
+
             font {family: "Comfortaa"; pointSize: 8;}
             x: cloud.width + 10
             anchors.verticalCenter: parent.verticalCenter
