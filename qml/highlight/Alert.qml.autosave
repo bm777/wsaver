@@ -6,7 +6,7 @@ Rectangle {
     property string alert2: "Tornad"
     property string level: {
         if(lang === "Français") {
-            if(level > 6)
+            if(level > 6) re
         }
 
         if(lang === "English") return "Flood (" + level + ")"
