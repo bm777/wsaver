@@ -15,7 +15,7 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
         hoverEnabled: true
-        onEntered: root.color
+        onEntered: root.border.color = "#4050D2"
     }
 
 }
