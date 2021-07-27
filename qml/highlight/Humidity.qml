@@ -3,7 +3,11 @@ import QtQuick 2.0
 Rectangle {
     id: root
     property real value: 0.123
-    property string dataname: "Humidity"
+    property string lang: ""
+    property string dataname: {
+        if(lang === "Français") return "Pression (mb)"
+        if(lang === "English") return "Humidity"
+    }
     radius: 10
     color: "#ffffff"
 
