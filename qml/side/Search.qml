@@ -13,7 +13,7 @@ TextField {
 //    font.capitalization: Font.AllLowercase
     maximumLength: 30
     hoverEnabled: true
-
+    font{family: "Comfortaa"}
     background: Rectangle {
 //        color: "transparent"
 //        color: "red"
