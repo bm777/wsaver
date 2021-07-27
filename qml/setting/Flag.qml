@@ -53,6 +53,8 @@ Rectangle {
             height: width
             y: 0
             x: 10
+
+
             Text {id: tFr
                 text: "Français"
                 anchors.verticalCenter: parent.verticalCenter
