@@ -10,7 +10,7 @@ Item {
     Text {
         id: hl_text
         text: {
-            if(lang === "Français") return "Titre"
+            if(lang === "Français") return "Points culminants"
             if(lang === "English") return "Highlights"
         }
 
