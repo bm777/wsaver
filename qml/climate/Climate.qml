@@ -53,7 +53,7 @@ Item {
             wrap: true
             width: parent.width * 0.5
             height: parent.height * 0.8
-            currentIndex: 5
+//            currentIndex: 5
         }
         Tumbler {
             id: day
