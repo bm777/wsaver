@@ -4,7 +4,12 @@ Rectangle {
     id: root
     width: 70
     height: 32
-    color: (t.text === "Light") ? "#ffffff" : "#4050D2"
+    color: {
+        if(t.text === "Light"){
+            return "#ffffff"
+        }
+    }
+
     property string thema: t.text
     property string lang: "Français"
     onLangChanged: {
