@@ -5,7 +5,7 @@ Rectangle {
     property real value: 0.123
     property string lang: ""
     property string dataname: {
-        if(lang === "Français") return "Pression (mb)"
+        if(lang === "Français") return "Humidité"
         if(lang === "English") return "Humidity"
     }
     radius: 10
