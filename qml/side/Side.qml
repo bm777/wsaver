@@ -161,6 +161,7 @@ Item {
                 anchors.fill: parent
                 unit: t
                 week_day: date
+                lang: root.lang
             }
         }
 
