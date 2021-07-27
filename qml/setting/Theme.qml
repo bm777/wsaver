@@ -9,7 +9,7 @@ Rectangle {
         if(t.text === "Dark") return "#4050D2"
 
     }
-
+    property string tmp: "Light"
     property string thema: t.text
     property string lang: "Français"
     onLangChanged: {
