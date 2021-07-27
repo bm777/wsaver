@@ -15,7 +15,7 @@ Rectangle {
         x: parent.width * 0.1
     }
 
-    Text {
+    Text {id: t
         text: place
         x: parent.width * 0.3
         anchors.verticalCenter: parent.verticalCenter
@@ -24,8 +24,15 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
         hoverEnabled: true
-        onEntered: root.border.color = "#4050D2"
-        onExited: root.border.color = "transparent"
+        onEntered: {
+            t.font.bold = true
+            root.border.color = "#4050D2"
+        }
+
+        onExited: {
+            t.font.bold = false
+            root.border.color = "transparent"
+        }
     }
 
 }
