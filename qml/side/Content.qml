@@ -102,9 +102,9 @@ Item {
             thema: root.thema
         }
         Text {
-            text: "Rain - " + condition_rain
             text: {
                 if(lang === "Français") return "Pluies" + condition_rain
+                if(lang === "English") return "Rain" + condition_rain
             }
 
             font {family: "Comfortaa"; pointSize: 8;}
