@@ -6,7 +6,7 @@ Rectangle {
     color: "transparent"
     property string name_language: "English"
     property string name_source: "../../img/uk.png"
-    property string theme: "light"
+    property string theme: "Light"
 //    Rectangle {
 //        width: 32 +
 //    }
@@ -28,7 +28,7 @@ Rectangle {
     Text {
         text: name_language
         anchors.verticalCenter: parent.verticalCenter
-        color: theme === "light" ? "#4050D2" : "#ffffff"
+        color: theme === "Light" ? "#4050D2" : "#ffffff"
         font{family: "Comfortaa"; pointSize: 12; bold: false}
         x: img.x + img.width + 10
     }
@@ -56,7 +56,7 @@ Rectangle {
             Text {id: tFr
                 text: "Français"
                 anchors.verticalCenter: parent.verticalCenter
-                color: theme === "light" ? "#4050D2" : "#ffffff"
+                color: theme === "Light" ? "#4050D2" : "#ffffff"
                 font{family: "Comfortaa"; pointSize: 12; bold: false}
                 x: imgFr.x + imgFr.width
             }
@@ -84,7 +84,7 @@ Rectangle {
             Text {id: tUk
                 text: "English"
                 anchors.verticalCenter: parent.verticalCenter
-                color: theme === "light" ? "#4050D2" : "#ffffff"
+                color: theme === "Light" ? "#4050D2" : "#ffffff"
                 font{family: "Comfortaa"; pointSize: 12; bold: false}
                 x: imgFr.x + imgFr.width
             }
@@ -112,7 +112,7 @@ Rectangle {
             Text {id: tNg
                 text: "Yoruba"
                 anchors.verticalCenter: parent.verticalCenter
-                color: theme === "light" ? "#4050D2" : "#ffffff"
+                color: theme === "Light" ? "#4050D2" : "#ffffff"
                 font{family: "Comfortaa"; pointSize: 12; bold: false}
                 x: imgFr.x + imgFr.width
             }
