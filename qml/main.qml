@@ -33,6 +33,7 @@ Window {
         height: parent.height * (1 - 0.65)
         x: side.width
         y: 0
+        lang: setting.lang
     }
 
     Setting {
