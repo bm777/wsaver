@@ -139,6 +139,7 @@ Item {
         height: parent.height * 0.5
         color: "transparent"
         border.color: "red"
+        y: parent.height * 0.1
     }
 
 
