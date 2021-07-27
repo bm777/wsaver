@@ -43,7 +43,7 @@ Item {
                             "December"]
                 if(lang === "Français")
                     return ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
-                            "Juillet", "Aoùt", "Septemrer", "Octobre", "Novembre",
+                            "Juillet", "Août", "Septemrer", "Octobre", "Novembre",
                             "Décembre"]
             }
 
