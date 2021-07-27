@@ -6,6 +6,14 @@ Rectangle {
     radius: 5
     color: "transparent"
 //    border.color: "transparent"
+    Rectangle {
+        width: 5
+        height: width
+        color: "red"
+        anchors.verticalCenter: parent.verticalCenter
+        x: 10
+    }
+
     Text {
         text: place
         x: parent.width * 0.3
