@@ -26,7 +26,7 @@ Rectangle {
         hoverEnabled: true
         onEntered: {
             t.font.bold = true
-            root.border.color = "#4050D2"
+            root.border.color = "#804050D2"
         }
 
         onExited: {
