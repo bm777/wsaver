@@ -9,9 +9,9 @@ Rectangle {
     Rectangle {
         width: 5
         height: width
-        color: "red"
+        color: "green"
         anchors.verticalCenter: parent.verticalCenter
-        x: 10
+        x: parent.width * 0.1
     }
 
     Text {
