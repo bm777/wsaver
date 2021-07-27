@@ -55,7 +55,7 @@ Rectangle {
 
     }
     Text {id: flood_cm
-        text: "3"
+        text: value
         font{family: "Comfortaa"; pointSize: 15; bold: true}
         anchors.horizontalCenter: parent.horizontalCenter
         y: parent.height * 0.7
