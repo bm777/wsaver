@@ -32,8 +32,12 @@ Rectangle {
         anchors.fill: parent
         onClicked: {
             print("inside")
-            if(t.text === "Light") tmp = "Dark"
-            else tmp = "Light"
+            if(t.text === "Light"){
+                tmp = "Dark"
+            }
+            else {
+                tmp = "Light"
+            }
         }
     }
 //    Timer {
