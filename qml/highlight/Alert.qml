@@ -3,11 +3,11 @@ import QtQuick 2.0
 Rectangle {
     id: root
 
-    property string alert2: "Tornad"
-    property real level: {
+    property real value: 5
+    property level level: {
         if(lang === "Français") {
-            if(level > 6) return "risque élevé"
-            else if(level > 3) return "risque moyen"
+            if(value > 6) return "risque élevé"
+            else if(value > 3) return "risque moyen"
             else return "faible risque"
         }
 
