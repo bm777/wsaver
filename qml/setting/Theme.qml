@@ -19,7 +19,7 @@ Rectangle {
     radius: height/2
     Text {
         id: t
-        text: "Light"
+        text: tmp
         font {family: "Comfortaa"}
         anchors.centerIn: parent
         color: {
@@ -31,8 +31,8 @@ Rectangle {
         anchors.fill: parent
         onClicked: {
             print("inside")
-            if(t.text === "Light") t.text = "Dark"
-            if(t.text === "Dark") t.text = "Light"
+            if(t.text === "Light") tmp = "Dark"
+            if(t.text === "Dark") tmp = "Light"
         }
     }
 //    Timer {
