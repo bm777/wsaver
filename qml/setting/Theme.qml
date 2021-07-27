@@ -5,9 +5,9 @@ Rectangle {
     width: 70
     height: 32
     color: {
-        if(t.text === "Light"){
-            return "#ffffff"
-        }
+        if(t.text === "Light") return "#ffffff"
+        if(t.text === "Dark") return "#4050D2"
+
     }
 
     property string thema: t.text
