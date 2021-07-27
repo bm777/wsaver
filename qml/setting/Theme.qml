@@ -29,8 +29,8 @@ Rectangle {
         font {family: "Comfortaa"}
         anchors.centerIn: parent
         color: {
-            if(text === "Light") return "#4050D2"
-            if(text === "Dark") return "#ffffff"
+            if(text === "Light" || text === "Blanc") return "#4050D2"
+            if(text === "Dark"  || text === "Noir") return "#ffffff"
         }
     }
 
