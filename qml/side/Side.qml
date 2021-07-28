@@ -192,7 +192,7 @@ Item {
                                 parent.border.color = "#104050D2"
                             }
                             onClicked: {
-                                clicked = true
+                                parent.clicked = true
                             }
                         }
                     }
