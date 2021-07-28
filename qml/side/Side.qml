@@ -187,21 +187,18 @@ Item {
                         height: 30
                         place: modelData
                         x: (container.width - width) / 2
+                        visible: {
+                            var key = search.text.toLowerCase()
+                            if(key === "") return true
+                            else if(place.toLowerCase().includes(key)){
+                                return true
+                            }
+                            else return false
+                        }
 
                         MouseArea {
                             anchors.fill: parent
                             hoverEnabled: true
-                            visible: {
-                                var key = search.text.toLowerCase()
-                                var word = place.toLowerCase()
-                                print(key, word)
-                                if(key === "") return true
-                                else if(word.includes(key)){
-                                    return true
-                                }
-                                else return false
-                            }
-
                             onEntered: {
                                 bold_state = true
                                 parent.border.color = "#804050D2"
