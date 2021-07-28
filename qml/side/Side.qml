@@ -193,6 +193,8 @@ Item {
                             }
                             onClicked: {
                                 parent.clicked = true
+                                root.place = parent.place
+                                container.visible = false
                             }
                         }
                     }
