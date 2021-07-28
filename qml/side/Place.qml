@@ -6,7 +6,7 @@ Rectangle {
 //    property type name: value
     property bool clicked: false
     radius: 5
-    color: "transparent"
+    color: "#104050D2"
 //    border.color: "transparent"
     Rectangle {
         width: 10
