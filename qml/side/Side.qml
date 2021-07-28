@@ -194,7 +194,7 @@ Item {
                             visible: {
                                 var key = search.text.toLowerCase()
                                 if(key === "") return true
-                                else if(key.text.includes(search.text)){
+                                else if(place.includes(key)){
                                     return true
                                 }
                                 else return false
