@@ -36,7 +36,7 @@
     "condition": "Sunny",
     "wind": 15,
     "wind_unit": "m/s",
-    "wind_direction": NE",
+    "wind_direction": "NE",
     "rain": 20
     },
     {
@@ -49,7 +49,7 @@
     "condition": "Partly Cloudy",
     "wind": -1,
     "wind_unit": "m/s",
-    "wind_direction": n/a",
+    "wind_direction": "n/a",
     "rain": 30
     }
   ]
