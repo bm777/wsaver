@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 Rectangle {
     id: root //
-    property string value: "998"
+    property string value: "--"
     property string lang: ""
     property string dataname: {
         if(lang === "Français") return "Pression (mb)"
