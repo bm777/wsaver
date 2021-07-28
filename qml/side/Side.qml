@@ -108,7 +108,6 @@ Item {
             lang: root.lang
             thema: root.theme
 
-
         }
         Rectangle {
             id: back_search
