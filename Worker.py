@@ -13,7 +13,7 @@ class Worker(QObject):
 
 
     @Slot(str, result="QVariant")
-    def slot_forecast(self, filename="forecasts.json"):
+    def slot_forecast(self, filename="forecast.json"):
         data = import_forecast(filename)
         return data
 
