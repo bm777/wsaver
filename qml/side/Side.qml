@@ -192,6 +192,7 @@ Item {
                         place: modelData
                         x: (container.width - width) / 2
                         visible: {
+                            print(root.place, root.tmp_date)
                             print(bridge.slot_getForecastData(root.place, root.tmp_date))
                             var key = search.text.toLowerCase()
                             if(key === "") return true
