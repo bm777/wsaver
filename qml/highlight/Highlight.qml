@@ -79,6 +79,7 @@ Item {
         interval: 100
         onTriggered: {
             var data = bridge.getForecastData(root.place, root.tmp_date)
+            print(root.place, root.tmp_date)
             print(data)
             if(data[2] !== -1) a1.value = data[2]
             else{
