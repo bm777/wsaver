@@ -43,7 +43,8 @@ Rectangle {
                 else if(value >= 0.5) return "Cold"
                 else if(value >= 0.3) return "Very humide"
                 else if(value >= 0.2) return "Humide"
-                else return "Normal"
+                else if(value >= 0) return "Normale"
+                else return "..."
             }
             if(lang === "Français"){
                 if(value >= 0.7) return "Mauvais"
@@ -51,6 +52,7 @@ Rectangle {
                 else if(value >= 0.3) return "Très humide"
                 else if(value >= 0.2) return "Humide"
                 else if(value >= 0) return "Normale"
+                else return "..."
             }
 
         }
