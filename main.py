@@ -18,13 +18,13 @@ if __name__ == "__main__":
     engine = QQmlApplicationEngine()
 
     worker = Worker()
-    
+
     font_barlow = os.path.join(CURRENT_DIRECTORY, "font", "Barlow/Barlow-Regular.ttf")
     font_comfortaa = os.path.join(CURRENT_DIRECTORY, "font", "Comfortaa/Comfortaa-Regular.ttf")
 
     _id1 = QFontDatabase.addApplicationFont(font_barlow)
     _id2 = QFontDatabase.addApplicationFont(font_comfortaa)
-    print(QFontDatabase.applicationFontFamilies(_id2))
+    engine.rootContext().setContextProperty("bridge", worker)
     engine.load(os.path.join(os.path.dirname(__file__), "qml/main.qml"))
 
     if not engine.rootObjects():
