@@ -191,6 +191,10 @@ Item {
                         MouseArea {
                             anchors.fill: parent
                             hoverEnabled: true
+                            visible: {
+                                search.text.includes(place)
+                            }
+
                             onEntered: {
                                 bold_state = true
                                 parent.border.color = "#804050D2"
