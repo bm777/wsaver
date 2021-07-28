@@ -16,9 +16,7 @@ TextField {
     hoverEnabled: true
     font{family: "Comfortaa"}
     background: Rectangle {
-//        color: "transparent"
-//        color: "red"
-//        anchors.fill:
+
     }
 
 //    MouseArea {
