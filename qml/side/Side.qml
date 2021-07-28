@@ -151,9 +151,10 @@ Item {
         height: parent.height * 0.55
         width: parent.width
         visible: false
-        color: "red"
+//        color: "red"
 
         ScrollView {
+            y: parent.height * 0.02
             contentWidth: col.width
             contentHeight: col.height
             width: parent.width
