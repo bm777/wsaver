@@ -154,7 +154,7 @@ Item {
         Column {
             id: col
             spacing: 5
-            anchors.horizontalCenter: parent.horizontalCenter
+//            anchors.horizontalCenter: parent.horizontalCenter
 
             Repeater {
                 model: 5
