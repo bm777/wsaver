@@ -21,7 +21,7 @@ class Worker(QObject):
     @Slot(result="QVariant")
     def slot_towns(self):
         data = self.slot_forecast()
-        print(data)
+        print(type(data))
         l = []
         for elt in data:
             print(elt)
