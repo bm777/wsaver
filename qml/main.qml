@@ -56,7 +56,18 @@ Window {
     //////////////////////////////////////////////////////
     property string tmp_mm: {
         if(setting.lang === "Français"){
-            if(climate.mm === "Janvier") return "J"
+            if(climate.mm === "Janvier") return "January"
+            if(climate.mm === "Février") return "February"
+            if(climate.mm === "Mars") return "March"
+            if(climate.mm === "Avril") return "April"
+            if(climate.mm === "Mai") return "May"
+            if(climate.mm === "Juin") return "June"
+            if(climate.mm === "Juillet") return "July"
+            if(climate.mm === "Août") return "August"
+            if(climate.mm === "Septembre") return "September"
+            if(climate.mm === "Octobre") return "October"
+            if(climate.mm === "Novembre") return "November"
+            if(climate.mm === "Décembre") return "December"
         }
 
 
