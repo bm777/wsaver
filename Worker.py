@@ -24,8 +24,7 @@ class Worker(QObject):
         #print(type(data))
         l = []
         for elt in data["forecasts"]:
-            print(elt)
             if(elt["town"] not in l):
                 l.append(elt["town"])
-
+        print(l)
         return l
