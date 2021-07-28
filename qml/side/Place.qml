@@ -6,8 +6,8 @@ Rectangle {
 //    property type name: value
     property bool clicked: false
     radius: 5
-    color: "#104050D2"
-//    border.color: "transparent"
+    color: "transparent"
+    border.color: "#104050D2"
     Rectangle {
         width: 10
         height: width
@@ -33,7 +33,7 @@ Rectangle {
 
         onExited: {
             t.font.bold = false
-            root.border.color = "transparent"
+            root.border.color = "#104050D2"
         }
         onClicked: {
             root.clicked = true
