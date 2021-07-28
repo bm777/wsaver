@@ -2,7 +2,7 @@
 from PySide2 import QtWidgets
 from PySide2.QtCore import QObject, Signal, Slot, Property
 import os
-from loca_request import import_forecast
+from . import loca_request
 
 class Worker(QObject):
     """docstring for Worker."""
