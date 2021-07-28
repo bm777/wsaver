@@ -5,6 +5,8 @@ Rectangle {
     property string place: "Uyo, Nigeria"
 //    property type name: value
     property bool clicked: false
+    property bool bold_state: false
+
     radius: height/2 //5
     color: "transparent"
     border.color: "#104050D2"
@@ -21,7 +23,7 @@ Rectangle {
         text: place
         x: parent.width * 0.25
         anchors.verticalCenter: parent.verticalCenter
-        font{family: "Comfortaa"; pointSize: 10}
+        font{family: "Comfortaa"; pointSize: 10; bold: bold_state }
     }
 
 
