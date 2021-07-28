@@ -52,7 +52,7 @@ Window {
         y: parent.height - height
         lang: setting.lang
         place: side.place
-        date: side.date
+        date: side.tmp_date
     }
 
     //////////////////////////////////////////////////////
