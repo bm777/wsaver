@@ -96,6 +96,10 @@ Item {
             else{
                 a2.value = "--"
             }
+            if(data[7] !== -1) a2.direction = data[7]
+            else{
+                a2.value = "--"
+            }
         }
     }
 
