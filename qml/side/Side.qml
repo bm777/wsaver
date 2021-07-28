@@ -164,7 +164,6 @@ Item {
             Column {
                 id: col
                 spacing: 5
-                anchors.horizontalCenter: root.horizontalCenter
 
                 Repeater {
                     model: {
@@ -176,7 +175,7 @@ Item {
                         width: container.width * 0.9
                         height: 30
                         place: modelData
-                        anchors.horizontalCenter: parent.horizontalCenter
+                        x: container.width - width/2
                     }
                 }
 
