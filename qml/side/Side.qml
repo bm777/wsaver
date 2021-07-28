@@ -16,7 +16,7 @@ Item {
     property string time: "4:00 PM (GMT+1)"
     property string t: "°C"
     property string lang: "Français"
-    property string theme: "Light"
+    property string theme: ""
 
 
     // + + + + + + + + + + + + + + + + +
