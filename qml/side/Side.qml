@@ -148,13 +148,13 @@ Item {
             contentHeight: col.height
             anchors.fill: parent
             clip: true
-
+            anchors.horizontalCenter: parent.horizontalCenter
 
 
             Column {
                 id: col
                 spacing: 5
-    //            anchors.horizontalCenter: parent.horizontalCenter
+
 
                 Repeater {
                     model: 5
