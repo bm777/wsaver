@@ -83,7 +83,7 @@ Rectangle {
             y: {
                 if(value === -1000) {
                     return parent.height * (1 - 0) * 0.85
-                }else return parent.height * (1 - value) * 0.85
+                }else return parent.height * (100 - value) * 0.85
             }
         }
     }
