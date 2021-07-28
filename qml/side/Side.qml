@@ -185,7 +185,7 @@ Item {
                             hoverEnabled: true
                             onEntered: {
                                 t.font.bold = true
-                                root.border.color = "#804050D2"
+                                parent.border.color = "#804050D2"
                             }
                             onExited: {
                                 t.font.bold = false
