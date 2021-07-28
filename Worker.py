@@ -39,4 +39,4 @@ class Worker(QObject):
                 return elt
 
 
-        return {}
+        return {"Value": None}
