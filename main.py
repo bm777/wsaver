@@ -7,6 +7,8 @@ from PySide2.QtQml import QQmlApplicationEngine
 from PySide2.QtGui import QFontDatabase
 from PySide2.QtCore import QDir
 
+from Worker import Worker
+
 
 CURRENT_DIRECTORY = os.path.dirname(os.path.realpath(__file__))
 
@@ -14,6 +16,9 @@ if __name__ == "__main__":
     app = QGuiApplication(sys.argv)
 
     engine = QQmlApplicationEngine()
+
+    worker = Worker()
+    
     font_barlow = os.path.join(CURRENT_DIRECTORY, "font", "Barlow/Barlow-Regular.ttf")
     font_comfortaa = os.path.join(CURRENT_DIRECTORY, "font", "Comfortaa/Comfortaa-Regular.ttf")
 
