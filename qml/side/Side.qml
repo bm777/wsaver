@@ -159,7 +159,7 @@ Item {
             Repeater {
                 model: 5
                 Place {
-                    width: row.width * 0.9
+                    width: col.width * 0.9
                     height: 30
 
                 }
