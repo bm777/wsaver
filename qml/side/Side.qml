@@ -143,6 +143,7 @@ Item {
         y: parent.height * 0.1
         height: parent.height * 0.55
         width: parent.width
+        visible: false
 
         ScrollView {
             contentWidth: col.width
