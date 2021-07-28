@@ -5,6 +5,8 @@ Item {
     property real humidity: 0
     property string f: "Comfortaa"
     property string lang: ""
+    property string place: ""
+    property string thema: ""
 
     ////////////////////////////////////////////////////////////////
     Text {

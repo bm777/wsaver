@@ -51,6 +51,7 @@ Window {
         x: side.width
         y: parent.height - height
         lang: setting.lang
+        place: side.place
     }
 
     //////////////////////////////////////////////////////
