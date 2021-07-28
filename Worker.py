@@ -21,8 +21,9 @@ class Worker(QObject):
     def slot_towns(self):
         data = self.slot_forecast()
         l = []
+        print(data)
         for elt in data:
-            if(elt["town"]) is not in l:
+            if(elt["town"]) not in l:
                 l.append(elt["town"])
 
         return l
