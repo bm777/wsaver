@@ -277,7 +277,7 @@ Item {
     Timer {
         running: true
         repeat: true
-        interval: 1
+        interval: 100
         onTriggered: {
             var data = bridge.getForecastData(root.place, root.tmp_date)
             print(data)
