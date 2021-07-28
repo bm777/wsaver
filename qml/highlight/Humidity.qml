@@ -22,7 +22,7 @@ Rectangle {
     Text {
         id: value_
         text: {
-            if(value !== -1000) return Math.round(Math.floor(value * 100), 0)
+            if(value !== -1000) return Math.round(Math.floor(value), 0)
             else return "--"
         }
 
