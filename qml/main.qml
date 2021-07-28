@@ -54,6 +54,10 @@ Window {
     }
 
     //////////////////////////////////////////////////////
+    property string tmp_mm: {
+        if(climate.mm === "January")
+    }
+
 //    property string th: {
 //        if(climate.dd === "1" || climate.dd === "21" || climate.dd === "31") return "st"
 //        if(climate.dd === "2" || climate.dd === "22") return "nd"
