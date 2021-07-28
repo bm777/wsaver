@@ -17,8 +17,9 @@ class Worker(QObject):
         data = import_forecast(filename)
         return data
 
-    @Slot(dict, result="QVariant")
-    def slot_towns(data):
+    @Slot(result="QVariant")
+    def slot_towns(self):
+        data = self.slot_forecast()
         l = []
         for elt in data:
             if(elt["town"]) not in l:
