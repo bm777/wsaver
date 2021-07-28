@@ -192,7 +192,9 @@ Item {
                             anchors.fill: parent
                             hoverEnabled: true
                             visible: {
-                                search.text.includes(place)
+                                if(search.text.includes(place)){
+                                    return true
+                                }
                             }
 
                             onEntered: {
