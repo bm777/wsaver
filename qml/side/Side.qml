@@ -195,7 +195,7 @@ Item {
                                 var key = search.text.toLowerCase()
                                 print(key, place)
                                 if(key === "") return true
-                                else if(place.includes(key)){
+                                else if(place.toLowerCase().includes(key)){
                                     return true
                                 }
                                 else return false
