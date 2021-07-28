@@ -5,7 +5,7 @@ Rectangle {
     property string place: "Uyo, Nigeria"
 //    property type name: value
     property bool clicked: false
-    radius: 5
+    radius: height/2 //5
     color: "transparent"
     border.color: "#104050D2"
     Rectangle {
