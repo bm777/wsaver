@@ -50,7 +50,7 @@ Rectangle {
                 else if(value >= 0.5) return "Froid"
                 else if(value >= 0.3) return "Très humide"
                 else if(value >= 0.2) return "Humide"
-                else return "Normale"
+                else if(value >= 0) return "Normale"
             }
 
         }
@@ -80,8 +80,8 @@ Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
             y: {
                 if(value === -1000) {
-                    return parent.height * (1 - 1) * 0.85
-                }
+                    return parent.height * (1 - 0) * 0.85
+                }else return parent.height * (1 - value) * 0.85
             }
         }
     }
