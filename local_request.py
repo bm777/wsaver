@@ -9,3 +9,8 @@ def import_forecast(filename):
         data = json.load(f)
 
     return data
+
+
+
+if __name__ == '__main__':
+    print(import_forecast("forecast.csv"))
