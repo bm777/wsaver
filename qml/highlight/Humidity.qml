@@ -78,7 +78,11 @@ Rectangle {
             radius: width / 2
             color: "#4050D2"
             anchors.horizontalCenter: parent.horizontalCenter
-            y: parent.height * (1 - value) * 0.85
+            y: {
+                if(value === -1000) {
+                    return parent.height * (1 - 1) * 0.85
+                }
+            }
         }
     }
 
