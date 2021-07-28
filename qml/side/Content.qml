@@ -9,7 +9,7 @@ Item {
     property string hour: ""
     property string condition_cloud: "Partly cloudy"
     property string condition_rain: "30%"
-    property string town: "Uyo, Nigeria"
+    property string town: "Town"
     property string f: "Comfortaa Light"
     property string lang: ""
     property string thema: ""
