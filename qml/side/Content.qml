@@ -4,7 +4,7 @@ import QtGraphicalEffects 1.15
 Item {
     id: root
     property int temperature: 12
-    property string def: "--"
+    property bool disable_temperature: false
     property string unit: "C"
     property string week_day: "January 18, 2018"
     property string hour: ""
@@ -21,6 +21,7 @@ Item {
         y: parent.height * 0.05
         text: unit === "°C" ? temperature : Math.round(temperature*9/5 + 32, 1)
         text: {
+            if()
             if(unit === "°C") return temperature
             else return Math.round(temperature*9/5 + 32, 1)
         }
