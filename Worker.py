@@ -23,7 +23,7 @@ class Worker(QObject):
         l = []
         for elt in data:
             print(elt)
-            if(elt["town"]) not in l:
+            if(elt["town"] not in l):
                 l.append(elt["town"])
 
         return l
