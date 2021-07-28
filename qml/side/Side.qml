@@ -111,7 +111,10 @@ Item {
             MouseArea {
                 anchors.fill: parent
                 hoverEnabled: true
-                onEntered: container.visible = true
+                onClicked: {
+                    mouse.accepted = false
+                    search.focus = true
+                }
             }
         }
         Rectangle {
