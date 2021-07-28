@@ -144,6 +144,8 @@ Item {
         contentHeight: col.height
         height: parent.height * 0.55
         width: parent.width
+        clip: true
+
         Rectangle {
             anchors.fill: parent
 
