@@ -148,7 +148,7 @@ Item {
         height: parent.height * 0.55
         width: parent.width
         visible: {
-            if(search.pressed) return true
+            if(search.onclicked) return true
             else return false
         }
 
