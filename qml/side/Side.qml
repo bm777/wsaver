@@ -111,6 +111,7 @@ Item {
             MouseArea {
                 anchors.fill: parent
                 hoverEnabled: true
+                onEntered: container.visible = true
             }
         }
         Rectangle {
