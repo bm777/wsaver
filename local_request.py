@@ -9,7 +9,7 @@ def import_forecast(filename):
     with open(filename) as f:
         data = json.load(f)
         data = json.dumps(data) # to read in ASCII
-
+        print(type(data))
     return data
 
 
