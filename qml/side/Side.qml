@@ -288,10 +288,10 @@ Item {
 
             if(data[3] !== -1) content.temperature = data[3]
             else {
-                if(lang === "English") content.temperature = "n/a!"
-                if(lang === "Français") content.temperature = "n/a!"
+                if(lang === "English") content.temperature = -1
+                if(lang === "Français") content.temperature = -1
             }
-            if(data[5] !== -1) content.condition_cloud = data[5]
+//            if(data[5] !== -1) content.condition_cloud = data[5]
         }
     }
 
