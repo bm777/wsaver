@@ -155,7 +155,8 @@ Item {
         ScrollView {
             contentWidth: col.width
             contentHeight: col.height
-            anchors.fill: parent
+            width: parent.width
+            height: parent.height
             clip: true
             anchors.horizontalCenter: parent.horizontalCenter
 
