@@ -91,6 +91,11 @@ Item {
             else{
                 c1.value = -1000
             }
+
+            if(data[6] !== -1) a2.value = data[6]
+            else{
+                a2.value = "--"
+            }
         }
     }
 
