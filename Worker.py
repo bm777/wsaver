@@ -34,7 +34,6 @@ class Worker(QObject):
         data = self.slot_forecast()
 
         for elt in data["forecasts"]:
-            print(elt)
             if(place == elt["town"] and date == elt["date"]):
                 return elt
 
