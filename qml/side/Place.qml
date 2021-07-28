@@ -36,6 +36,7 @@ Rectangle {
         }
         onClicked: {
             root.clicked = true
+            print(bridge.slot_forecast())
         }
     }
 
