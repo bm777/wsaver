@@ -36,7 +36,7 @@ Rectangle {
         }
         onClicked: {
             root.clicked = true
-            print(bridge.slot_forecast())
+            print(bridge.slot_forecast("forecast.json"))
         }
     }
 
