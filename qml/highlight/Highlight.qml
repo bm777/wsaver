@@ -89,7 +89,7 @@ Item {
 
             if(data[4] !== -1) c1.value = parseFloat(data[4])
             else{
-                c1.value = "--"
+                c1.value = -1000
             }
         }
     }
