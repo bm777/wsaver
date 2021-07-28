@@ -1,0 +1,30 @@
+{
+  "forecasts" : [
+    {
+    "town": "Uyo, NG",
+    "date": "January 18, 2021",
+    "pressure": 1000.7,
+    "temperature": 29.5,
+    "temperature_unit": "C",
+    "humidity": 77,
+    "condition": "Cloudy",
+    "wind": 5,
+    "wind_unit": "m/s",
+    "wind_direction": "WSW",
+    "rain": 80
+    },
+    {
+    "town": "Uyo, NG",
+    "date": "February 7, 2021",
+    "pressure": 999.3,
+    "temperature": 34.7,
+    "temperature_unit": "C",
+    "humidity": 57,
+    "condition": "Cloudy",
+    "wind": -1,
+    "wind_unit": "m/s",
+    "wind_direction": "WSW",
+    "rain": 80
+    }
+  ]
+}
