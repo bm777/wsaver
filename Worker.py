@@ -35,6 +35,7 @@ class Worker(QObject):
 
         for elt in data["forecasts"]:
             if(place == elt["town"] and date == elt["date"]):
+                print(elt)
                 return elt
 
 
