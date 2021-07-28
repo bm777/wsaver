@@ -7,6 +7,7 @@ def import_forecast(filename):
     # - the function return data var
     with open(filename) as f:
         data = json.load(f)
+        data = json.dumps(data)
 
     return data
 
