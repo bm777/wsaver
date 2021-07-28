@@ -5,7 +5,7 @@ def import_forecast(filename):
     # Args:
     # - filename : the file name of the json which contains forecasts data
     # - the function return data var
-    with open("filename") as f:
+    with open(filename) as f:
         data = json.load(f)
 
     return data
