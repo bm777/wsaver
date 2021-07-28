@@ -30,14 +30,27 @@
     "town": "Uyo, NG",
     "date": "March 9, 2021",
     "pressure": 998.2,
-    "temperature": 34.7,
+    "temperature": 34.9,
     "temperature_unit": "C",
-    "humidity": 57,
-    "condition": "Cloudy",
+    "humidity": 60,
+    "condition": "Sunny",
+    "wind": 15,
+    "wind_unit": "m/s",
+    "wind_direction": NE",
+    "rain": 20
+    },
+    {
+    "town": "Accra, GH",
+    "date": "June 9, 2021",
+    "pressure": 1002.0,
+    "temperature": 32.7,
+    "temperature_unit": "C",
+    "humidity": 68,
+    "condition": "Partly Cloudy",
     "wind": -1,
     "wind_unit": "m/s",
-    "wind_direction": "n/a",
-    "rain": 20
+    "wind_direction": n/a",
+    "rain": 30
     }
   ]
 }
