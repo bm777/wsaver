@@ -193,9 +193,10 @@ Item {
                             hoverEnabled: true
                             visible: {
                                 var key = search.text.toLowerCase()
-                                print(key, place)
+                                var word = place.toLowerCase()
+                                print(key, word)
                                 if(key === "") return true
-                                else if(place.toLowerCase().includes(key)){
+                                else if(word.includes(key)){
                                     return true
                                 }
                                 else return false
