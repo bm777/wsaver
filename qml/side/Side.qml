@@ -175,7 +175,7 @@ Item {
                         width: container.width * 0.9
                         height: 30
                         place: modelData
-                        x: container.width - width/2
+                        x: (container.width - width) / 2
                     }
                 }
 
