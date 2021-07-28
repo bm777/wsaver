@@ -21,8 +21,8 @@ Item {
         y: parent.height * 0.05
 //        text: unit === "°C" ? temperature : Math.round(temperature*9/5 + 32, 1)
         text: {
-            if(disable_temperature) {
-                if(unit === "°C") return "--"
+            if(!disable_temperature) {
+                if(unit === "°C") return "**"
                 else return "--"
             }else {
                 if(unit === "°C") return temperature
