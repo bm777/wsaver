@@ -114,6 +114,7 @@ Item {
                 onClicked: {
                     mouse.accepted = false
                     search.focus = true
+                    container.visible = true
                 }
             }
         }
