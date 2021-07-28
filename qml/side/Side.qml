@@ -147,7 +147,11 @@ Item {
         y: parent.height * 0.1
         height: parent.height * 0.55
         width: parent.width
-        visible: false
+        visible: {
+            if(search.pressed()) return true
+            return false
+        }
+
 //        color: "red"
 
         ScrollView {
