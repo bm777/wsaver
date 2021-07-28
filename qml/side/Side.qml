@@ -100,18 +100,14 @@ Item {
             }
         }
 
-        MouseArea {
-            anchors.fill: search
-            onClicked: {
-                container.visible = true
-            }
-        }
+
         Search {
             id: search
             width: parent.width * 0.8
             anchors.centerIn: parent
             lang: root.lang
             thema: root.theme
+
 
 
         }
