@@ -144,7 +144,6 @@ Item {
         width: parent.width
 
         ScrollView {
-            y: parent.height * 0.1
             contentWidth: col.width
             contentHeight: col.height
             anchors.fill: parent
