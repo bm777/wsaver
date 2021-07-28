@@ -21,7 +21,11 @@ Rectangle {
 
     Text {
         id: value_
-        text: Math.round(Math.floor(value * 100), 0)
+        text: {
+            if(value === -1000) return Math.round(Math.floor(value * 100), 0)
+            else return "--"
+        }
+
         font{family: "Comfortaa"; pointSize: 25; bold: false}
         anchors.verticalCenter: parent.verticalCenter
         x: parent.width * 0.2
