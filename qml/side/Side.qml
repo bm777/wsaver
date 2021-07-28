@@ -192,6 +192,7 @@ Item {
                         place: modelData
                         x: (container.width - width) / 2
                         visible: {
+                            print(root.tmp_date)
                             var key = search.text.toLowerCase()
                             if(key === "") return true
                             else if(place.toLowerCase().includes(key)){
