@@ -16,3 +16,8 @@ class Worker(QObject):
     def slot_forecast(self, filename="forecasts.json"):
         data = import_forecast(filename)
         return data
+
+    @Slot(dict, result="QVariant")
+    def slot_towns(data):
+        for elt in data:
+            print(elt)
