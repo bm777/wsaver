@@ -9,6 +9,7 @@ TextField {
 
     property string lang: ""
     property string thema: ""
+    property bool clicked: false
     color: "#80000000"
 //    font.capitalization: Font.AllLowercase
     maximumLength: 30
@@ -18,5 +19,10 @@ TextField {
 //        color: "transparent"
 //        color: "red"
 //        anchors.fill:
+    }
+
+    MouseArea {
+        anchors.fill: parent
+        onClicked: clicked = true
     }
 }

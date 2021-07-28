@@ -109,7 +109,6 @@ Item {
             thema: root.theme
 
 
-
         }
         Rectangle {
             id: back_search
