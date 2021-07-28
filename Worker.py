@@ -23,3 +23,5 @@ class Worker(QObject):
         for elt in data:
             if(elt["town"]) not in l:
                 l.append(elt["town"])
+
+        return l
