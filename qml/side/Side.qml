@@ -100,6 +100,12 @@ Item {
             }
         }
 
+        MouseArea {
+            anchors.fill: search
+            onClicked: {
+                container.visible = true
+            }
+        }
         Search {
             id: search
             width: parent.width * 0.8
@@ -107,12 +113,7 @@ Item {
             lang: root.lang
             thema: root.theme
 
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    container.visible = true
-                }
-            }
+
         }
         Rectangle {
             id: back_search
