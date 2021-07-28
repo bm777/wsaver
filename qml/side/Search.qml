@@ -9,7 +9,6 @@ TextField {
 
     property string lang: ""
     property string thema: ""
-    property bool onclicked: !pressed
     color: "#80000000"
     maximumLength: 30
     hoverEnabled: true
@@ -18,8 +17,8 @@ TextField {
 
     }
 
-//    MouseArea {
-//        anchors.fill: parent
-//        onClicked: onclicked = true
-//    }
+    MouseArea {
+        anchors.fill: parent
+        onClicked: onclicked = true
+    }
 }
