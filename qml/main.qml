@@ -18,12 +18,14 @@ Window {
 
 //    property real tmp: width * 0.28 // = 322
 //    property string deg: setting.deg
-//    property string lang: setting.lang
-//    property string thema: setting.thema
+//    property string lang: setting.lang    //F6F6F8
+//    property string thema: setting.thema //25294A
 
     Rectangle {
         anchors.fill: parent
-        color: "#F6F6F8"
+        color: {
+
+        }
     }
 
     //////////////////////////////////////////////////////
