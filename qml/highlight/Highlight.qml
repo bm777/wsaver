@@ -6,6 +6,7 @@ Item {
     property string f: "Comfortaa"
     property string lang: ""
     property string place: ""
+    property string date: ""
     property string thema: ""
 
     ////////////////////////////////////////////////////////////////
@@ -69,6 +70,18 @@ Item {
         height: parent.height * 0.37
         lang: root.lang
     }
+
+
+    //////////////////////////////////////////////////////////////////////////
+    Timer {
+        running: true
+        repeat: true
+        interval: 100
+        onTriggered: {
+            var data = bridge.getForecastData(root.place, root.tmp_date)
+        }
+    }
+
 //
 
 }
