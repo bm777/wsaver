@@ -158,7 +158,11 @@ Item {
 
 
                 Repeater {
-                    model: 15
+                    model: {
+                        var data = bridge.slot_towns()
+                        return data
+                    }
+
                     Place {
                         width: container.width * 0.9
                         height: 30
