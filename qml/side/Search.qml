@@ -17,8 +17,5 @@ TextField {
 
     }
 
-    MouseArea {
-        anchors.fill: parent
-        onClicked: onclicked = true
-    }
+
 }

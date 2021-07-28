@@ -108,6 +108,10 @@ Item {
             lang: root.lang
             thema: root.theme
 
+            MouseArea {
+                anchors.fill: parent
+                hoverEnabled: true
+            }
         }
         Rectangle {
             id: back_search
