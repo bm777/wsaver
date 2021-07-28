@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 Rectangle {
     id: root
-    property real value: 0.123
+    property real value: -1000
     property string lang: ""
     property string dataname: {
         if(lang === "Français") return "Humidité"
@@ -22,7 +22,7 @@ Rectangle {
     Text {
         id: value_
         text: {
-            if(value === -1000) return Math.round(Math.floor(value * 100), 0)
+            if(value !== -1000) return Math.round(Math.floor(value * 100), 0)
             else return "--"
         }
 
