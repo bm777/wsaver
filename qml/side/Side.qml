@@ -295,8 +295,8 @@ Item {
 
             if(data[8] !== -1) content.condition_rain = data[8]
             else {
-                if(root.lang === "English") content.condition_rain = -1000
-                if(root.lang === "Français") content.condition_rain = -1000
+                if(root.lang === "English") content.condition_rain = -1
+                if(root.lang === "Français") content.condition_rain = -1
             }
         }
     }
