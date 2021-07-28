@@ -28,3 +28,13 @@ class Worker(QObject):
                 l.append(elt["town"])
         print(l)
         return l
+
+    @Slot(str, str, result="QVariant")
+    def slot_obtainForecastData(self, place, date):
+        data = self.slot_forecast()
+
+        for elt in data["forecasts"]:
+            if(place == elt["town"] and date == elt["date"])
+
+
+        return []
