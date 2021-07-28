@@ -23,8 +23,8 @@
     "condition": "Cloudy",
     "wind": -1,
     "wind_unit": "m/s",
-    "wind_direction": "WSW",
-    "rain": 80
+    "wind_direction": "n/a",
+    "rain": 20
     }
   ]
 }
