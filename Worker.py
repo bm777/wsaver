@@ -21,9 +21,9 @@ class Worker(QObject):
     @Slot(result="QVariant")
     def slot_towns(self):
         data = self.slot_forecast()
-        print(type(data))
+        #print(type(data))
         l = []
-        for elt in data:
+        for elt in data["forecasts"]:
             print(elt)
             if(elt["town"] not in l):
                 l.append(elt["town"])
