@@ -189,10 +189,10 @@ Item {
                             }
                             onExited: {
                                 t.font.bold = false
-                                root.border.color = "#104050D2"
+                                parent.border.color = "#104050D2"
                             }
                             onClicked: {
-                                root.clicked = true
+                                clicked = true
                             }
                         }
                     }
