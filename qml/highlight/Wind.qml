@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 Rectangle {
     id: root
-    property string value: "7.70"
+    property string value: "--"
     property string direction: "WSW"
     property string lang: ""
     property string dataname: {
