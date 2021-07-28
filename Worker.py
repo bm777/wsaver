@@ -19,5 +19,7 @@ class Worker(QObject):
 
     @Slot(dict, result="QVariant")
     def slot_towns(data):
+        l = []
         for elt in data:
-            print(elt)
+            if(elt["town"]) not in l:
+                l.append(elt["town"])
