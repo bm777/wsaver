@@ -36,9 +36,9 @@ class Worker(QObject):
         for elt in data["forecasts"]:
             if(place == elt["town"] and date == elt["date"]):
 
-                return [elt["town"], elt["date"], elt["date"],
+                return [elt["town"], elt["date"],
                     elt["pressure"], elt["temperature"], elt["humidity"], elt["condition"],
                     elt["wind"], elt["wind_direction"], elt["rain"], 5, 102]
 
 
-        return [None] * 12
+        return [None] * 11
