@@ -138,18 +138,20 @@ Item {
     }
     ///////////////////////////////////////////////////////////////////////
     // Adding search bottom side
+    Rectangle {
+        y: parent.height * 0.1
+        height: parent.height * 0.55
+        width: parent.width
+
+    }
     ScrollView {
         y: parent.height * 0.1
         contentWidth: col.width
         contentHeight: col.height
-        height: parent.height * 0.55
-        width: parent.width
+        anchors.fill: parent
         clip: true
 
-        Rectangle {
-            anchors.fill: parent
 
-        }
 
         Column {
             id: col
