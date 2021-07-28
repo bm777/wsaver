@@ -1,4 +1,4 @@
-import json
+import json, os
 
 def import_forecast(filename):
     # Function to read data from local json file on the hard drive
