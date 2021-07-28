@@ -277,7 +277,7 @@ Item {
     Timer {
         running: true
         repeat: true
-        interval: 500
+        interval: 1
         onTriggered: {
             var data = bridge.getForecastData(root.place, root.tmp_date)
             if(data[5] !== -1) content.condition_cloud = data[5]
