@@ -148,8 +148,8 @@ Item {
         height: parent.height * 0.55
         width: parent.width
         visible: {
-            if(search.pressed()) return true
-            return false
+            if(search.pressed) return true
+            else return false
         }
 
 //        color: "red"
