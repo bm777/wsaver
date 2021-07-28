@@ -87,7 +87,7 @@ Item {
                 a1.value = "--"
             }
 
-            if(data[4] !== -1) c1.value = data[4]
+            if(data[4] !== -1) c1.value = parseInt(data[4])
             else{
                 c1.value = "--"
             }
