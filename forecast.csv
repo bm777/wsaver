@@ -25,6 +25,19 @@
     "wind_unit": "m/s",
     "wind_direction": "n/a",
     "rain": 20
+    },
+    {
+    "town": "Uyo, NG",
+    "date": "March 9, 2021",
+    "pressure": 998.2,
+    "temperature": 34.7,
+    "temperature_unit": "C",
+    "humidity": 57,
+    "condition": "Cloudy",
+    "wind": -1,
+    "wind_unit": "m/s",
+    "wind_direction": "n/a",
+    "rain": 20
     }
   ]
 }
