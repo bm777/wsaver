@@ -6,7 +6,7 @@ Item {
     id: root
     property string town: ""
     property real temperature: 15 // change for global
-    property string place:
+    property string place: ""
 
     property string date:"Monday, 17th 2021"
     property string time: "4:00 PM (GMT+1)"
@@ -179,7 +179,24 @@ Item {
                         height: 30
                         place: modelData
                         x: (container.width - width) / 2
+
+                        MouseArea {
+                            anchors.fill: parent
+                            hoverEnabled: true
+                            onEntered: {
+                                t.font.bold = true
+                                root.border.color = "#804050D2"
+                            }
+                            onExited: {
+                                t.font.bold = false
+                                root.border.color = "#104050D2"
+                            }
+                            onClicked: {
+                                root.clicked = true
+                            }
+                        }
                     }
+
                 }
 
             }

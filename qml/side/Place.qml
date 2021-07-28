@@ -23,22 +23,6 @@ Rectangle {
         anchors.verticalCenter: parent.verticalCenter
         font{family: "Comfortaa"; pointSize: 10}
     }
-    MouseArea {
-        anchors.fill: parent
-        hoverEnabled: true
-        onEntered: {
-            t.font.bold = true
-            root.border.color = "#804050D2"
-        }
 
-        onExited: {
-            t.font.bold = false
-            root.border.color = "#104050D2"
-        }
-        onClicked: {
-            root.clicked = true
-//            print(bridge.slot_towns())
-        }
-    }
 
 }
