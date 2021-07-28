@@ -56,7 +56,7 @@ Window {
     //////////////////////////////////////////////////////
     property string tmp_mm: {
         if(setting.lang === "Français"){
-            if(climate.mm === "Janvier") return "J"
+            if(climate.mm === "Janvier") return "January"
         }
 
 
