@@ -139,6 +139,7 @@ Item {
     ///////////////////////////////////////////////////////////////////////
     // Adding search bottom side
     Rectangle {
+        id: container
         y: parent.height * 0.1
         height: parent.height * 0.55
         width: parent.width
@@ -153,13 +154,13 @@ Item {
 
             Column {
                 id: col
-                spacing: 5
+                spacing: 15
 
 
                 Repeater {
                     model: 5
                     Place {
-                        width: col.width * 0.9
+                        width: container.width * 0.9
                         height: 30
 
                     }
