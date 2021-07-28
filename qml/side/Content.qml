@@ -19,7 +19,12 @@ Item {
         id: temp
         x: parent.width * 0.1
         y: parent.height * 0.05
-        text: unit === "°C" ? temperature : Math.round(temperature*9/5 + 32, 1) +
+        text: unit === "°C" ? temperature : Math.round(temperature*9/5 + 32, 1)
+        text: {
+            if(unit === "°C") return temperature
+            else return Math.round(temperature*9/5 + 32, 1)
+        }
+
         font { pointSize: 33; family: f}
     }
     Text {
