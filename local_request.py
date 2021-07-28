@@ -13,4 +13,4 @@ def import_forecast(filename):
 
 
 if __name__ == '__main__':
-    print(import_forecast("forecast.csv"))
+    print(import_forecast("forecast.json"))
