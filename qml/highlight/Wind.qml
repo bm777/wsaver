@@ -3,7 +3,7 @@ import QtQuick 2.0
 Rectangle {
     id: root
     property string value: "--"
-    property string direction: "WSW"
+    property string direction: "--"
     property string lang: ""
     property string dataname: {
         if(lang === "Français") return "Status du vent"
