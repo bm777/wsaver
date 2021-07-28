@@ -143,32 +143,34 @@ Item {
         height: parent.height * 0.55
         width: parent.width
 
-    }
-    ScrollView {
-        y: parent.height * 0.1
-        contentWidth: col.width
-        contentHeight: col.height
-        anchors.fill: parent
-        clip: true
+        ScrollView {
+            y: parent.height * 0.1
+            contentWidth: col.width
+            contentHeight: col.height
+            anchors.fill: parent
+            clip: true
 
 
 
-        Column {
-            id: col
-            spacing: 5
-//            anchors.horizontalCenter: parent.horizontalCenter
+            Column {
+                id: col
+                spacing: 5
+    //            anchors.horizontalCenter: parent.horizontalCenter
 
-            Repeater {
-                model: 5
-                Place {
-                    width: col.width * 0.9
-                    height: 30
+                Repeater {
+                    model: 5
+                    Place {
+                        width: col.width * 0.9
+                        height: 30
 
+                    }
                 }
-            }
 
+            }
         }
+
     }
+
 
 
 
