@@ -6,7 +6,10 @@ Item {
     id: root
     property string town: ""
     property real temperature: 15 // change for global
-    property string place: "Place"
+    property string place: {
+        if(lang === "Français") return "Vile"
+        if(lang === "English") return "Town"
+    }
 
     property string date:"Monday, 17th 2021"
     property string time: "4:00 PM (GMT+1)"
