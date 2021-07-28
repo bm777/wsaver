@@ -6,6 +6,8 @@ Item {
     id: root
     property string town: ""
     property real temperature: 15 // change for global
+    property string place:
+
     property string date:"Monday, 17th 2021"
     property string time: "4:00 PM (GMT+1)"
     property string t: "°C"
