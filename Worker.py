@@ -30,7 +30,7 @@ class Worker(QObject):
         return l
 
     @Slot(str, str, result="QVariant")
-    def slot_obtainForecastData(self, place, date):
+    def getForecastData(self, place, date):
         data = self.slot_forecast()
 
         for elt in data["forecasts"]:
