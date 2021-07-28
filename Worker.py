@@ -41,4 +41,4 @@ class Worker(QObject):
                     elt["wind"], elt["wind_direction"], elt["rain"], 5, 102]
 
 
-        return [None] * 11
+        return [-1] * 11
