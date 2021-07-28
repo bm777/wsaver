@@ -154,11 +154,11 @@ Item {
 
             Column {
                 id: col
-                spacing: 15
+                spacing: 5
 
 
                 Repeater {
-                    model: 5
+                    model: 15
                     Place {
                         width: container.width * 0.9
                         height: 30
