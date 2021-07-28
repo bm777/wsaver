@@ -104,6 +104,13 @@ Item {
             anchors.centerIn: parent
             lang: root.lang
             thema: root.theme
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    container.visible = true
+                }
+            }
         }
         Rectangle {
             id: back_search
