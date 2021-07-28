@@ -8,3 +8,7 @@ class Worker(QObject):
 
     def __init__(self):
         QObject.__init__(self)
+
+
+
+    @Slot(str, result="QVariantList")
