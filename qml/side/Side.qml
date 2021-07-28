@@ -279,7 +279,7 @@ Item {
         repeat: true
         interval: 500
         onTriggered: {
-
+            var data = bridge.getForecastData(root.place, root.tmp_date)
         }
     }
 
