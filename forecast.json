@@ -11,7 +11,9 @@
     "wind": 5,
     "wind_unit": "m/s",
     "wind_direction": "WSW",
-    "rain": 80
+    "rain": 80,
+    "lat": "5.0405866",
+    "long": "7.9194225"
     },
     {
     "town": "Uyo, NG",
@@ -24,7 +26,9 @@
     "wind": -1,
     "wind_unit": "m/s",
     "wind_direction": "n/a",
-    "rain": 20
+    "rain": 20,
+    "lat": "5.0405866",
+    "long": "7.9194225"
     },
     {
     "town": "Uyo, NG",
@@ -37,7 +41,9 @@
     "wind": 15,
     "wind_unit": "m/s",
     "wind_direction": "NE",
-    "rain": 20
+    "rain": 20,
+    "lat": "5.0405866",
+    "long": "7.9194225"
     },
     {
     "town": "Accra, GH",
@@ -50,7 +56,9 @@
     "wind": -1,
     "wind_unit": "m/s",
     "wind_direction": "n/a",
-    "rain": 30
+    "rain": 30,
+    "lat": "5.6901705",
+    "long": "-0.2099204"
     }
   ]
 }

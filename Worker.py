@@ -9,6 +9,7 @@ class Worker(QObject):
 
     def __init__(self):
         QObject.__init__(self)
+        self.tmp = 55
 
 
 
@@ -38,7 +39,7 @@ class Worker(QObject):
 
                 return [elt["town"], elt["date"],
                     elt["pressure"], elt["temperature"], elt["humidity"], elt["condition"],
-                    elt["wind"], elt["wind_direction"], elt["rain"], 5, 102]
+                    elt["wind"], elt["wind_direction"], elt["rain"], self.tmp, 102, elt["lat"], elt["long"]]
 
 
-        return [-1] * 11
+        return [-1] * 13
