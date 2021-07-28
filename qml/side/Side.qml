@@ -256,6 +256,7 @@ Item {
                 unit: t
                 week_day: date
                 lang: root.lang
+                town: root.place
             }
         }
 
