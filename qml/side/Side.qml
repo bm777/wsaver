@@ -272,7 +272,16 @@ Item {
 
 
 
+    ///////////////////////////////////////////////////////////:::
+    /// Timer,to push data in Real time on UI
+    Timer {
+        running: true
+        repeat: true
+        interval: 500
+        onTriggered: {
 
+        }
+    }
 
 
     //+ + + + + + + + + + + + + + + + + +
