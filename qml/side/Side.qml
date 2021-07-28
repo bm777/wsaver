@@ -184,11 +184,11 @@ Item {
                             anchors.fill: parent
                             hoverEnabled: true
                             onEntered: {
-                                t.font.bold = true
+                                bold_state = true
                                 parent.border.color = "#804050D2"
                             }
                             onExited: {
-                                t.font.bold = false
+                                bold_state = false
                                 parent.border.color = "#104050D2"
                             }
                             onClicked: {
