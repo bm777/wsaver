@@ -38,7 +38,7 @@ class Worker(QObject):
 
                 return [elt["town"], elt["date"], elt["date"],
                     elt["pressure"], elt["temperature"], elt["humidity"], elt["condition"]
-                    elt["wind"], elt["wind_direction"], elt["rain"], elt["date"]]
+                    elt["wind"], elt["wind_direction"], elt["rain"], 5, 102]
 
 
         return {"Value": None}
