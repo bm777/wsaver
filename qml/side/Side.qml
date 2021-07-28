@@ -286,7 +286,11 @@ Item {
                 if(lang === "Français") content.condition_cloud = "Aucune condition!"
             }
 
-            if(data[5] !== -1) content.condition_cloud = data[5]
+            if(data[3] !== -1) content.temperature = data[3]
+            else {
+                if(lang === "English") content.condition_cloud = "No condition!"
+                if(lang === "Français") content.condition_cloud = "Aucune condition!"
+            }
             if(data[5] !== -1) content.condition_cloud = data[5]
         }
     }
