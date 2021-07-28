@@ -192,8 +192,9 @@ Item {
                             anchors.fill: parent
                             hoverEnabled: true
                             visible: {
-                                if(place.text.includes("")) return true
-                                else if(place.text.includes(search.text)){
+                                var key = place
+                                if(key.text.includes("")) return true
+                                else if(key.text.includes(search.text)){
                                     return true
                                 }
                                 else return false
