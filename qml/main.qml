@@ -24,7 +24,10 @@ Window {
     Rectangle {
         anchors.fill: parent
         color: {
-
+            if(setting.lang === "English"){
+                if(setting.thema === "Light") return "#F6F6F8"
+                else return "#25294A"
+            }
         }
     }
 
