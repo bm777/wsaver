@@ -289,8 +289,8 @@ Item {
 
             if(data[3] !== -1) content.temperature = data[3]
             else {
-                if(root.lang === "English") content.temperature = -1
-                if(root.lang === "Français") content.temperature = -1
+                if(root.lang === "English") content.temperature = -1000
+                if(root.lang === "Français") content.temperature = -1000
             }
 //            if(data[5] !== -1) content.condition_cloud = data[5]
         }
