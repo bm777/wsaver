@@ -37,7 +37,7 @@ Rectangle {
         }
         onClicked: {
             root.clicked = true
-            print(bridge.slot_towns())
+//            print(bridge.slot_towns())
         }
     }
 
