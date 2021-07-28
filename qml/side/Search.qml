@@ -9,9 +9,8 @@ TextField {
 
     property string lang: ""
     property string thema: ""
-    property bool onclicked: false
+    property bool onclicked: pressed
     color: "#80000000"
-//    font.capitalization: Font.AllLowercase
     maximumLength: 30
     hoverEnabled: true
     font{family: "Comfortaa"}
