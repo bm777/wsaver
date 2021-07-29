@@ -41,6 +41,7 @@ Item {
         width: height * 1.3
         height: parent.height * 0.37
         lang: root.lang
+        thema: root.thema
     }
     Humidity {
         id: c1
