@@ -52,7 +52,7 @@ Rectangle {
             width: height
             height: parent.height * 0.65
             anchors.verticalCenter: parent.verticalCenter
-            color: "#4050D2"
+            color: thema === "Light" ? "#4050D2" : "#F65164"
             x: (parent.width * value/10 - width / 2) * 0.96
             radius: height/2
         }
