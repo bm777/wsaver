@@ -4,12 +4,14 @@ Rectangle {
     id: root
     property real value: -1000
     property string lang: ""
+    property string thema: ""
     property string dataname: {
         if(lang === "Français") return "Humidité"
         if(lang === "English") return "Humidity"
     }
     radius: 10
-    color: "#ffffff"
+    color: thema === "Light" ? "#ffffff" : "#202442"
+    border.color: thema === "Light" ? "transparent" : "#40E9E9E9"
 
     Text {
         text: root.dataname
