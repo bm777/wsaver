@@ -62,13 +62,14 @@ Rectangle {
         font{family: "Comfortaa"; pointSize: 15; bold: true}
         anchors.horizontalCenter: parent.horizontalCenter
         y: parent.height * 0.7
-
+        color: thema === "Light" ? "#000000" : "#ffffff"
     }
     Text {
         text: "cm"
         font{family: "Comfortaa"; pointSize: 11; bold: false}
         y: parent.height * 0.68
         x: flood_cm.x + flood_cm.width + 5
+        color: thema === "Light" ? "#000000" : "#ffffff"
     }
     Text {
         text: "10+"
