@@ -20,7 +20,7 @@ Rectangle {
         font {family: "Comfortaa"; pointSize: 10}
         y: parent.height * 0.1
         x: y + 8
-        color: thema === "Light" ? "#ADADAD" : "#E9EBF9"
+        color: thema === "Light" ? "#ADADAD" : "#80E9EBF9"
     }
     Text {
         id: value_
