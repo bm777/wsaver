@@ -86,7 +86,7 @@ Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
             y: {
                 if(value === -1000) {
-                    return parent.height * (1 - 0) * 0.85
+                    return parent.height * (1 - 0) * 0.8
                 }else return parent.height * (100 - value)/100 * 0.85
             }
         }
