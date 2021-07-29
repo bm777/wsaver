@@ -49,8 +49,8 @@ Item {
         glowRadius: flag.width / 2
         color: {
            if(setting.lang === "English"){
-               if(setting.thema === "Light") return "#F6F6F8"
-               if(setting.thema === "Dark") return "#f025294A"
+               if(setting.thema === "Light") return "#10000000"
+               if(setting.thema === "Dark") return "#10000000"
            }
         }
     }
