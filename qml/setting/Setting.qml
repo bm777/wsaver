@@ -18,6 +18,7 @@ Item {
             if(flag.name_language === "Français") return "Paramètres"
             if(flag.name_language === "English") return "Settings"
         }
+        color: thema === "Light" ? "#000000" : "#E9EBF9"
 
         font {family: f; pointSize: 12; bold: false}
         x: parent.width * 0.07

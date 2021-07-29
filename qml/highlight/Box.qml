@@ -1,9 +1,11 @@
 import QtQuick 2.0
 
+
 Rectangle {
     id: root //
     property string value: "--"
     property string lang: ""
+    property string thema: ""
     property string dataname: {
         if(lang === "Français") return "Pression (mb)"
         if(lang === "English") return "Pressure (mb)"
@@ -11,14 +13,17 @@ Rectangle {
 
 
     radius: 10
+    color: thema === "Light" ? "#ffffff" : "#202442"
+    border.color: thema === "Light" ? "transparent" : "#40E9E9E9"
 
     Text {
         text: root.dataname
         font {family: "Comfortaa"; pointSize: 10}
         y: parent.height * 0.1
         x: y + 8
-        color: "#ADADAD"
+        color: thema === "Light" ? "#ADADAD" : "#E9EBF9"
     }
+
     Gauge {
         id: gauge
         y: parent.height * 0.35
@@ -34,6 +39,7 @@ Rectangle {
             anchors.horizontalCenter: parent.horizontalCenter
             font {family: "Comfortaa"; pointSize: 25}
             y: parent.height * 0.3
+            color: thema === "Light" ? "#000000" : "#ffffff"
         }
     }
     Gauge {
@@ -44,6 +50,6 @@ Rectangle {
         arcBegin: -90
         arcEnd: arcBegin + 45
         lineWidth: 10
-        colorCircle: "#F1C40F"
+        colorCircle: thema === "Light" ? "#F1C40F" : "#F65164"
     }
 }

@@ -16,7 +16,7 @@ Item {
             if(lang === "Français") return "Points culminants"
             if(lang === "English") return "Highlights"
         }
-
+        color: thema === "Light" ? "#000000" : "#E9EBF9"
         font {family: f; pointSize: 12; bold: false}
         x: parent.width * 0.07
     }
@@ -32,7 +32,7 @@ Item {
         width: height * 1.3
         height: parent.height * 0.37
         lang: root.lang
-
+        thema: root.thema
     }
     Air {
         id: b1

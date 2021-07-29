@@ -26,31 +26,31 @@ Window {
         color: {
             if(setting.lang === "English"){
                 if(setting.thema === "Light") {
-                    climate.thema = "#F6F6F8"
-                    hl.thema = "#F6F6F8"
-                    side.theme = "#F6F6F8"
+                    climate.thema = "Light"
+                    hl.thema = "Light"
+                    side.theme = "Light"
                     return "#F6F6F8"
                 }
 
                 if(setting.thema === "Dark") {
-                    climate.thema = "#25294A"
-                    hl.thema = "#25294A"
-                    side.theme = "#25294A"
+                    climate.thema = "Dark"
+                    hl.thema = "Dark"
+                    side.theme = "Dark"
                     return "#25294A"
                 }
             }
             if(setting.lang === "Français"){
                 if(setting.thema === "Blanc") {
-                    climate.thema = "#F6F6F8"
-                    hl.thema = "#F6F6F8"
-                    side.theme = "#F6F6F8"
+                    climate.thema = "Light"
+                    hl.thema = "Light"
+                    side.theme = "Light"
                     return "#F6F6F8"
                 }
 
                 if(setting.thema === "Noir") {
-                    climate.thema = "#25294A"
-                    hl.thema = "#25294A"
-                    side.theme = "#25294A"
+                    climate.thema = "Dark"
+                    hl.thema = "Dark"
+                    side.theme = "Dark"
                     return "#25294A"
                 }
             }

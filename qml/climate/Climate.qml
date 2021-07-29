@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.15
 
+
 Item {
     id: root
     property real humidity: 0
@@ -20,19 +21,25 @@ Item {
         font {family: f; pointSize: 12; bold: false}
         x: parent.width * 0.18
         y: parent.height * 0.18
-        color: {
-
-        }
+        color: thema === "Light" ? "#000000" : "#E9EBF9"
     }
-//    Rectangle {
-//        anchors.fill: parent
-//        border.color: "red"
-//        color: "transparent"
-//    }
+
     ////////////////////////////////////////////////////////
 //    onLangChanged: {
 //        indexMonth = month.currentIndex
 //    }
+//    Text {
+//        id: delegation
+//        property int displacement: Math.abs(Tumbler.displacement)
+//        text: modelData
+//        horizontalAlignment: Text.AlignHCenter
+//        verticalAlignment: Text.AlignVCenter
+////                scale: displacement == 0 ? 1.20 : 1.0
+//        font: month.font
+//        color: displacement == 0 ? "red" : "#40000000"
+//    }
+
+
 
     Rectangle {
         x: parent.width * 0.18
@@ -40,6 +47,11 @@ Item {
         width: parent.width * 0.8
         height: parent.height * 0.5
         radius: 10
+        color: {
+            if(thema === "Light") return "#ffffff"
+            else return "#ffffff"
+
+        }
 
         Tumbler {
             id: month
@@ -54,13 +66,15 @@ Item {
                             "Décembre"]
             }
 
+
             anchors.verticalCenter: parent.verticalCenter
             font {family: "Comfortaa"; bold: false}
             visibleItemCount: 3
             wrap: true
             width: parent.width * 0.5
             height: parent.height * 0.8
-//            currentIndex: indexMonth
+
+
         }
         Tumbler {
             id: day
@@ -73,6 +87,7 @@ Item {
                               "11","12","13","14","15","16","17","18","19","20",
                               "21","22","23","24","25","26","27","28","29","30", "31"]
             }
+
 
             anchors.verticalCenter: parent.verticalCenter
             font {family: "Comfortaa"; bold: false}
