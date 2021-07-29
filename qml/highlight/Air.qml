@@ -28,6 +28,7 @@ Rectangle {
         font{family: "Comfortaa"; bold: false; pointSize: 25}
         anchors.verticalCenter: parent.verticalCenter
         x: parent.width * 0.2
+        color: thema === "Light" ? "#000000" : "#ffffff"
     }
 
     Image {
@@ -54,6 +55,7 @@ Rectangle {
         }
 
         font{family: "Comfortaa"; bold: false; pointSize: 10}
+        color: thema === "Light" ? "#000000" : "#ffffff"
         y: parent.height * 0.78
         x: parent.width * 0.35
     }
