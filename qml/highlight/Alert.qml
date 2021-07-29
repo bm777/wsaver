@@ -15,7 +15,6 @@ Rectangle {
             else if(value >= 3) return "average risk"
             else return "low risk"
         }
-
     }
 
     property string lang: ""
