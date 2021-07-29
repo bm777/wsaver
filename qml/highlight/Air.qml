@@ -11,13 +11,15 @@ Rectangle {
     property string lang: ""
 
     radius: 10
+    color: thema === "Light" ? "#ffffff" : "#202442"
+    border.color: thema === "Light" ? "transparent" : "#40E9E9E9"
 
     Text {
         text: root.dataname
         font {family: "Comfortaa"; pointSize: 10}
         y: parent.height * 0.1
         x: y + 8
-        color: "#ADADAD"
+        color: thema === "Light" ? "#ADADAD" : "#E9EBF9"
     }
 
     Text {
