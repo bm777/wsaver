@@ -50,7 +50,7 @@ Item {
         color: {
            if(setting.lang === "English"){
                if(setting.thema === "Light") return "#10000000"
-               if(setting.thema === "Dark") return "#1      0ffffff"
+               if(setting.thema === "Dark") return "#10ffffff"
            }
         }
     }
