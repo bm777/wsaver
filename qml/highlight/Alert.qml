@@ -19,6 +19,9 @@ Rectangle {
     }
 
     property string lang: ""
+    property string thema: ""
+    color: thema === "Light" ? "#ffffff" : "#202442"
+    border.color: thema === "Light" ? "transparent" : "#40E9E9E9"
     property string alert1: {
         if(lang === "Français") return "Innondation (" + level + ")"
         if(lang === "English") return "Flood (" + level + ")"
@@ -31,7 +34,8 @@ Rectangle {
         font {family: "Comfortaa"; pointSize: 10}
         y: parent.height * 0.1
         x: y + 8
-        color: "#ADADAD"
+        color: thema === "Light" ? "#ADADAD" : "#E9EBF9"
+
     }
 
     Rectangle {
