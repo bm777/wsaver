@@ -26,13 +26,14 @@ Item {
         anchors.fill: frame
         spread: 0.1
         glowRadius: 10
-        color: "#a0a9a9a9"
+        color: theme === "Light" ? "#a0a9a9a9" : "#80000000"
     }
     Rectangle {
 
         id: frame
         anchors.fill: parent
         clip:  true
+//        color: "red"
 
         Image {
             id: slave
@@ -52,18 +53,19 @@ Item {
         id: top_bg_search
         width: parent.width
         height: parent.height * 0.1
+        color: theme === "Light" ? "#ffffff" : "#202442"
         clip: true
         Rectangle {
             width: parent.height * 0.5;
             height: 2;
-            color: "blue";
+            color: theme === "Light" ? "blue" : "white"
             x: parent.width * 0.25
             rotation: 135
         }
         Rectangle {
             width: parent.height * 0.5;
             height: 2;
-            color: "blue";
+            color: theme === "Light" ? "blue" : "white"
             x: parent.width * 0.6
             y: parent.height - height
             rotation: 135
@@ -75,7 +77,7 @@ Item {
         anchors.fill: bg_search
         spread: 0.1
         glowRadius: 10
-        color: "#80a9a9a9"
+        color: theme === "Light" ? "#a0a9a9a9" : "transparent"
     }
     Rectangle {
         y: x/2
@@ -165,7 +167,10 @@ Item {
             else return false
         }
 
-//        color: "red"
+        color: {
+            if(theme==="Light") return "#ffffff"
+            else return "#202442"
+        }
 
         ScrollView {
             y: parent.height * 0.02
@@ -199,6 +204,7 @@ Item {
                             }
                             else return false
                         }
+                        thema: root.theme
 
                         MouseArea {
                             anchors.fill: parent
@@ -244,15 +250,15 @@ Item {
         y: parent.height - height
         gradient: Gradient {
             GradientStop {position: 0.0; color: "transparent"}
-            GradientStop {position: 0.3; color: "#b0ffffff"}
-            GradientStop {position: 1.0; color: "white"}
+            GradientStop {position: 0.3; color: theme==="Light"?"#b0ffffff":"#b0202442"}
+            GradientStop {position: 1.0; color: theme==="Light"?"#ffffff":"#202442"}
         }
         Rectangle {
             anchors.horizontalCenter: bottom_rect.horizontalCenter
             width: bottom_rect.width
             height: bottom_rect.height * 0.7
             y: parent.height - height
-            color: "#ffffff"
+            color: theme === "Light" ? "#ffffff" : "#202442"
 
             Content {
                 id: content
@@ -261,6 +267,7 @@ Item {
                 week_day: date
                 lang: root.lang
                 town: root.place
+                thema: root.theme
             }
         }
 
@@ -280,7 +287,7 @@ Item {
         interval: 100
         onTriggered: {
             var data = bridge.getForecastData(root.place, root.tmp_date)
-//            print(data)
+
             if(data[5] !== -1) content.condition_cloud = data[5]
             else {
                 if(root.lang === "English") content.condition_cloud = "No condition!"

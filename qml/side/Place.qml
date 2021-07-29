@@ -6,6 +6,7 @@ Rectangle {
 //    property type name: value
     property bool clicked: false
     property bool bold_state: false
+    property string thema: ""
 
     radius: height/2 //5
     color: "transparent"
@@ -24,6 +25,7 @@ Rectangle {
         x: parent.width * 0.25
         anchors.verticalCenter: parent.verticalCenter
         font{family: "Comfortaa"; pointSize: 10; bold: bold_state }
+        color: thema==="Light" ? "#000000" : "#ffffff"
     }
 
 

@@ -48,7 +48,11 @@ Rectangle {
         anchors.horizontalCenter: parent.horizontalCenter
         size: parent.width * 0.8
         arcBegin: -90
-        arcEnd: arcBegin + 45
+        arcEnd: {
+            if(value === "--") return arcBegin
+            else return arcBegin + 180 * (1060-parseFloat(value))/(1060-950)
+        }
+
         lineWidth: 10
         colorCircle: thema === "Light" ? "#F1C40F" : "#F65164"
     }

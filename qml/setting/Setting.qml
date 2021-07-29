@@ -41,13 +41,31 @@ Item {
         anchors.fill: unit
         spread: 0.1
         glowRadius: unit.width / 2
-        color: "#10000000"
+        color: {
+            if(setting.lang === "English"){
+                if(setting.thema === "Light") return "#10000000"
+                if(setting.thema === "Dark") return "#10ffffff"
+            }
+            if(setting.lang === "Français"){
+                if(setting.thema === "Blanc") return "#10000000"
+                if(setting.thema === "Noir") return "#10ffffff"
+            }
+        }
     }
     RectangularGlow {
         anchors.fill: flag
         spread: 0.1
         glowRadius: flag.width / 2
-        color: "#204050D2"
+        color: {
+            if(setting.lang === "English"){
+                if(setting.thema === "Light") return "#204050D2"
+                if(setting.thema === "Dark") return "#10ffffff"
+            }
+            if(setting.lang === "Français"){
+                if(setting.thema === "Blanc") return "#204050D2"
+                if(setting.thema === "Noir") return "#10ffffff"
+            }
+        }
     }
     RectangularGlow {
         anchors.fill: theme
@@ -57,6 +75,10 @@ Item {
            if(setting.lang === "English"){
                if(setting.thema === "Light") return "#10000000"
                if(setting.thema === "Dark") return "#10ffffff"
+           }
+           if(setting.lang === "Français"){
+               if(setting.thema === "Blanc") return "#10000000"
+               if(setting.thema === "Noir") return "#10ffffff"
            }
         }
     }

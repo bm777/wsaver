@@ -27,7 +27,7 @@ class Worker(QObject):
         for elt in data["forecasts"]:
             if(elt["town"] not in l):
                 l.append(elt["town"])
-        print(l)
+        # print(l)
         return l
 
     @Slot(str, str, result="QVariant")
