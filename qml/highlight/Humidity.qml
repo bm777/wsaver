@@ -75,14 +75,14 @@ Rectangle {
         border.color: "#40ADADAD"
         x: parent.width * 0.75
         anchors.verticalCenter: parent.verticalCenter
-        color: thema === "Light" ? "#ffffff" : "#2D325A"
+        color: thema === "Light" ? "#ffffff" : "#2D325A" //
 
 
         Rectangle {
             width: parent.width * 0.65
             height: width
             radius: width / 2
-            color: "#4050D2"
+            color: thema === "Light" ? "#4050D2" : "#F65164"
             anchors.horizontalCenter: parent.horizontalCenter
             y: {
                 if(value === -1000) {
