@@ -26,7 +26,8 @@ Window {
         color: {
             if(setting.lang === "English"){
                 if(setting.thema === "Light") return "#F6F6F8"
-                else return "#f025294A"
+                if(setting.thema === "Dark") return "#f025294A"
+
             }
         }
     }
