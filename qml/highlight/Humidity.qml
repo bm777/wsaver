@@ -37,6 +37,7 @@ Rectangle {
         font{family: "Comfortaa"; pointSize: 12; bold: false}
         y: value_.y
         x: value_.x + value_.width + 5
+        color: thema === "Light" ? "#000000" : "#ffffff"
     }
     Text {
         text: {
