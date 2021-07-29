@@ -27,7 +27,10 @@ Window {
             if(setting.lang === "English"){
                 if(setting.thema === "Light") return "#F6F6F8"
                 if(setting.thema === "Dark") return "#f025294A"
-
+            }
+            if(setting.lang === "Français"){
+                if(setting.thema === "Blanc") return "#F6F6F8"
+                if(setting.thema === "Noir") return "#f025294A"
             }
         }
     }
