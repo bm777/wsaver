@@ -18,7 +18,7 @@ Rectangle {
         font {family: "Comfortaa"; pointSize: 10}
         y: parent.height * 0.1
         x: y + 8
-        color: "#ADADAD"
+        color: thema === "Light" ? "#ADADAD" : "#E9EBF9"
     }
 
     Text {
@@ -62,6 +62,7 @@ Rectangle {
         font{family: "Comfortaa"; pointSize: 10; bold: false}
         y: parent.height * 0.78
         x: parent.width * 0.2
+        color: thema === "Light" ? "#000000" : "#ffffff"
     }
 
 
