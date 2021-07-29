@@ -25,12 +25,27 @@ Window {
         anchors.fill: parent
         color: {
             if(setting.lang === "English"){
-                if(setting.thema === "Light") return "#F6F6F8"
-                if(setting.thema === "Dark") return "#25294A"
+                if(setting.thema === "Light") {
+                    climate.thema = "#F6F6F8"
+
+                    return "#F6F6F8"
+                }
+
+                if(setting.thema === "Dark") {
+                    climate.thema = "#25294A"
+                    return "#25294A"
+                }
             }
             if(setting.lang === "Français"){
-                if(setting.thema === "Blanc") return "#F6F6F8"
-                if(setting.thema === "Noir") return "#25294A"
+                if(setting.thema === "Blanc") {
+                    climate.thema = "#F6F6F8"
+                    return "#F6F6F8"
+                }
+
+                if(setting.thema === "Noir") {
+                    climate.thema = "#25294A"
+                    return "#25294A"
+                }
             }
         }
     }
