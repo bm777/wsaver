@@ -7,9 +7,7 @@ Rectangle {
     property string name_language: "English"
     property string name_source: "../../img/uk.png"
     property string theme: "Light"
-//    Rectangle {
-//        width: 32 +
-//    }
+
 
     MouseArea {
         anchors.fill: parent
