@@ -15,6 +15,7 @@ Item {
         text: {
             if(lang === "Français") return "Points culminants"
             if(lang === "English") return "Highlights"
+            if(lang === "Yoruba") return "Awọn ifojusi"
         }
         color: thema === "Light" ? "#000000" : "#E9EBF9"
         font {family: f; pointSize: 12; bold: false}
@@ -86,7 +87,7 @@ Item {
             var data = bridge.getForecastData(root.place, root.date)
             print(root.place, root.date)
             print(data)
-            if(data[2] !== -1) a1.value = data[2]
+            if(data[2] !== -1) a1.value = data[2].toFixed(1)
             else{
                 a1.value = "--"
             }

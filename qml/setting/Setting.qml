@@ -18,7 +18,12 @@ Item {
             if(flag.name_language === "Français") return "Paramètres"
             if(flag.name_language === "English") return "Settings"
         }
-        color: thema === "Light" ? "#000000" : "#E9EBF9"
+        color: {
+            if(thema === "Light") return "#000000"
+            if(thema === "Blanc") return "#000000"
+            if(thema === "Dark") return "#E9EBF9"
+            if(thema === "Noir") return "#E9EBF9"
+        }
 
         font {family: f; pointSize: 12; bold: false}
         x: parent.width * 0.07
@@ -70,6 +75,7 @@ Item {
         id: flag
         y: parent.height * 0.37
         x: parent.width * 0.5
+        theme: root.thema
     }
 
 

@@ -40,7 +40,7 @@ Rectangle {
 
 
     Image {
-        source: "../../img/compass.png"
+        source: thema === "Light" ? "../../img/compass.png" : "../../img/compass-dark.png"
         width: 25
         height: width
         y: parent.height * 0.69

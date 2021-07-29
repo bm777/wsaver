@@ -51,7 +51,7 @@ Rectangle {
                 else return "..."
             }
             if(lang === "Français"){
-                if(value >= 0.7) return "Mauvais"
+                if(value >= 0.7) return "Mauvaise"
                 else if(value >= 0.5) return "Froid"
                 else if(value >= 0.3) return "Très humide"
                 else if(value >= 0.2) return "Humide"
