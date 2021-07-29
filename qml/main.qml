@@ -26,11 +26,11 @@ Window {
         color: {
             if(setting.lang === "English"){
                 if(setting.thema === "Light") return "#F6F6F8"
-                if(setting.thema === "Dark") return "#202442"
+                if(setting.thema === "Dark") return "#25294A"
             }
             if(setting.lang === "Français"){
                 if(setting.thema === "Blanc") return "#F6F6F8"
-                if(setting.thema === "Noir") return "#202442"
+                if(setting.thema === "Noir") return "#25294A"
             }
         }
     }
