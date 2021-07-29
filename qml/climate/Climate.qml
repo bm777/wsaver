@@ -21,6 +21,8 @@ Item {
         x: parent.width * 0.18
         y: parent.height * 0.18
         color: {
+
+        }
     }
 //    Rectangle {
 //        anchors.fill: parent
