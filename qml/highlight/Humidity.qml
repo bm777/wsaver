@@ -75,7 +75,7 @@ Rectangle {
         border.color: "#40ADADAD"
         x: parent.width * 0.75
         anchors.verticalCenter: parent.verticalCenter
-        color: thema === "Light" ? "#ffffff" : "#000000"
+        color: thema === "Light" ? "#ffffff" : "#2D325A"
 
 
         Rectangle {
