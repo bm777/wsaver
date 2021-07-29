@@ -31,6 +31,7 @@ Rectangle {
         font{family: "Comfortaa"; pointSize: 25; bold: false}
         anchors.verticalCenter: parent.verticalCenter
         x: parent.width * 0.2
+        color: thema === "Light" ? "#000000" : "#ffffff"
     }
     Text {
         text: "%"
