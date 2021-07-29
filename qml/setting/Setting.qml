@@ -47,7 +47,12 @@ Item {
         anchors.fill: theme
         spread: 0.1
         glowRadius: flag.width / 2
-        color: "#10000000"
+        color: {
+           if(setting.lang === "English"){
+               if(setting.thema === "Light") return "#F6F6F8"
+               if(setting.thema === "Dark") return "#f025294A"
+           }
+        }
     }
     Theme {
         id: theme
