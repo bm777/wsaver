@@ -58,7 +58,6 @@ Rectangle {
                 else if(value >= 0) return "Normale"
                 else return "..."
             }
-
         }
 
         font{family: "Comfortaa"; pointSize: 10; bold: false}
