@@ -44,6 +44,7 @@ Rectangle {
         width: parent.width * 0.8
         height: 30
         border.color: "#40ADADAD"
+        color: thema === "Light" ? "#ffffff" : "#2D325A"
         anchors.centerIn: parent
 
 
