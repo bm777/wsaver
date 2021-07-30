@@ -5,6 +5,7 @@ TextField {
     placeholderText: {
         if(lang === "English") return "Search for places ..."
         if(lang === "Français") return "Rechercher des places ..."
+        if(lang === "Yoruba") return "Wa awọn aaye ..."
     }
 
     property string lang: ""
