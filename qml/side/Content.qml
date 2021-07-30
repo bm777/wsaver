@@ -6,10 +6,10 @@ Item {
     property int temperature: 12
     property bool disable_temperature: false
     property string unit: "C"
-    property string week_day: "January 18, 2018"
+    property string week_day: ""
     property string hour: ""
     property string condition_cloud: ""
-    property string condition_rain: "30%"
+    property string condition_rain: ""
     property string town: "Town"
     property string f: "Comfortaa Light"
     property string lang: ""
