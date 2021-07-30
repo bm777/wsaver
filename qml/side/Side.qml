@@ -12,7 +12,7 @@ Item {
         if(lang === "Yoruba") return "Ilu"
     }
 
-    property string date:"Monday, 17th 2021"
+    property string date:""
     property string tmp_date: ""
     property string time: "4:00 PM (GMT+1)"
     property string t: "°C"
