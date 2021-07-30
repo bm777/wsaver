@@ -292,6 +292,7 @@ Item {
             if(data[5] !== -1) content.condition_cloud = data[5]
             else {
                 if(root.lang === "English") content.condition_cloud = "No condition!"
+                if(root.lang === "Yoruba") content.condition_cloud = "Ko si majemu!"
                 if(root.lang === "Français") content.condition_cloud = "Aucune condition!"
             }
 
