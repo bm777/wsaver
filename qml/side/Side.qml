@@ -122,7 +122,7 @@ Item {
                     mouse.accepted = false
                     search.focus = true
                     container.visible = true
-                    if(!search.cursorVisible) {
+                    if(search.cursorVisible) {
                         search.cursorVisible = true
                     }else search.cursorVisible = false
                 }
