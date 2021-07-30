@@ -14,11 +14,12 @@ these requirements is under requirements.txt.
 
 #### 1. using final pip package (you can run it anytime), you can see what I'm developing.
 You can clone and try it using simple command :)
-`git clone https://github.com/bm777/wsaver.git
+```
+git clone https://github.com/bm777/wsaver.git
 cd wsaver
 pip3 install -r requirements.txt
 python3 main.py
-`
+```
 
 #### 2. using final pip package (you could do until I finished the development)
 You have only have the possibility to launch as a pip3 software.
