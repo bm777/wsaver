@@ -146,6 +146,19 @@ Item {
             height: parent.height * 0.8
             visible: root.lang === "Français" && thema==="Light"
         }
+        Tumbler {
+            id: month_yo
+            model: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+                "Juillet", "Août", "Septembre", "Octobre", "Novembre",
+                "Décembre"]
+            anchors.verticalCenter: parent.verticalCenter
+            font {family: "Comfortaa"; bold: false}
+            visibleItemCount: 3
+            wrap: true
+            width: parent.width * 0.5
+            height: parent.height * 0.8
+            visible: root.lang === "Yoruba" && thema==="Light"
+        }
 
         Tumbler {
             id: day
