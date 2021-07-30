@@ -10,9 +10,11 @@ Item {
     property string mm: {
         if(lang==="English" && thema ==="Light") return month.model[indexMonth]
         if(lang==="Français" && thema ==="Light") return month_fr.model[indexMonth]
+        if(lang==="Yoruba" && thema ==="Light") return month_yo.model[indexMonth]
 
         if(lang==="English" && thema ==="Dark") return month_dark.model[indexMonth]
         if(lang==="Français" && thema ==="Dark") return month_fr_dark.model[indexMonth]
+        if(lang==="Yoruba" && thema ==="Dark") return month_yo_dark.model[indexMonth]
     }
 
     property string dd: {
