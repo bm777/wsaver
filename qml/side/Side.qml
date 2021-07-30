@@ -9,6 +9,7 @@ Item {
     property string place: {
         if(lang === "Français") return "Vile"
         if(lang === "English") return "Town"
+        if(lang === "Yoruba") return "Ilu"
     }
 
     property string date:"Monday, 17th 2021"
