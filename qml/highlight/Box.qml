@@ -9,7 +9,7 @@ Rectangle {
     property string dataname: {
         if(lang === "Français") return "Pression (mb)"
         if(lang === "English") return "Pressure (mb)"
-        if(lang === "Yoruba") return "Pressure (mb)"
+        if(lang === "Yoruba") return "Ipa (mb)"
     }
 
 
