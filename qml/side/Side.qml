@@ -123,6 +123,7 @@ Item {
                     search.focus = true
                     container.visible = true
                 }
+
             }
         }
         Rectangle {

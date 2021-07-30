@@ -10,6 +10,7 @@ TextField {
 
     property string lang: ""
     property string thema: ""
+    property bool c_visible: false
     color: "#80000000"
     maximumLength: 30
     hoverEnabled: true
@@ -17,6 +18,6 @@ TextField {
     background: Rectangle {
 
     }
-
+    cursorVisible: c_visible
 
 }
