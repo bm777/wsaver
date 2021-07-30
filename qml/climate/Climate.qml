@@ -62,6 +62,8 @@ Item {
             month.currentIndex = month_dark.currentIndex
             month_fr.currentIndex = month_dark.currentIndex
             month_fr_dark.currentIndex = month_dark.currentIndex
+            month_yo.currentIndex = month_dark.currentIndex
+            month_yo_dark.currentIndex = month_dark.currentIndex
             return month_dark.currentIndex
         }
         if(month_fr_dark.visible){
