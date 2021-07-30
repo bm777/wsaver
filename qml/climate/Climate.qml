@@ -249,7 +249,15 @@ Item {
             wrap: true
             width: parent.width * 0.5
             height: parent.height * 0.8
-            visible: root.lang === "Yoruba" && thema==="Light"
+            visible: root.lang === "Yoruba" && thema==="Dark"
+            delegate: Text {
+                property int displacement: Math.abs(Tumbler.displacement)
+                text: modelData
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font: month_yo_dark.font
+                color: displacement == 0 ? "#ffffff" : "#40ffffff"
+            }
         }
         Tumbler {id: day_dark
             model: {
