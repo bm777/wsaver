@@ -53,7 +53,7 @@ Rectangle {
             }
             if(lang === "Yoruba"){
                 if(value >= 100) return "Alailera"
-                else return "ni ilera"
+                else return "Ni ilera"
             }
 
         }
