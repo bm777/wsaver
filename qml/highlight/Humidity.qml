@@ -46,9 +46,9 @@ Rectangle {
             if(lang === "English"){
                 if(value >= 0.7) return "Bad"
                 else if(value >= 0.5) return "Cold"
-                else if(value >= 0.3) return "Very humide"
+                else if(value >= 0.3) return "Very humid"
                 else if(value >= 0.2) return "Humide"
-                else if(value >= 0) return "Normale"
+                else if(value >= 0) return "Normal"
                 else return "..."
             }
             if(lang === "Français"){
@@ -60,11 +60,11 @@ Rectangle {
                 else return "..."
             }
             if(lang === "Yoruba"){
-                if(value >= 0.7) return "Mauvaise"
-                else if(value >= 0.5) return "Froid"
-                else if(value >= 0.3) return "Très humide"
-                else if(value >= 0.2) return "Humide"
-                else if(value >= 0) return "Normale"
+                if(value >= 0.7) return "Buburu"
+                else if(value >= 0.5) return "Tutu"
+                else if(value >= 0.3) return "Tutu pupọ"
+                else if(value >= 0.2) return "Ọrinrin"
+                else if(value >= 0) return "Deede"
                 else return "..."
             }
         }
