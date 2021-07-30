@@ -116,6 +116,20 @@ Window {
             if(climate.mm === "Novembre") return "November"
             if(climate.mm === "Décembre") return "December"
         }
+        if(setting.lang === "Yoruba"){
+            if(climate.mm === "Oṣu Kini") return "January"
+            if(climate.mm === "Kínní") return "February"
+            if(climate.mm === "Oṣu Kẹta") return "March"
+            if(climate.mm === "Oṣu Kẹrin") return "April"
+            if(climate.mm === "Oṣu Karun") return "May"
+            if(climate.mm === "Okudu") return "June"
+            if(climate.mm === "Oṣu Keje") return "July"
+            if(climate.mm === "Oṣu Kẹjọ") return "August"
+            if(climate.mm === "Oṣu Kẹsan") return "September"
+            if(climate.mm === "Oṣu Kẹwa") return "October"
+            if(climate.mm === "Oṣu kọkanla") return "November"
+            if(climate.mm === "Oṣu kejila") return "December"
+        }
         return climate.mm
 
 
