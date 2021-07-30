@@ -300,12 +300,14 @@ Item {
             else {
                 if(root.lang === "English") content.temperature = -1000
                 if(root.lang === "Français") content.temperature = -1000
+                if(root.lang === "Yoruba") content.temperature = -1000
             }
 
             if(data[8] !== -1) content.condition_rain = data[8]+"%"
             else {
                 if(root.lang === "English") content.condition_rain = "n/a"
                 if(root.lang === "Français") content.condition_rain = "n/a"
+                if(root.lang === "Yoruba") content.condition_rain = "n/a"
             }
         }
     }
