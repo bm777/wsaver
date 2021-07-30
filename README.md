@@ -14,6 +14,6 @@ How to install requirements so that you can launch the UI. It is just the reques
 `
 pip3 install -r requirements.txt
 `
-
+#### 2. using final pip package (you could do until I finished the development)
 You have only have the possibility to launch as a pip3 software.
 I'm preparing the pip file so that you can do easily ```pip3 install wsaver```
