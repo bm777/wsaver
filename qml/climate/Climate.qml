@@ -84,7 +84,7 @@ Item {
     ////////////////////////////////////////////////////////////////
     Text {
         id: hl_text
-        text: "Date"
+        text: lang === "Yoruba" ? "ọjọ" : "Date"
         font {family: f; pointSize: 12; bold: false}
         x: parent.width * 0.18
         y: parent.height * 0.18
