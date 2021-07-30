@@ -148,9 +148,9 @@ Item {
         }
         Tumbler {
             id: month_yo
-            model: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
-                "Juillet", "Août", "Septembre", "Octobre", "Novembre",
-                "Décembre"]
+            model: ["Oṣu Kini", "Kínní", "Oṣu Kẹta", "Oṣu Kẹrin", "Oṣu Karun", "Okudu",
+                "Oṣu Keje", "Oṣu Kẹjọ", "Oṣu Kẹsan", "Oṣu Kẹwa", "Oṣu kọkanla",
+                "Oṣu kejila"]
             anchors.verticalCenter: parent.verticalCenter
             font {family: "Comfortaa"; bold: false}
             visibleItemCount: 3
@@ -163,7 +163,7 @@ Item {
         Tumbler {
             id: day
             model: {
-                if(month.currentIndex == 1 || month_fr.currentIndex == 1) {
+                if(month.currentIndex == 1 || month_fr.currentIndex == 1 || month_yo.currentIndex == 1) {
                     return ["1","2","3","4","5","6","7","8","9","10",
                             "11","12","13","14","15","16","17","18","19","20",
                             "21","22","23","24","25","26","27","28","29"]
