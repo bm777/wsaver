@@ -238,6 +238,19 @@ Item {
                 color: displacement == 0 ? "#ffffff" : "#40ffffff"
             }
         }
+        Tumbler {
+            id: month_yo_dark
+            model: ["Oṣu Kini", "Kínní", "Oṣu Kẹta", "Oṣu Kẹrin", "Oṣu Karun", "Okudu",
+                "Oṣu Keje", "Oṣu Kẹjọ", "Oṣu Kẹsan", "Oṣu Kẹwa", "Oṣu kọkanla",
+                "Oṣu kejila"]
+            anchors.verticalCenter: parent.verticalCenter
+            font {family: "Comfortaa"; bold: false}
+            visibleItemCount: 3
+            wrap: true
+            width: parent.width * 0.5
+            height: parent.height * 0.8
+            visible: root.lang === "Yoruba" && thema==="Light"
+        }
         Tumbler {id: day_dark
             model: {
                 if(month.currentIndex == 1) {
