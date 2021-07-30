@@ -12,7 +12,13 @@ def import_forecast(filename):
         #data = json.dumps(data) # to read in ASCII
     return data
 
-
+def import_volumetric(filename):
+    # Function to read data from local csv file on the hard drive
+    # Args:
+    # - filename : the file name of the csv which contains
+    #   forecasts data of volumetric soil data
+    # - the function return data var
+    filename = os.path.join(os.path.dirname(__file__), filename)
 
 if __name__ == '__main__':
     print(import_forecast("forecast.json"))
