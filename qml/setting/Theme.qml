@@ -19,11 +19,11 @@ Rectangle {
         }
         if(lang === "English") {
             if(t.text === "Blanc" || t.text === "Imọlẹ") t.text = "Light"
-            if(t.text === "Noir" || t.text === "Imọlẹ") t.text = "Dark"
+            if(t.text === "Noir" || t.text === "Dudu") t.text = "Dark"
         }
         if(lang === "Yoruba") {
             if(t.text === "Blanc" || t.text === "Light") t.text = "Imọlẹ"
-            if(t.text === "Noir" || t.text === "Light") t.text = "Dudu"
+            if(t.text === "Noir" || t.text === "Dark") t.text = "Dudu"
         }
     }
 
