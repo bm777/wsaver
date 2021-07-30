@@ -124,8 +124,9 @@ Item {
 
                     if(container.visible){
                         container.visible = false
+                        search.cursorVisible = true
                     }else {
-                        search.cursorVisible = false
+                        search.cursorVisible = true
                         container.visible = true
                     }
                 }
