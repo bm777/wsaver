@@ -7,6 +7,7 @@ Rectangle {
     property string dataname: {
         if(lang === "Français") return "Qualité d'air"
         if(lang === "English") return "Air quality"
+        if(lang === "Yoruba") return "Air quality"
     }
     property string lang: ""
 
