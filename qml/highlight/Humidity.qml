@@ -8,6 +8,7 @@ Rectangle {
     property string dataname: {
         if(lang === "Français") return "Humidité"
         if(lang === "English") return "Humidity"
+        if(lang === "Yoruba") return "Ọriniinitutu"
     }
     radius: 10
     color: thema === "Light" ? "#ffffff" : "#202442"
@@ -51,6 +52,14 @@ Rectangle {
                 else return "..."
             }
             if(lang === "Français"){
+                if(value >= 0.7) return "Mauvaise"
+                else if(value >= 0.5) return "Froid"
+                else if(value >= 0.3) return "Très humide"
+                else if(value >= 0.2) return "Humide"
+                else if(value >= 0) return "Normale"
+                else return "..."
+            }
+            if(lang === "Yoruba"){
                 if(value >= 0.7) return "Mauvaise"
                 else if(value >= 0.5) return "Froid"
                 else if(value >= 0.3) return "Très humide"
