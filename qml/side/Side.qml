@@ -217,6 +217,7 @@ Item {
                             }
                             onExited: {
                                 bold_state = false
+                                search.cursorVisible = false
                                 parent.border.color = "#104050D2"
                             }
                             onClicked: {
