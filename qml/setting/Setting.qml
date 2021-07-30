@@ -4,7 +4,7 @@ import QtGraphicalEffects 1.12
 
 
 Item {
-    id: root
+    id: setting
     property real humidity: 0
     property string f: "Comfortaa"
     property string lang: flag.name_language
@@ -17,12 +17,14 @@ Item {
         text: {
             if(flag.name_language === "Français") return "Paramètres"
             if(flag.name_language === "English") return "Settings"
+            if(flag.name_language === "Yoruba") return "ètò"
         }
         color: {
             if(thema === "Light") return "#000000"
-            if(thema === "Blanc") return "#000000"
+            if(thema === "Blanc" || thema === "Imọlẹ") return "#000000"
+
             if(thema === "Dark") return "#E9EBF9"
-            if(thema === "Noir") return "#E9EBF9"
+            if(thema === "Noir" || thema === "Dudu") return "#E9EBF9"
         }
 
         font {family: f; pointSize: 12; bold: false}
@@ -50,6 +52,10 @@ Item {
                 if(setting.thema === "Blanc") return "#10000000"
                 if(setting.thema === "Noir") return "#10ffffff"
             }
+            if(setting.lang === "Yoruba"){
+                if(setting.thema === "Imọlẹ") return "#10000000"
+                if(setting.thema === "Dudu") return "#10ffffff"
+            }
         }
     }
     RectangularGlow {
@@ -64,6 +70,10 @@ Item {
             if(setting.lang === "Français"){
                 if(setting.thema === "Blanc") return "#204050D2"
                 if(setting.thema === "Noir") return "#10ffffff"
+            }
+            if(setting.lang === "Yoruba"){
+                if(setting.thema === "Imọlẹ") return "#204050D2"
+                if(setting.thema === "Dudu") return "#10ffffff"
             }
         }
     }
@@ -80,13 +90,17 @@ Item {
                if(setting.thema === "Blanc") return "#10000000"
                if(setting.thema === "Noir") return "#10ffffff"
            }
+           if(setting.lang === "Yoruba"){
+               if(setting.thema === "Imọlẹ") return "#10000000"
+               if(setting.thema === "Dudu") return "#10ffffff"
+           }
         }
     }
     Theme {
         id: theme
         y: parent.height * 0.37
         x: parent.width * 0.1
-        lang: root.lang
+        lang: setting.lang
     }
     Unit {
         id: unit
@@ -97,7 +111,7 @@ Item {
         id: flag
         y: parent.height * 0.37
         x: parent.width * 0.5
-        theme: root.thema
+        theme: setting.thema
     }
 
 

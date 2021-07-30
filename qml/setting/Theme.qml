@@ -5,8 +5,8 @@ Rectangle {
     width: 70
     height: 32
     color: {
-        if(t.text === "Light" || t.text === "Blanc") return "#ffffff"
-        if(t.text === "Dark"  || t.text === "Noir") return "#4050D2"
+        if(t.text === "Light" || t.text === "Blanc" || t.text === "Imọlẹ") return "#ffffff"
+        if(t.text === "Dark"  || t.text === "Noir" || t.text === "Dudu") return "#4050D2"
     }
 
     property string thema: t.text
@@ -14,13 +14,18 @@ Rectangle {
     onLangChanged: {
 
         if(lang === "Français") {
-            if(t.text === "Light") t.text = "Blanc"
-            if(t.text === "Dark") t.text = "Noir"
+            if(t.text === "Light" || t.text === "Imọlẹ") t.text = "Blanc"
+            if(t.text === "Dark" || t.text === "Dudu") t.text = "Noir"
         }
         if(lang === "English") {
-            if(t.text === "Blanc") t.text = "Light"
-            if(t.text === "Noir") t.text = "Dark"
-        }}
+            if(t.text === "Blanc" || t.text === "Imọlẹ") t.text = "Light"
+            if(t.text === "Noir" || t.text === "Imọlẹ") t.text = "Dark"
+        }
+        if(lang === "Yoruba") {
+            if(t.text === "Blanc" || t.text === "Light") t.text = "Imọlẹ"
+            if(t.text === "Noir" || t.text === "Light") t.text = "Dudu"
+        }
+    }
 
     radius: height/2
     Text {
@@ -29,8 +34,8 @@ Rectangle {
         font {family: "Comfortaa"}
         anchors.centerIn: parent
         color: {
-            if(text === "Light" || text === "Blanc") return "#4050D2"
-            if(text === "Dark"  || text === "Noir") return "#ffffff"
+            if(text === "Light" || text === "Blanc" || text === "Imọlẹ") return "#4050D2"
+            if(text === "Dark"  || text === "Noir" || text === "Dudu") return "#ffffff"
         }
     }
 
@@ -51,6 +56,14 @@ Rectangle {
                 }
                 else {
                     t.text = "Blanc"
+                }
+            }
+            if(lang === "Yoruba"){
+                if(t.text === "Imọlẹ" ){
+                    t.text = "Dudu"
+                }
+                else {
+                    t.text = "Imọlẹ"
                 }
             }
 

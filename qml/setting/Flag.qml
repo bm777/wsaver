@@ -29,8 +29,12 @@ Rectangle {
         color: {
             if(theme === "Light") return "#4050D2"
             if(theme === "Blanc") return "#4050D2"
+            if(theme === "Imọlẹ") return "#4050D2"
+
             if(theme === "Dark") return "#E9EBF9"
             if(theme === "Noir") return "#E9EBF9"
+            if(theme === "Dudu") return "#E9EBF9"
+
         }
 
         font{family: "Comfortaa"; pointSize: 12; bold: false}
@@ -48,13 +52,17 @@ Rectangle {
         color: {
             if(theme === "Light") return "#ffffff"
             if(theme === "Blanc") return "#ffffff"
+            if(theme === "Imọlẹ") return "#ffffff"
+
             if(theme === "Dark") return "#202442"
             if(theme === "Noir") return "#202442"
+            if(theme === "Dudu") return "#202442"
         }
 
 //        border.color: "red"
         radius: 10
         visible: false
+
         /////////////////////////////////////////////////////////////
         Image {
             id: imgFr
@@ -72,11 +80,14 @@ Rectangle {
                    //theme === "Light" ? "#4050D2" : "#ffffff"
                     if(theme === "Light") return "#4050D2"
                     if(theme === "Blanc") return "#4050D2"
+                    if(theme === "Imọlẹ") return "#4050D2"
+
                     if(theme === "Dark") return "#E9EBF9"
                     if(theme === "Noir") return "#E9EBF9"
+                    if(theme === "Dudu") return "#E9EBF9"
                 }
 
-                font{family: "Comfortaa"; pointSize: 12; bold: false}
+                font{family: "Comfortaa"; pointSize: 10; bold: false}
                 x: imgFr.x + imgFr.width
             }
             MouseArea {
@@ -90,6 +101,7 @@ Rectangle {
                     frame.visible = false
 //                    print(name_language)
                 }
+
             }
         }
         /////////////////////////////////////////////////////////////
@@ -106,11 +118,14 @@ Rectangle {
                 color: {
                     if(theme === "Light") return "#4050D2"
                     if(theme === "Blanc") return "#4050D2"
+                    if(theme === "Imọlẹ") return "#4050D2"
+
                     if(theme === "Dark") return "#E9EBF9"
                     if(theme === "Noir") return "#E9EBF9"
+                    if(theme === "Dudu") return "#E9EBF9"
                 }
 
-                font{family: "Comfortaa"; pointSize: 12; bold: false}
+                font{family: "Comfortaa"; pointSize: 10; bold: false}
                 x: imgFr.x + imgFr.width
             }
             MouseArea {
@@ -140,11 +155,14 @@ Rectangle {
                 color: {
                     if(theme === "Light") return "#4050D2"
                     if(theme === "Blanc") return "#4050D2"
+                    if(theme === "Imọlẹ") return "#4050D2"
+
                     if(theme === "Dark") return "#E9EBF9"
                     if(theme === "Noir") return "#E9EBF9"
+                    if(theme === "Dudu") return "#E9EBF9"
                 }
 
-                font{family: "Comfortaa"; pointSize: 12; bold: false}
+                font{family: "Comfortaa"; pointSize: 10; bold: false}
                 x: imgFr.x + imgFr.width
             }
             MouseArea {
@@ -160,6 +178,7 @@ Rectangle {
                 }
             }
         }
+
 
     }
 }
