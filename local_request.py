@@ -1,4 +1,5 @@
-import json, os
+import json
+import os, pandas
 
 def import_forecast(filename):
     # Function to read data from local json file on the hard drive
