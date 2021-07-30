@@ -97,8 +97,8 @@ Item {
             }
             width: 20
             height: width
-            visible: {
-                if(condition_cloud === "No condition!" || condition_cloud === "Aucune condition!")
+            visible: {//Ko si majemu!
+                if(condition_cloud === "No condition!" || condition_cloud === "Aucune condition!" || condition_cloud === "Ko si majemu!")
                     return false
                 else return true
             }
@@ -110,7 +110,7 @@ Item {
             thema: root.thema
             visible: {
 
-                if(condition_cloud === "No condition!" || condition_cloud === "Aucune condition!")
+                if(condition_cloud === "No condition!" || condition_cloud === "Aucune condition!"  || condition_cloud === "Ko si majemu!")
                     return true
                 else return false
             }
@@ -119,6 +119,11 @@ Item {
         Text {
             text: {
                 if(lang === "Français") {
+                    if(condition_cloud === "Cloudy") return "Nuageux"
+                    if(condition_cloud === "Sunny") return "Ensoleillé"
+                    if(condition_cloud === "Partly cloudy") return "Partiellement nuageux"
+                }
+                if(lang === "Yoruba") {
                     if(condition_cloud === "Cloudy") return "Nuageux"
                     if(condition_cloud === "Sunny") return "Ensoleillé"
                     if(condition_cloud === "Partly cloudy") return "Partiellement nuageux"
