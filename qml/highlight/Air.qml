@@ -52,8 +52,8 @@ Rectangle {
                 else return "Bon état"
             }
             if(lang === "Yoruba"){
-                if(value >= 100) return "Mauvais état"
-                else return "Bon état"
+                if(value >= 100) return "Alailera"
+                else return "ni ilera"
             }
 
         }
