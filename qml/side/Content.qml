@@ -157,7 +157,7 @@ Item {
         Text {
             text: {
                 if(lang === "Français") return "Pluies - " + condition_rain
-
+                if(lang === "Yoruba") return "Ojo - " + condition_rain
                 if(lang === "English") return "Rain - " + condition_rain
             }
 
