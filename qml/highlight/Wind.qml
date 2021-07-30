@@ -9,6 +9,7 @@ Rectangle {
     property string dataname: {
         if(lang === "Français") return "Status du vent"
         if(lang === "English") return "Wind Status"
+        if(lang === "Yoruba") return "Ipo Afẹfẹ"
     }
 
     radius: 10
