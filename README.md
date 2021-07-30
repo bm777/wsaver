@@ -21,7 +21,7 @@ pip3 install -r requirements.txt
 python3 main.py
 ```
 
-#### 2. using final pip package (you could do until I finished the development)
+#### 2. using final pip package (you could do until I finish the development)
 You have only have the possibility to launch as a pip3 software.
 I'm preparing the pip file so that you can do easily
 ```
