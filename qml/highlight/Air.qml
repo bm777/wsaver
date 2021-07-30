@@ -7,7 +7,7 @@ Rectangle {
     property string dataname: {
         if(lang === "Français") return "Qualité d'air"
         if(lang === "English") return "Air quality"
-        if(lang === "Yoruba") return "Air quality"
+        if(lang === "Yoruba") return "Didara afẹfẹ"
     }
     property string lang: ""
 
@@ -51,7 +51,10 @@ Rectangle {
                 if(value >= 100) return "Mauvais état"
                 else return "Bon état"
             }
-
+            if(lang === "Yoruba"){
+                if(value >= 100) return "Mauvais état"
+                else return "Bon état"
+            }
 
         }
 
