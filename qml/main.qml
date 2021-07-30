@@ -55,14 +55,14 @@ Window {
                 }
             }
             if(setting.lang === "Yoruba"){
-                if(setting.thema === "Blanc") {
+                if(setting.thema === "Imọlẹ") {
                     climate.thema = "Light"
                     hl.thema = "Light"
                     side.theme = "Light"
                     return "#F6F6F8"
                 }
 
-                if(setting.thema === "Noir") {
+                if(setting.thema === "Dudu") {
                     climate.thema = "Dark"
                     hl.thema = "Dark"
                     side.theme = "Dark"
