@@ -15,6 +15,11 @@ Rectangle {
             else if(value >= 3) return "average risk"
             else return "low risk"
         }
+        if(lang === "Yoruba") {
+            if(value >= 6) return "ga ewu"
+            else if(value >= 3) return "apapọ ewu"
+            else return "ewu kekere"
+        }
     }
 
     property string lang: ""
@@ -24,6 +29,7 @@ Rectangle {
     property string alert1: {
         if(lang === "Français") return "Innondation (" + level + ")"
         if(lang === "English") return "Flood (" + level + ")"
+        if(lang === "Yoruba") return "Ìkún omi (" + level + ")"
     }
 
     radius: 10
