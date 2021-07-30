@@ -31,7 +31,6 @@ Window {
                     side.theme = "Light"
                     return "#F6F6F8"
                 }
-
                 if(setting.thema === "Dark") {
                     climate.thema = "Dark"
                     hl.thema = "Dark"
@@ -39,6 +38,7 @@ Window {
                     return "#25294A"
                 }
             }
+
             if(setting.lang === "Français"){
                 if(setting.thema === "Blanc") {
                     climate.thema = "Light"
@@ -46,7 +46,6 @@ Window {
                     side.theme = "Light"
                     return "#F6F6F8"
                 }
-
                 if(setting.thema === "Noir") {
                     climate.thema = "Dark"
                     hl.thema = "Dark"
@@ -54,6 +53,7 @@ Window {
                     return "#25294A"
                 }
             }
+
             if(setting.lang === "Yoruba"){
                 if(setting.thema === "Imọlẹ") {
                     climate.thema = "Light"
@@ -61,7 +61,6 @@ Window {
                     side.theme = "Light"
                     return "#F6F6F8"
                 }
-
                 if(setting.thema === "Dudu") {
                     climate.thema = "Dark"
                     hl.thema = "Dark"
