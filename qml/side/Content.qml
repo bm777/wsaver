@@ -124,9 +124,9 @@ Item {
                     if(condition_cloud === "Partly cloudy") return "Partiellement nuageux"
                 }
                 if(lang === "Yoruba") {
-                    if(condition_cloud === "Cloudy") return "Nuageux"
-                    if(condition_cloud === "Sunny") return "Ensoleillé"
-                    if(condition_cloud === "Partly cloudy") return "Partiellement nuageux"
+                    if(condition_cloud === "Cloudy") return "Kurukuru"
+                    if(condition_cloud === "Sunny") return "Oorun"
+                    if(condition_cloud === "Partly cloudy") return "Kurukuru ni apakan"
                 }
                 return condition_cloud
             }
