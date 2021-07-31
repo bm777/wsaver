@@ -49,7 +49,7 @@ class Worker(QObject):
 
         df = import_volumetric(file)
 
-        # parsing date from January 1, 2021 to 2021-01-01
+        # parsing date from January 1, 2021 to 2021-01-01 (Y-m-d)
         date = self.parseDate(date)
 
         # getting the index and value of a specific date ie : in var data
