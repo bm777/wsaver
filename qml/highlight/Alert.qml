@@ -64,6 +64,12 @@ import QtQuick 2.0
                 else
                     return (parent.width * value/100 - width / 2) * 0.9 +width*0.7
             }
+            Behavior on x {
+                enabled: true
+                SmoothedAnimation {
+                    velocity: 50
+                }
+            }
 
             radius: height/2
         }
