@@ -69,7 +69,7 @@ class Worker(QObject):
         #######################################################
         percent = percent_flood(selection, value)
         percent = round(percent, 1) # fixed to 1 digit after the dot.
-        print(percent)
+        #print(percent)
         return [percent]
         #######################################################
 
@@ -116,7 +116,7 @@ class Worker(QObject):
         # and ten if it is in top 5% of higthest value -> hight flood risk
         percent = percent_flood(selection, value)
         percent = round(percent, 1) # fixed to 1 digit after the dot.
-
+        print(percent)
         return [percent]
 
 
