@@ -40,7 +40,7 @@ Rectangle {
     }
 
 
-    Image {
+    Image {id: cpt
         source: thema === "Light" ? "../../img/compass.png" : "../../img/compass-dark.png"
         width: 25
         height: width
@@ -65,7 +65,7 @@ Rectangle {
         color: thema === "Light" ? "#000000" : "#ffffff"
     }
     RotationAnimation {
-        target: cloud
+        target: cpt
         running: value === -1
         duration: 200
         from: 0
