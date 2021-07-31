@@ -103,6 +103,9 @@ Window {
             if(climate.mm.length === 0) return "0"+climate.mm
             else return climate.mm
         }
+        yy: {
+            if(climate.mm === "January") return "01"
+        }
     }
 
     //////////////////////////////////////////////////////
