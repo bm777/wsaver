@@ -86,7 +86,7 @@ class Worker(QObject):
             file = file_flood_ng
         else:
             file = file_flood_gh
-        
+
         # load csv file on dataframe
         df1 = pd.read_csv(file)
         #df2 = pd.read_csv(file2)
@@ -117,6 +117,7 @@ class Worker(QObject):
         percent = percent_flood(selection, value)
         percent = round(percent, 1) # fixed to 1 digit after the dot.
 
+        return percent
 
 
 
