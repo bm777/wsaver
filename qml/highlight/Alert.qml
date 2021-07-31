@@ -82,7 +82,7 @@ import QtQuick 2.0
         target: frame_
         property: "width"
 //        from: 0
-        to: 50
+        to: root.width * 0.8
         duration: 800
         easing.type: Easing.InOutQuad
     }
