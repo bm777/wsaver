@@ -58,6 +58,10 @@ class Worker(QObject):
         # getting the DF of 12 day ie 288 rows
         selection = select_12_days(df, index)
 
+        # percentage of the forecast vlaue compare to 12 days before
+        # and ten if it is in top 5% of higthest value -> hight flood risk
+        percent = percent_flood(selection, value)
+
         #######################################################
 
         for elt in data["forecasts"]:
