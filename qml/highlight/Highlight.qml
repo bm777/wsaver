@@ -93,7 +93,7 @@ Item {
             if(data[2] !== -1) {
                 a1.value = data[2].toFixed(1)
 //                status = true
-                //tmp = data[2]
+                tmp = data[2]
             }
             else{
                 a1.value = "--"
