@@ -96,11 +96,11 @@ Item {
         running: root.visible
 
 
-        SequentialAnimation {
+        ParallelAnimation {
             NumberAnimation {
                 target: r_pressure
                 property: "radius"
-                duration: 500
+                duration: 800
                 from: 0
                 to: a1.radius
                 easing.type: Easing.InOutQuad
@@ -108,7 +108,7 @@ Item {
             PropertyAnimation {
                 target: r_pressure
                 property: "color"
-                duration: 200
+                duration: 800
                 from: "#20F6F6F8"
                 to: "transparent"
                 easing.type: Easing.InOutQuad
