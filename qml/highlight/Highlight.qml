@@ -62,6 +62,7 @@ Item {
     Rectangle {
         id: r_pressure
         anchors.fill: a1
+        radius: a1.radius
     }
 
 
@@ -99,12 +100,11 @@ Item {
 
 
         ParallelAnimation {
-
             PropertyAnimation {
                 target: r_pressure
                 property: "color"
                 duration: 1000
-                from: "#80F6F6F8"
+                from: "#40F6F6F8"
                 to: "transparent"
                 easing.type: Easing.InOutQuad
             }
