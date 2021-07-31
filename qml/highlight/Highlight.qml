@@ -12,7 +12,7 @@ Item {
     property string dd: ""
     property string thema: ""
     property bool status: false
-    property real tmp: -1
+    property real tmp: -2
 
     ////////////////////////////////////////////////////////////////
     Text {
@@ -93,12 +93,12 @@ Item {
             if(data[2] !== -1) {
                 a1.value = data[2].toFixed(1)
                 status = true
-                tmp = data[2]
+                //tmp = data[2]
             }
             else{
                 a1.value = "--"
                 status = false
-                tmp = -1
+                tmp = -2
             }
             print(data[2], status, tmp)
             if(data[2] !== -1 && status === true && tmp === data[2]) {
@@ -106,7 +106,7 @@ Item {
                 var flood = bridge.getFloodRisk(root.place, root.yy, root.mm, root.dd)
             }else{
                 status = false
-                tmp = -1
+                tmp = -2
             }
 
             if(data[4] !== -1) c1.value = parseFloat(data[4])
