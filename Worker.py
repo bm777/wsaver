@@ -48,8 +48,15 @@ class Worker(QObject):
             file = file_flood_gh
 
         df = import_volumetric(file)
+
+        # parsing date from January 1, 2021 to 2021-01-01
         date = self.parseDate(date)
+
+        # getting the index and value of a specific date ie : in var data
         index, value = get_index_and_value(df, date)
+
+        # getting the DF of 12 day ie 288 rows
+        selection = select_12_days(df, index)
 
         #######################################################
 
