@@ -71,5 +71,12 @@ Rectangle {
         from: 0
         to: 90
     }
+    RotationAnimation {
+        target: cpt
+        running: value === "--"
+        duration: 1000
+        from: 0
+        to: 90
+    }
 
 }
