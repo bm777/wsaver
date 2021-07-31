@@ -34,7 +34,7 @@ Rectangle {
     }
     Text {
         y: value_.y
-        x: value_.x + value_.width
+        x: value_.x + value_.width + 10
         text: "%"
         font{family: "Comfrotaa"}
     }
