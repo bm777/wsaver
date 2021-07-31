@@ -11,6 +11,7 @@ Item {
     property string mm: ""
     property string dd: ""
     property string thema: ""
+    property bool status: false
 
     ////////////////////////////////////////////////////////////////
     Text {
@@ -88,7 +89,11 @@ Item {
         interval: 100
         onTriggered: {
             var data = bridge.getForecastData(root.place, root.date)
-            if(data[2] !== -1) a1.value = data[2].toFixed(1)
+            if(data[2] !== -1) {
+                a1.value = data[2].toFixed(1)
+                status = true
+            }
+
             else{
                 a1.value = "--"
             }
