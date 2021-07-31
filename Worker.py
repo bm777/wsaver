@@ -2,6 +2,7 @@
 from PySide2 import QtWidgets
 from PySide2.QtCore import QObject, Signal, Slot, Property
 import os
+import pandas as pd
 from local_request import import_forecast, import_volumetric, get_index_and_value, select_12_days, percent_flood
 
 class Worker(QObject):
@@ -45,6 +46,8 @@ class Worker(QObject):
             file = file_flood_gh
 
         df = import_volumetric(file)
+        date = self.parseDate(date)
+        index, value = get_index_and_value(df, date)
 
         for elt in data["forecasts"]:
             if(place == elt["town"] and date == elt["date"]):
