@@ -44,7 +44,7 @@ Rectangle {
     Text {
         text: {
             if(lang === "English"){
-                if(value >= 100) return "Unhealthy"
+                if(value >= 90) return "Unhealthy"
                 else return "Healhty"
             }
             if(lang === "Français"){
