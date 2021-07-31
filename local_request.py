@@ -42,7 +42,8 @@ if __name__ == '__main__':
     df = import_volumetric(file)
     date = "2021-01-07 00:00:00"
     index = get_index_date(df, date)
-    print(index)
+    #print(index)
 
     selection = select_12_days(df, index)
-    print(selection)
+    #print(selection)
+    
