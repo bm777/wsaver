@@ -44,15 +44,15 @@ Rectangle {
     Text {
         text: {
             if(lang === "English"){
-                if(value >= 90) return "Unhealthy"
+                if(value <= 10) return "Unhealthy"
                 else return "Healhty"
             }
             if(lang === "Français"){
-                if(value >= 100) return "Mauvais état"
+                if(value <= 100) return "Mauvais état"
                 else return "Bon état"
             }
             if(lang === "Yoruba"){
-                if(value >= 100) return "Alailera"
+                if(value <= 100) return "Alailera"
                 else return "Ni ilera"
             }
 
