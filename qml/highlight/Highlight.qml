@@ -99,15 +99,13 @@ Item {
         running: root.visible
 
 
-        ParallelAnimation {
-            PropertyAnimation {
-                target: r_pressure
-                property: "color"
-                duration: 1000
-                from: "#40F6F6F8"
-                to: "transparent"
-                easing.type: Easing.InOutQuad
-            }
+        PropertyAnimation {
+            target: r_pressure
+            property: "color"
+            duration: 1000
+            from: "#40F6F6F8"
+            to: "transparent"
+            easing.type: Easing.InOutQuad
         }
     }
 
