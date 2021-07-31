@@ -100,14 +100,14 @@ Item {
                 tmp = -1
             }
 
-            if(data[2] !== -1 && tmp === data[2]) {
-                print("+++++++++++++++++++++++++++++++++++++++++++++++++++"+data[2], tmp)
-                tmp = -1
+//            if(data[2] !== -1 && tmp === data[2]) {
+//                print("+++++++++++++++++++++++++++++++++++++++++++++++++++"+data[2], tmp)
+//                tmp = -1
 
-                var flood = bridge.getFloodRisk(root.place, root.yy, root.mm, root.dd)
-            }else{
-                tmp = -1
-            }
+//                var flood = bridge.getFloodRisk(root.place, root.yy, root.mm, root.dd)
+//            }else{
+//                tmp = -1
+//            }
 
             if(data[4] !== -1) c1.value = parseFloat(data[4])
             else{
