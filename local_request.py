@@ -19,6 +19,14 @@ def import_volumetric(filename):
     #   forecasts data of volumetric soil data
     # - the function return data var
     filename = os.path.join(os.path.dirname(__file__), filename)
+    df = pd.read_csv(filename)
+    return df
+
+
+def get_index_date(df, date):
+
+    label = date
+    result = df.loc[label == df["date"]]
 
 if __name__ == '__main__':
     print(import_forecast("forecast.json"))
