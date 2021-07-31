@@ -88,6 +88,14 @@ class Worker(QObject):
         file_flood_gh = "era5_wind_100m_u-hourly-5.6901705_-0.2099204.csv"
 
 
+        if(place == "Uyo, NG"):
+            file = file_flood_ng
+        else:
+            file = file_flood_gh
+
+        df = import_volumetric(file)
+
+
     @Slot(str, str, result="QVariant")
     def getForecastData(self, place, date):
         data = self.slot_forecast()
