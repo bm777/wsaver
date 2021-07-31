@@ -27,6 +27,13 @@ def get_index_date(df, date):
 
     label = date
     result = df.loc[label == df["date"]]
+    return result.index[0]
+
+def select_12_days(df, result_index):
+
+    current = result_index
+    df.iloc[current-24*12 : current]
+
 
 if __name__ == '__main__':
     print(import_forecast("forecast.json"))
