@@ -180,7 +180,7 @@ Item {
                     b2.value = flood[0]
                     if(air >= 90) air = Math.round(100 - air, 0)
 
-                    b1.value = air
+                    b1.value = parseFloat(air)
                 }
                 tmp = data[2]
             }
