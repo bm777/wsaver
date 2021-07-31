@@ -59,13 +59,7 @@ class Worker(QObject):
         # getting the DF of 12 day ie 288 rows
         selection = select_12_days(df, index)
 
-        # percentage of the forecast vlaue compare to 12 days before
-        # and ten if it is in top 5% of higthest value -> hight flood risk######################################################
-        ## preparing the data for pushing
-        if(place == "Uyo, Ng"):
-            file = file_flood_ng
-        else:
-            file = file_flood_gh
+
 
         # percentage of the forecast vlaue compare to 12 days before
         # and ten if it is in top 5% of higthest value -> hight flood risk
@@ -92,8 +86,20 @@ class Worker(QObject):
             file = file_flood_ng
         else:
             file = file_flood_gh
+        
+        # load csv file on dataframe
+        df1 = pd.read_csv(file)
+        #df2 = pd.read_csv(file2)
 
-        df = import_volumetric(file)
+        # split the df
+        df1[["value", "t1", "t2", "t3"]] = df1.value.str.split(" ", expand=True)
+        #df2[["speed", "t1", "t2", "t3"]] = df2.value.str.split(" ", expand=True)
+
+        # remove column unusable
+        df1.pop("t1"), df1.pop("t2"), df1.pop("t3")
+        #df2.pop("value"), df2.pop("t1"), df2.pop("t2"), df2.pop("t3")
+
+        df = df1
 
         # parsing date from January 1, 2021 to 2021-01-01 (Y-m-d)
         #date = self.parseDate(date)
@@ -105,6 +111,14 @@ class Worker(QObject):
 
         # getting the DF of 12 day ie 288 rows
         selection = select_12_days(df, index)
+
+        # percentage of the forecast vlaue compare to 12 days before
+        # and ten if it is in top 5% of higthest value -> hight flood risk
+        percent = percent_flood(selection, value)
+        percent = round(percent, 1) # fixed to 1 digit after the dot.
+
+
+
 
 
     @Slot(str, str, result="QVariant")
