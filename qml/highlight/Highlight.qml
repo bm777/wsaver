@@ -92,23 +92,20 @@ Item {
             var data = bridge.getForecastData(root.place, root.date)
             if(data[2] !== -1) {
                 a1.value = data[2].toFixed(1)
-//                status = true
                 if(data[2] !== -1) tmp = data[2]
             }
             else{
                 a1.value = "--"
-//                status = false
-                tmp = -2
+                tmp = -1
             }
 
             if(data[2] !== -1 && tmp !== data[2]) {
                 print("+++++++++++++++++++++++++++++++++++++++++++++++++++"+data[2], tmp)
-                tmp = -2
-//                status = false
+                tmp = -1
+
                 var flood = bridge.getFloodRisk(root.place, root.yy, root.mm, root.dd)
             }else{
-//                status = false
-                tmp = -2
+                tmp = -1
             }
 
             if(data[4] !== -1) c1.value = parseFloat(data[4])
