@@ -78,6 +78,13 @@ import QtQuick 2.0
         color: thema === "Light" ? "#000000" : "#ffffff"
     }
     Text {
+        text: "0"
+        color: "#4050D2"
+        font{family: "Comfortaa"; pointSize: 11; bold: false}
+        y: parent.height * 0.68
+        x: (parent.width - frame_.width) / 2
+    }
+    Text {
         text: "100"
         color: "#4050D2"
         font{family: "Comfortaa"; pointSize: 11; bold: false}
