@@ -25,7 +25,7 @@ Rectangle {
 
     Text {
         id: value_
-        text: value + ""
+        text: value
         font{family: "Comfortaa"; bold: false; pointSize: 25}
         anchors.verticalCenter: parent.verticalCenter
         x: parent.width * 0.2
