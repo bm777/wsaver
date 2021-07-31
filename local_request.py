@@ -28,7 +28,7 @@ def get_index_and_value(df, date):
 
     label = date
     value_of_result = df.loc[label == df["date"], ["date","value"]]
-    return value_of_result.index[0], value_of_result.tolist()[0]
+    return value_of_result.index[0], value_of_result["value"].tolist()[0]
 
 def select_12_days(df, result_index):
 
