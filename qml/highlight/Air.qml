@@ -30,12 +30,13 @@ Rectangle {
         anchors.verticalCenter: parent.verticalCenter
         x: parent.width * 0.2
         color: thema === "Light" ? "#000000" : "#ffffff"
-        Text {
-            y: root.height * 0.01
-            x: value_.x + value_.width
-            text: "%"
-            font{family: "Comfrotaa"}
-        }
+
+    }
+    Text {
+        y: value_.y
+        x: value_.x + value_.width
+        text: "%"
+        font{family: "Comfrotaa"}
     }
 
     Image {
