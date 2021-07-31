@@ -74,6 +74,14 @@ Item {
             month_yo_dark.currentIndex = month_fr_dark.currentIndex
             return month_fr_dark.currentIndex
         }
+        if(month_yo_dark.visible){
+            month.currentIndex = month_yo_dark.currentIndex
+            month_dark.currentIndex = month_yo_dark.currentIndex
+            month_fr.currentIndex = month_yo_dark.currentIndex
+            month_fr_dark.currentIndex = month_yo_dark.currentIndex
+            month_yo.currentIndex = month_yo_dark.currentIndex
+            return month_yo_dark.currentIndex
+        }
 
     }
 
