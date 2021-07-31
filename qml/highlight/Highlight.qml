@@ -92,7 +92,8 @@ Item {
             var data = bridge.getForecastData(root.place, root.date)
             if(data[2] !== -1) {
                 a1.value = data[2].toFixed(1)
-                status = true
+                if(status === true) status = false
+                else status = true
                 //tmp = data[2]
             }
             else{
