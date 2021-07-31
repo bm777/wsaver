@@ -101,10 +101,11 @@ Item {
                 tmp = -1
             }
 
-            if(data[2] !== -1 && status === true && tmp !== data[2]){
+            if(data[2] !== -1 && status === true && tmp !== data[2]) {
 
             }else{
-
+                status = false
+                tmp = -1
             }
 
             if(data[4] !== -1) c1.value = parseFloat(data[4])
