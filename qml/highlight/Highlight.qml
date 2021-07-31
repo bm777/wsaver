@@ -94,7 +94,7 @@ Item {
                 a1.value = data[2].toFixed(1)
                 if(data[2] !== tmp) {
                     var flood = bridge.getFloodRisk(root.place, root.yy, root.mm, root.dd)
-                    print(root.place, root.yy, root.mm, root.dd)
+//                    print(root.place, root.yy, root.mm, root.dd)
                 }
                 tmp = data[2]
             }
