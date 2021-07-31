@@ -99,7 +99,7 @@ Item {
             target: a1
             property: "radius"
             duration: 500
-            to: 0
+            from: 0
             to: a1.radius
             easing.type: Easing.InOutQuad
         }
