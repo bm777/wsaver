@@ -99,6 +99,12 @@ Rectangle {
                     return parent.height * (1 - 0) * 0.8
                 }else return parent.height * (100 - value)/100 * 0.85
             }
+            Behavior on y {
+                enabled: true
+                SmoothedAnimation {
+                    velocity: 100
+                }
+            }
         }
     }
 
