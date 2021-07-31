@@ -38,7 +38,7 @@ class Worker(QObject):
     def getFloodRisk(self, place, date):
         ######################################################
         ## preparing the data for pushing
-        if(place == "Uyo, Ng"):
+        if(place == "Uyo, NG"):
             file = file_flood_ng
         else:
             file = file_flood_gh
