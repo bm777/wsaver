@@ -100,7 +100,7 @@ Window {
         date: side.tmp_date
         yy: climate.yy
         dd: {
-            if(climate.dd.length === 0) return "0"+climate.dd
+            if(climate.dd.length === 1) return "0"+climate.dd
             else return climate.dd
         }
         mm: {
