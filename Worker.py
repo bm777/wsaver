@@ -36,6 +36,10 @@ class Worker(QObject):
         file_flood_ng = "era5_volumetric_soil_water_layer_1-hourly-5.0405866_7.9194225.csv"
         file_flood_gh = "era5_volumetric_soil_water_layer_1-hourly-5.6901705_-0.2099204.csv"
 
+        if(place == "Uyo, Ng"):
+            file = file_flood_ng
+            df = import_volumetric(file)
+
         for elt in data["forecasts"]:
             if(place == elt["town"] and date == elt["date"]):
 
