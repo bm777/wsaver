@@ -98,6 +98,7 @@ Window {
         lang: setting.lang
         place: side.place
         date: side.tmp_date
+        yy: climate.yy
     }
 
     //////////////////////////////////////////////////////
