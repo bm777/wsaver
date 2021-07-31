@@ -176,6 +176,7 @@ Item {
                 if(data[2] !== tmp) {
                     print(root.yy, root.mm, root.dd)
                     var flood = bridge.getFloodRisk(root.place, root.yy, root.mm, root.dd)
+                    var air = bridge.getAir(root.place, root.yy, root.mm, root.dd)
                     b2.value = flood[0]
                 }
                 tmp = data[2]
