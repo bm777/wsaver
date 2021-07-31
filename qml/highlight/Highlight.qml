@@ -60,6 +60,7 @@ Item {
     }
 
     Rectangle {
+        id: r_pressure
         anchors.fill: a1
     }
 
@@ -97,7 +98,7 @@ Item {
 
         SequentialAnimation {
             NumberAnimation {
-                target: a1
+                target: r_pressure
                 property: "radius"
                 duration: 500
                 from: 0
@@ -105,7 +106,7 @@ Item {
                 easing.type: Easing.InOutQuad
             }
             PropertyAnimation {
-                target: a1
+                target: r_pressure
                 property: "color"
                 duration: 500
 //                from: 0
