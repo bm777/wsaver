@@ -99,14 +99,7 @@ Item {
 
 
         ParallelAnimation {
-            NumberAnimation {
-                target: r_pressure
-                property: "radius"
-                duration: 800
-                from: 0
-                to: a1.radius
-                easing.type: Easing.InOutQuad
-            }
+
             PropertyAnimation {
                 target: r_pressure
                 property: "color"
