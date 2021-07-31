@@ -102,7 +102,7 @@ Rectangle {
             Behavior on y {
                 enabled: true
                 SmoothedAnimation {
-                    velocity: 100
+                    velocity: 50
                 }
             }
         }
