@@ -64,7 +64,7 @@ import QtQuick 2.0
 
     }
     Text {id: flood_cm
-        text: value === -1000 ? "n/a" : value
+        text: value === -1000 ? "--" : value
         font{family: "Comfortaa"; pointSize: 15; bold: true}
         anchors.horizontalCenter: parent.horizontalCenter
         y: parent.height * 0.7
