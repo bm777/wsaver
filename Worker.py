@@ -2,7 +2,7 @@
 from PySide2 import QtWidgets
 from PySide2.QtCore import QObject, Signal, Slot, Property
 import os
-from local_request import import_forecast
+from local_request import import_forecast, import_volumetric, get_index_and_value, select_12_days, percent_flood
 
 class Worker(QObject):
     """docstring for Worker."""
