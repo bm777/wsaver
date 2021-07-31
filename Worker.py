@@ -53,6 +53,7 @@ class Worker(QObject):
         date =yy+"-"+mm+"-"+dd+" 00:00:00"
 
         # getting the index and value of a specific date ie : in var data
+        print(date)
         index, value = get_index_and_value(df, date)
 
         # getting the DF of 12 day ie 288 rows
