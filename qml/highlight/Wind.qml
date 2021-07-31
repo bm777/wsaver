@@ -68,6 +68,8 @@ Rectangle {
         target: cloud
         running: value === -1
         duration: 200
+        from: 0
+        to: 90
     }
 
 }
