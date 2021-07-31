@@ -3,7 +3,7 @@ import QtQuick 2.0
     Rectangle {
     id: root
 
-    property real value: 5
+    property real value: 0
     property string level: {
         if(lang === "Français") {
             if(value > 6) return "risque élevé"
@@ -71,7 +71,7 @@ import QtQuick 2.0
         color: thema === "Light" ? "#000000" : "#ffffff"
     }
     Text {
-        text: "cm"
+        text: "%"
         font{family: "Comfortaa"; pointSize: 11; bold: false}
         y: parent.height * 0.68
         x: flood_cm.x + flood_cm.width + 5
