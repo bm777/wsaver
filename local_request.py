@@ -19,7 +19,7 @@ def import_volumetric(filename):
     # - filename : the file name of the csv which contains
     #   forecasts data of volumetric soil data
     # - the function return data var
-    filename = os.path.join(os.path.dirname(""), filename)
+    filename = os.path.join(os.path.dirname(__file__), filename)
     df = pd.read_csv(filename)
     return df
 
