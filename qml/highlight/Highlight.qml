@@ -95,13 +95,23 @@ Item {
         running: root.visible
 
 
-        NumberAnimation {
-            target: a1
-            property: "radius"
-            duration: 500
-            from: 0
-            to: 10
-            easing.type: Easing.InOutQuad
+        SequentialAnimation {
+            NumberAnimation {
+                target: a1
+                property: "radius"
+                duration: 500
+                from: 0
+                to: 10
+                easing.type: Easing.InOutQuad
+            }
+            PropertyAnimation {
+                target: a1
+                property: "color"
+                duration: 500
+//                from: 0
+                to: "red"
+                easing.type: Easing.InOutQuad
+            }
         }
     }
 
