@@ -1,8 +1,8 @@
 import QtQuick 2.0
 
-    Rectangle {
+Rectangle {
     id: root
-
+    width: height * 1.3 * 2 + 19
     property real value: 0
     property string level: {
         if(lang === "Français") {
