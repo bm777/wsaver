@@ -33,7 +33,8 @@ Rectangle {
         Text {
             y: root.height * 0.01
             x: value_.x -5
-            text: qsTr("text")
+            text: "%"
+            font{family: "Comfrotaa"}
         }
     }
 
