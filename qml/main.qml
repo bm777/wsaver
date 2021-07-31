@@ -99,6 +99,9 @@ Window {
         place: side.place
         date: side.tmp_date
         yy: climate.yy
+        mm: {
+            if(climate.mm)
+        }
     }
 
     //////////////////////////////////////////////////////
