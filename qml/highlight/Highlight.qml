@@ -92,7 +92,7 @@ Item {
             var data = bridge.getForecastData(root.place, root.date)
             if(data[2] !== -1) {
                 a1.value = data[2].toFixed(1)
-                if(data[2] !== tmp && tmp !== -2) {
+                if(data[2] !== tmp) {
 //                    var flood = bridge.getFloodRisk(root.place, root.yy, root.mm, root.dd)
                     print("+++++ source launched ++++")
                 }
