@@ -34,8 +34,8 @@ class Worker(QObject):
     def parseDate(self, yy, mm, dd):
         return
 
-    @Slot(str, str, result="QVariant")
-    def getFloodRisk(self, place, date):
+    @Slot(str, str, str, str, result="QVariant")
+    def getFloodRisk(self, place, yy, mm, dd):
         ######################################################
         ## preparing the data for pushing
         if(place == "Uyo, NG"):
@@ -47,6 +47,7 @@ class Worker(QObject):
 
         # parsing date from January 1, 2021 to 2021-01-01 (Y-m-d)
         #date = self.parseDate(date)
+        date =yy+"-"+mm+"-"+dd+" 00:00:00"
 
         # getting the index and value of a specific date ie : in var data
         index, value = get_index_and_value(df, date)
