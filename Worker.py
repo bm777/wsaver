@@ -61,6 +61,7 @@ class Worker(QObject):
         # percentage of the forecast vlaue compare to 12 days before
         # and ten if it is in top 5% of higthest value -> hight flood risk
         percent = percent_flood(selection, value)
+        percent = round(percent, 1)
 
         #######################################################
 
