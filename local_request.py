@@ -36,4 +36,8 @@ def select_12_days(df, result_index):
 
 
 if __name__ == '__main__':
-    print(import_forecast("forecast.json"))
+    #print(import_forecast("forecast.json"))
+    file = "era5_volumetric_soil_water_layer_1-hourly-5.0405866_7.9194225.csv"
+    df = import_volumetric(file)
+    date = "2021-01-07 00:00:00"
+    index = get_index_date()
