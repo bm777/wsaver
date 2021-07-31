@@ -68,7 +68,7 @@ import QtQuick 2.0
                 enabled: true
                 SmoothedAnimation {
                     velocity: 130
-                    easing.type: Easing.InExpo
+                    easing.type: Easing.InOutElastic
                 }
             }
 
