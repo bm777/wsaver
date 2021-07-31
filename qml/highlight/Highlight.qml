@@ -109,7 +109,7 @@ Item {
                 target: r_pressure
                 property: "color"
                 duration: 800
-                from: "#20F6F6F8"
+                from: "#80F6F6F8"
                 to: "transparent"
                 easing.type: Easing.InOutQuad
             }
