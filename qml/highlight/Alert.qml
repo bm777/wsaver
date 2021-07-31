@@ -1,6 +1,7 @@
 import QtQuick 2.0
 
 Rectangle {
+
     id: root
     width: height * 1.3 * 2 + 19
     property real value: 0
@@ -82,7 +83,7 @@ Rectangle {
         target: frame_
         property: "width"
 //        from: 0
-        to: root.width
+        to: 100
         duration: 800
         easing.type: Easing.InOutQuad
     }
