@@ -100,17 +100,8 @@ Item {
             }
             else{
                 a1.value = "--"
-//                tmp = -1
+
             }
-
-//            if(data[2] !== -1 && tmp === data[2]) {
-//                print("+++++++++++++++++++++++++++++++++++++++++++++++++++"+data[2], tmp)
-//                tmp = -1
-
-//
-//            }else{
-//                tmp = -1
-//            }
 
             if(data[4] !== -1) c1.value = parseFloat(data[4])
             else{
