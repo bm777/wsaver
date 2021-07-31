@@ -85,7 +85,7 @@ Rectangle {
         property: "width"
 //        from: 0
         to: 315
-        duration: 800
+        duration: 850
         easing.type: Easing.OutExpo
     }
     Text {id: flood_cm
