@@ -24,11 +24,11 @@ def import_volumetric(filename):
     return df
 
 
-def get_index_date(df, date):
+def get_index_dateValue(df, date):
 
     label = date
-    result = df.loc[label == df["date"]]
-    return result.index[0]
+    value_of_result = df.loc[label == df["date"], ["date","value"]]
+    return value_of_result.index[0], value_of_result.tolist()[0]
 
 def select_12_days(df, result_index):
 
