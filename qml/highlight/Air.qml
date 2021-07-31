@@ -2,7 +2,7 @@ import QtQuick 2.0
 
 Rectangle {
     id: root
-    property real value: 105 // "Air quality"
+    property real value: 0 // "Air quality"
     property string thema: ""
     property string dataname: {
         if(lang === "Français") return "Qualité d'air"
