@@ -33,7 +33,7 @@ def get_index_date(df, date):
 def select_12_days(df, result_index):
 
     current = result_index
-    df.iloc[current-24*12 : current]
+    return df.iloc[current-24*12 : current]
 
 
 if __name__ == '__main__':
