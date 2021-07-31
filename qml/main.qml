@@ -99,12 +99,23 @@ Window {
         place: side.place
         date: side.tmp_date
         yy: climate.yy
-        mm: {
+        dd: {
             if(climate.mm.length === 0) return "0"+climate.mm
             else return climate.mm
         }
-        yy: {
+        mm: {
             if(climate.mm === "January") return "01"
+            if(climate.mm === "February") return "02"
+            if(climate.mm === "March") return "03"
+            if(climate.mm === "April") return "04"
+            if(climate.mm === "May") return "05"
+            if(climate.mm === "June") return "06"
+            if(climate.mm === "July") return "07"
+            if(climate.mm === "August") return "08"
+            if(climate.mm === "September") return "09"
+            if(climate.mm === "October") return "10"
+            if(climate.mm === "November") return "11"
+            if(climate.mm === "December") return "12"
         }
     }
 
