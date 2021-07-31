@@ -38,7 +38,10 @@ class Worker(QObject):
 
         if(place == "Uyo, Ng"):
             file = file_flood_ng
-            df = import_volumetric(file)
+        else:
+            file = file_flood_gh
+
+        df = import_volumetric(file)
 
         for elt in data["forecasts"]:
             if(place == elt["town"] and date == elt["date"]):
