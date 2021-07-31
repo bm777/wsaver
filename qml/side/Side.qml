@@ -297,7 +297,7 @@ Item {
         interval: 100
         onTriggered: {
             var data = bridge.getForecastData(root.place, root.tmp_date)
-            print(root.tmp_date)
+//            print(root.tmp_date)
             if(data[5] !== -1) content.condition_cloud = data[5]
             else {
                 if(root.lang === "English") content.condition_cloud = "No condition!"
