@@ -178,7 +178,7 @@ Item {
                     var flood = bridge.getFloodRisk(root.place, root.yy, root.mm, root.dd)
                     var air = bridge.getAir(root.place, root.yy, root.mm, root.dd)
                     b2.value = flood[0]
-                    if(air >= 90) air = 100 - air
+                    if(air >= 90) air = Math.round(100 - air, 0)
 
                     b1.value = air
                 }
