@@ -69,6 +69,11 @@ Item {
         anchors.fill: b1
         radius: a1.radius
     }
+    Rectangle {
+        id: r_humidity
+        anchors.fill: c1
+        radius: a1.radius
+    }
 
 
 
@@ -114,6 +119,14 @@ Item {
         }
         PropertyAnimation {
             target: r_air
+            property: "color"
+            duration: 1000
+            from: "#40F6F6F8"
+            to: "transparent"
+            easing.type: Easing.InOutQuad
+        }
+        PropertyAnimation {
+            target: r_humidity
             property: "color"
             duration: 1000
             from: "#40F6F6F8"
