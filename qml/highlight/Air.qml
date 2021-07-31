@@ -32,7 +32,7 @@ Rectangle {
         color: thema === "Light" ? "#000000" : "#ffffff"
         Text {
             y: root.height * 0.01
-            x: value_.x -5
+            x: value_.x + value_.width
             text: "%"
             font{family: "Comfrotaa"}
         }
