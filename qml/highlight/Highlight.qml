@@ -102,6 +102,7 @@ Item {
             }
 
             if(data[2] !== -1 && status === true && tmp !== data[2]) {
+                print(status)
                 var flood = bridge.getFloodRisk(root.place, root.yy, root.mm, root.dd)
             }else{
                 status = false
