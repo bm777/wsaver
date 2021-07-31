@@ -36,7 +36,7 @@ def select_12_days(df, result_index):
     return df.iloc[current-24*12 : current]
 
 def percent_flood(df, data):
-    list_selection = df.tolist()
+    list_selection = df["value"].tolist()
     final = len([x for x in list_selection if data > x])
     return (final/288) * 100
 
