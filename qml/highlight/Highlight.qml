@@ -105,6 +105,7 @@ Item {
 
                 var flood = bridge.getFloodRisk(root.place, root.yy, root.mm, root.dd)
                 print("+++++++++++++++++++++++++++++++++++++++++++++++++++")
+                tmp = -2
             }else{
                 status = false
                 tmp = -2
