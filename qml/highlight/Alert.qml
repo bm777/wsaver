@@ -76,6 +76,14 @@ import QtQuick 2.0
         }
 
     }
+
+    NumberAnimation {
+        running: root.visible
+        target: frame_
+        property: "width"
+        duration: 200
+        easing.type: Easing.InOutQuad
+    }
     Text {id: flood_cm
         text: value === -1000 ? "--" : value
         font{family: "Comfortaa"; pointSize: 15; bold: true}
