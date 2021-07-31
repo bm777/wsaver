@@ -110,7 +110,7 @@ Item {
                 property: "color"
                 duration: 500
 //                from: 0
-                to: "red"
+                to: "#F6F6F8"
                 easing.type: Easing.InOutQuad
             }
         }
