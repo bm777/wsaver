@@ -65,6 +65,7 @@ Item {
 
 
 
+
     ////////////////////////////////////////////////////////////////
     // second line
     Wind {
@@ -84,6 +85,14 @@ Item {
         height: parent.height * 0.37
         lang: root.lang
         thema: root.thema
+    }
+
+
+
+    /////////////////////////////////////////////////////////////////////////
+    //: SequentialAnimation
+    ParallelAnimation {
+        running: root.visible
     }
 
 
