@@ -88,6 +88,7 @@ class Worker(QObject):
             file = file_flood_gh
 
         # load csv file on dataframe
+        file = os.path.join(os.path.dirname(__file__), file)
         df1 = pd.read_csv(file)
         #df2 = pd.read_csv(file2)
 
