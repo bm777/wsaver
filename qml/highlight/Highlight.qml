@@ -108,7 +108,7 @@ Item {
             PropertyAnimation {
                 target: r_pressure
                 property: "color"
-                duration: 800
+                duration: 1000
                 from: "#80F6F6F8"
                 to: "transparent"
                 easing.type: Easing.InOutQuad
