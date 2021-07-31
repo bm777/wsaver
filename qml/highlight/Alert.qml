@@ -80,7 +80,7 @@ Rectangle {
     }
 
     NumberAnimation {
-        running: !root.visible
+        running: root.visible
         target: frame_
         property: "width"
 //        from: 0
