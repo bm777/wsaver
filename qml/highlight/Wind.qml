@@ -66,8 +66,8 @@ Rectangle {
     }
     RotationAnimation {
         target: cpt
-        running: value === -1
-        duration: 200
+        running: value !== "--"
+        duration: 1000
         from: 0
         to: 90
     }
