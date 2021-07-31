@@ -79,6 +79,15 @@ class Worker(QObject):
         return [percent]
         #######################################################
 
+
+    @Slot(str, str, str, str, result="QVariant")
+    def getAir(self, place, yy, mm, dd):
+
+        ## preparing the data for pushing
+        file_flood_ng = "era5_wind_100m_u-hourly-5.0405866_7.9194225.csv"
+        file_flood_gh = "era5_wind_100m_u-hourly-5.6901705_-0.2099204.csv"
+
+
     @Slot(str, str, result="QVariant")
     def getForecastData(self, place, date):
         data = self.slot_forecast()
