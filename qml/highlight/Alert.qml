@@ -58,7 +58,7 @@ import QtQuick 2.0
             height: parent.height * 0.65
             anchors.verticalCenter: parent.verticalCenter
             color: thema === "Light" ? "#4050D2" : "#F65164"
-            x: (parent.width * value/10 - width / 2) * 0.9
+            x: (parent.width * value/100 - width / 2) * 0.95
             radius: height/2
         }
 
