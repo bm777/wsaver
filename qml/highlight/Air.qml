@@ -31,7 +31,8 @@ Rectangle {
         x: parent.width * 0.2
         color: thema === "Light" ? "#000000" : "#ffffff"
         Text {
-            y: root.height * 0.2
+            y: root.height * 0.01
+            x: value_.x
             text: qsTr("text")
         }
     }
