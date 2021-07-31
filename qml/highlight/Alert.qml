@@ -67,7 +67,7 @@ import QtQuick 2.0
             Behavior on x {
                 enabled: true
                 SmoothedAnimation {
-                    velocity: 100
+                    velocity: 130
                 }
             }
 
