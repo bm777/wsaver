@@ -51,3 +51,5 @@ if __name__ == '__main__':
 
     selection = select_12_days(df, index)
     print(selection)
+
+    percent = percent_flood(selection, value)
