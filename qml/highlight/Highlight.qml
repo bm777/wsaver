@@ -92,7 +92,9 @@ Item {
 
     /////////////////////////////////////////////////////////////////////////
     //: SequentialAnimation
+    onThemaChanged: main.running = true
     ParallelAnimation {
+        id: main
         running: root.visible
 
 
