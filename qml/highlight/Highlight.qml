@@ -7,6 +7,9 @@ Item {
     property string lang: ""
     property string place: ""
     property string date: ""
+    property string yy: ""
+    property string mm: ""
+    property string dd: ""
     property string thema: ""
 
     ////////////////////////////////////////////////////////////////
