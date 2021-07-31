@@ -30,7 +30,7 @@ Rectangle {
     radius: height/2
     Text {
         id: t
-        text: "Light"
+        text: "Dark"
         font {family: "Comfortaa"}
         anchors.centerIn: parent
         color: {
