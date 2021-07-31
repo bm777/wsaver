@@ -64,6 +64,10 @@ Rectangle {
         x: parent.width * 0.38
         color: thema === "Light" ? "#000000" : "#ffffff"
     }
-
+    RotationAnimation {
+        target: cloud
+        running: value === -1
+        duration: 200
+    }
 
 }
