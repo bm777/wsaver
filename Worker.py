@@ -75,6 +75,7 @@ class Worker(QObject):
         #######################################################
         percent = percent_flood(selection, value)
         percent = round(percent, 1) # fixed to 1 digit after the dot.
+        print(percent)
         return [percent]
         #######################################################
 
