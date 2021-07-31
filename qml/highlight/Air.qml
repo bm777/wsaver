@@ -25,11 +25,15 @@ Rectangle {
 
     Text {
         id: value_
-        text: value + "%"
+        text: value + ""
         font{family: "Comfortaa"; bold: false; pointSize: 25}
         anchors.verticalCenter: parent.verticalCenter
         x: parent.width * 0.2
         color: thema === "Light" ? "#000000" : "#ffffff"
+        Text {
+            y: root.height * 0.2
+            text: qsTr("text")
+        }
     }
 
     Image {
