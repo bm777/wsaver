@@ -101,7 +101,7 @@ Item {
                 property: "radius"
                 duration: 500
                 from: 0
-                to: 10
+                to: a1.radius
                 easing.type: Easing.InOutQuad
             }
             PropertyAnimation {
