@@ -30,6 +30,9 @@ class Worker(QObject):
         # print(l)
         return l
 
+    def parseDate(self, date):
+        return
+
     @Slot(str, str, result="QVariant")
     def getForecastData(self, place, date):
         data = self.slot_forecast()
