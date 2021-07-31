@@ -35,6 +35,8 @@ def select_12_days(df, result_index):
     current = result_index
     return df.iloc[current-24*12 : current]
 
+def percent_flood(df, data)
+
 
 if __name__ == '__main__':
     #print(import_forecast("forecast.json"))
