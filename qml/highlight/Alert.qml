@@ -47,7 +47,7 @@ Rectangle {
     Rectangle {
         id: frame_
         radius: height/2
-        width:  parent.width * 0.8
+        width:  height //parent.width * 0.8
         height: 30
         border.color: "#40ADADAD"
         color: thema === "Light" ? "#ffffff" : "#2D325A"
@@ -60,6 +60,7 @@ Rectangle {
             anchors.verticalCenter: parent.verticalCenter
             color: thema === "Light" ? "#4050D2" : "#F65164"
             x: {
+//                print(frame_.width)
                 if(value === -1000)
                     return (parent.width * 0/100 - width / 2) * 0.9 +width*0.7
                 else
@@ -83,7 +84,7 @@ Rectangle {
         target: frame_
         property: "width"
 //        from: 0
-        to: 100
+        to: 315
         duration: 800
         easing.type: Easing.InOutQuad
     }
