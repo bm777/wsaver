@@ -12,7 +12,7 @@ Item {
     property string dd: ""
     property string thema: ""
     property bool status: false
-    property string tmp: -1
+    property real tmp: -1
 
     ////////////////////////////////////////////////////////////////
     Text {
