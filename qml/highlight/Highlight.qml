@@ -99,6 +99,18 @@ Item {
         thema: root.thema
     }
 
+    Rectangle {
+        id: r_wind
+        anchors.fill: a2
+        radius: a2.radius
+    }
+    Rectangle {
+        id: r_flood
+        anchors.fill: b2
+        radius: b2.radius
+    }
+
+
 
 
     /////////////////////////////////////////////////////////////////////////
@@ -127,6 +139,22 @@ Item {
         }
         PropertyAnimation {
             target: r_humidity
+            property: "color"
+            duration: 1000
+            from: "#40F6F6F8"
+            to: "transparent"
+            easing.type: Easing.InOutQuad
+        }
+        PropertyAnimation {
+            target: r_wind
+            property: "color"
+            duration: 1000
+            from: "#40F6F6F8"
+            to: "transparent"
+            easing.type: Easing.InOutQuad
+        }
+        PropertyAnimation {
+            target: r_flood
             property: "color"
             duration: 1000
             from: "#40F6F6F8"
