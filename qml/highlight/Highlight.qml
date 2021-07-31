@@ -12,6 +12,7 @@ Item {
     property string dd: ""
     property string thema: ""
     property bool status: false
+    property string tmp: -1
 
     ////////////////////////////////////////////////////////////////
     Text {
@@ -92,10 +93,13 @@ Item {
             if(data[2] !== -1) {
                 a1.value = data[2].toFixed(1)
                 status = true
+                tmp = data[2]
             }
 
             else{
                 a1.value = "--"
+                status = false
+                tmp = -1
             }
 
             if(data[4] !== -1) c1.value = parseFloat(data[4])
