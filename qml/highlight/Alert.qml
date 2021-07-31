@@ -46,7 +46,7 @@ import QtQuick 2.0
     Rectangle {
         id: frame_
         radius: height/2
-        width:  height * 1.2//parent.width * 0.8
+        width:  height //parent.width * 0.8
         height: 30
         border.color: "#40ADADAD"
         color: thema === "Light" ? "#ffffff" : "#2D325A"
