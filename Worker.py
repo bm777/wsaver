@@ -95,6 +95,17 @@ class Worker(QObject):
 
         df = import_volumetric(file)
 
+        # parsing date from January 1, 2021 to 2021-01-01 (Y-m-d)
+        #date = self.parseDate(date)
+        date =yy+"-"+mm+"-"+dd+" 00:00:00"
+
+        # getting the index and value of a specific date ie : in var data
+        print(date)
+        index, value = get_index_and_value(df, date)
+
+        # getting the DF of 12 day ie 288 rows
+        selection = select_12_days(df, index)
+
 
     @Slot(str, str, result="QVariant")
     def getForecastData(self, place, date):
