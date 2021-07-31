@@ -86,7 +86,7 @@ Rectangle {
 //        from: 0
         to: 315
         duration: 800
-        easing.type: Easing.InBack
+        easing.type: Easing.OutExpo
     }
     Text {id: flood_cm
         text: value === -1000 ? "--" : value
