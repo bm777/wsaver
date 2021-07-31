@@ -1,5 +1,6 @@
 import json
-import os, pandas
+import os
+import pandas as pd
 
 def import_forecast(filename):
     # Function to read data from local json file on the hard drive
@@ -42,3 +43,4 @@ if __name__ == '__main__':
     date = "2021-01-07 00:00:00"
     index = get_index_date(df, date)
     selection = select_12_days(df, index)
+    print(selection)
