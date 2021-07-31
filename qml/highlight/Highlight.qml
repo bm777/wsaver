@@ -66,7 +66,7 @@ Item {
     }
     Rectangle {
         id: r_air
-        anchors.fill: a1
+        anchors.fill: b1
         radius: a1.radius
     }
 
