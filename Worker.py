@@ -10,7 +10,7 @@ class Worker(QObject):
 
     def __init__(self):
         QObject.__init__(self)
-        self.tmp = 55
+        self.tmp = 0
 
 
 
@@ -55,7 +55,30 @@ class Worker(QObject):
         selection = select_12_days(df, index)
 
         # percentage of the forecast vlaue compare to 12 days before
+        # and ten if it is in top 5% of higthest value -> hight flood risk######################################################
+        ## preparing the data for pushing
+        if(place == "Uyo, Ng"):
+            file = file_flood_ng
+        else:
+            file = file_flood_gh
+
+        df = import_volumetric(file)
+
+        # parsing date from January 1, 2021 to 2021-01-01 (Y-m-d)
+        date = self.parseDate(date)
+
+        # getting the index and value of a specific date ie : in var data
+        index, value = get_index_and_value(df, date)
+
+        # getting the DF of 12 day ie 288 rows
+        selection = select_12_days(df, index)
+
+        # percentage of the forecast vlaue compare to 12 days before
         # and ten if it is in top 5% of higthest value -> hight flood risk
+        percent = percent_flood(selection, value)
+        percent = round(percent, 1) # fixed to 1 digit after the dot.
+
+        #######################################################
         percent = percent_flood(selection, value)
         percent = round(percent, 1) # fixed to 1 digit after the dot.
 
