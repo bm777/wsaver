@@ -24,7 +24,7 @@ def import_volumetric(filename):
     return df
 
 
-def get_index_dateValue(df, date):
+def get_index_and_value(df, date):
 
     label = date
     value_of_result = df.loc[label == df["date"], ["date","value"]]
@@ -52,4 +52,5 @@ if __name__ == '__main__':
     selection = select_12_days(df, index)
     print(selection)
 
-    percent = percent_flood(selection, value)
+    percent = get_index_and_value(selection, value)
+    print(percent)
