@@ -38,6 +38,9 @@ class Worker(QObject):
     def getFloodRisk(self, place, yy, mm, dd):
         ######################################################
         ## preparing the data for pushing
+        file_flood_ng = "era5_volumetric_soil_water_layer_1-hourly-5.0405866_7.9194225.csv"
+        file_flood_gh = "era5_volumetric_soil_water_layer_1-hourly-5.6901705_-0.2099204.csv"
+
         if(place == "Uyo, NG"):
             file = file_flood_ng
         else:
@@ -63,17 +66,6 @@ class Worker(QObject):
         else:
             file = file_flood_gh
 
-        df = import_volumetric(file)
-
-        # parsing date from January 1, 2021 to 2021-01-01 (Y-m-d)
-        date = self.parseDate(date)
-
-        # getting the index and value of a specific date ie : in var data
-        index, value = get_index_and_value(df, date)
-
-        # getting the DF of 12 day ie 288 rows
-        selection = select_12_days(df, index)
-
         # percentage of the forecast vlaue compare to 12 days before
         # and ten if it is in top 5% of higthest value -> hight flood risk
         percent = percent_flood(selection, value)
@@ -88,8 +80,6 @@ class Worker(QObject):
     @Slot(str, str, result="QVariant")
     def getForecastData(self, place, date):
         data = self.slot_forecast()
-        file_flood_ng = "era5_volumetric_soil_water_layer_1-hourly-5.0405866_7.9194225.csv"
-        file_flood_gh = "era5_volumetric_soil_water_layer_1-hourly-5.6901705_-0.2099204.csv"
 
 
         for elt in data["forecasts"]:
