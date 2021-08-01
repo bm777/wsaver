@@ -44,26 +44,26 @@ Rectangle {
     Text {
         text: {
             if(lang === "English"){
-                if(value >= 0.7) return "Bad"
-                else if(value >= 0.5) return "Cold"
-                else if(value >= 0.3) return "Very humid"
-                else if(value >= 0.2) return "Humide"
+                if(value >= 70) return "Bad"
+                else if(value >= 50) return "Cold"
+                else if(value >= 30) return "Very humid"
+                else if(value >= 20) return "Humide"
                 else if(value >= 0) return "Normal"
                 else return "..."
             }
             if(lang === "Français"){
-                if(value >= 0.7) return "Mauvaise"
-                else if(value >= 0.5) return "Froid"
-                else if(value >= 0.3) return "Très humide"
-                else if(value >= 0.2) return "Humide"
+                if(value >= 70) return "Mauvaise"
+                else if(value >= 50) return "Froid"
+                else if(value >= 30) return "Très humide"
+                else if(value >= 20) return "Humide"
                 else if(value >= 0) return "Normale"
                 else return "..."
             }
             if(lang === "Yoruba"){
-                if(value >= 0.7) return "Buburu"
-                else if(value >= 0.5) return "Tutu"
-                else if(value >= 0.3) return "Tutu pupọ"
-                else if(value >= 0.2) return "Ọrinrin"
+                if(value >= 70) return "Buburu"
+                else if(value >= 50) return "Tutu"
+                else if(value >= 30) return "Tutu pupọ"
+                else if(value >= 20) return "Ọrinrin"
                 else if(value >= 0) return "Deede"
                 else return "..."
             }

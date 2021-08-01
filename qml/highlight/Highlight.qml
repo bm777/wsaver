@@ -174,7 +174,7 @@ Item {
             if(data[2] !== -1) {
                 a1.value = data[2].toFixed(1)
                 if(data[2] !== tmp) {
-                    print(root.yy, root.mm, root.dd)
+//                    print(root.yy, root.mm, root.dd)
                     var flood = bridge.getFloodRisk(root.place, root.yy, root.mm, root.dd)
                     var air = bridge.getAir(root.place, root.yy, root.mm, root.dd)
                     b2.value = flood[0]

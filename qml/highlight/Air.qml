@@ -37,6 +37,7 @@ Rectangle {
         x: value_.x + value_.width + 10
         text: "%"
         font{family: "Comfrotaa"}
+        color: thema === "Light" ? "#000000" : "#ffffff"
     }
 
     Image {

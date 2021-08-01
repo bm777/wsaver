@@ -18,7 +18,7 @@
     {
     "town": "Uyo, NG",
     "date": "February 7, 2021",
-    "pressure": 999.3,
+    "pressure": 999.35,
     "temperature": 34.7,
     "temperature_unit": "C",
     "humidity": 57,
@@ -33,10 +33,10 @@
     {
     "town": "Uyo, NG",
     "date": "March 9, 2021",
-    "pressure": 998.2,
+    "pressure": 995.2,
     "temperature": 34.9,
     "temperature_unit": "C",
-    "humidity": 60,
+    "humidity": 68,
     "condition": "Sunny",
     "wind": 15,
     "wind_unit": "m/s",

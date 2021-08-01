@@ -107,7 +107,7 @@ class Worker(QObject):
         date =yy+"-"+mm+"-"+dd+" 00:00:00"
 
         # getting the index and value of a specific date ie : in var data
-        print(date)
+        #print(date)
         index, value = get_index_and_value(df, date)
 
         # getting the DF of 12 day ie 288 rows
@@ -117,7 +117,7 @@ class Worker(QObject):
         # and ten if it is in top 5% of higthest value -> hight flood risk
         percent = percent_flood(selection, value)
         percent = round(percent, 1) # fixed to 1 digit after the dot.
-        print(percent)
+        #print(percent)
         return [percent]
 
 
