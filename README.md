@@ -1,7 +1,10 @@
 # wsaver
-Dashboard to show data in real time from virtual weather radiosonde of Kanda.
+Dashboard to show data in real time from virtual weather radiosonde of Kanda. 
 
-[wsaver](https://youtu.be/tGd_5L34Pzs)
+[click below to see the demo :) ]
+
+[![](http://img.youtube.com/vi/tGd_5L34Pzs/0.jpg)](https://youtu.be/tGd_5L34Pzs)
+
 
 ### What I used ?
  - [x] Python3.6
