@@ -5,6 +5,9 @@ import os
 import pandas as pd
 from local_request import import_forecast, import_volumetric, get_index_and_value, select_12_days, percent_flood
 
+import speech_recognition as sr
+import pyttsx3
+
 class Worker(QObject):
     """docstring for Worker."""
 
