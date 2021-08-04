@@ -68,16 +68,24 @@ def import_and_merge_wind(file1, file2):
     return df1
 
 
+import speech_recognition as sr
+import pyttsx3
+
+def speech(command):
+    engine = pyttsx3.init()
+    engine.say(command)
+    engine.runAndWait()
+
 if __name__ == '__main__':
     #print(import_forecast("forecast.json"))
-    file = "era5_volumetric_soil_water_layer_1-hourly-5.0405866_7.9194225.csv"
-    df = import_volumetric(file)
-    date = "2021-01-07 00:00:00"
-    index, value = get_index_and_value(df, date)
-    print(index)
-
-    selection = select_12_days(df, index)
-    print(selection)
-
-    percent = percent_flood(selection, value)
-    print(percent)
+    # file = "era5_volumetric_soil_water_layer_1-hourly-5.0405866_7.9194225.csv"
+    # df = import_volumetric(file)
+    # date = "2021-01-07 00:00:00"
+    # index, value = get_index_and_value(df, date)
+    # print(index)
+    #
+    # selection = select_12_days(df, index)
+    # print(selection)
+    #
+    # percent = percent_flood(selection, value)
+    # print(percent)

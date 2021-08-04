@@ -160,6 +160,9 @@ Item {
                     back_search.color = "#20a9a9a9"
                     back_search.border.color = "transparent"
                 }
+                onClicked: {
+
+                }
             }
         }
 
