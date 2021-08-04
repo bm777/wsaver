@@ -68,13 +68,8 @@ def import_and_merge_wind(file1, file2):
     return df1
 
 
-import speech_recognition as sr
-import pyttsx3
 
-def speech(command):
-    engine = pyttsx3.init()
-    engine.say(command)
-    engine.runAndWait()
+
 
 if __name__ == '__main__':
     #print(import_forecast("forecast.json"))
@@ -89,3 +84,4 @@ if __name__ == '__main__':
     #
     # percent = percent_flood(selection, value)
     # print(percent)
+    pass
