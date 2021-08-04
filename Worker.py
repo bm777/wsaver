@@ -149,3 +149,13 @@ class Worker(QObject):
         # That function return a text from a voice
         # It is a voice spkoen by the user
         r = sr.Recognizer()
+
+        # state to beak the loop
+        state = True
+        while(state)
+
+
+
+if __name__ == '__main__':
+    w = Worker()
+    w.getTextFromVoice()
