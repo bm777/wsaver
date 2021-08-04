@@ -6,7 +6,7 @@ do
 	git add .
 	git commit -m "Update on wsaver/ Update"
 	git push
-	sleep 30
+	sleep 120
 	echo "Hi, bm7. A update has been done :)"
 	i=$i+1
 done
