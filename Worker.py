@@ -140,3 +140,8 @@ class Worker(QObject):
 
 
         return [-1] * 13
+
+
+    @Slot(result="QVariant")
+    def getTextFromVoice(self):
+        
