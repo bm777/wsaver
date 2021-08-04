@@ -56,11 +56,11 @@ Rectangle {
                 else return "Healhty"
             }
             if(lang === "Français"){
-                if(value <= 100) return "Mauvais état"
+                if(value <= 10) return "Mauvais état"
                 else return "Bon état"
             }
             if(lang === "Yoruba"){
-                if(value <= 100) return "Alailera"
+                if(value <= 10) return "Alailera"
                 else return "Ni ilera"
             }
 

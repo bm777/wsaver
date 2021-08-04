@@ -165,12 +165,15 @@ Item {
 
 
     //////////////////////////////////////////////////////////////////////////
+    property int t_flood: 0
+    property int t_air: 0
     Timer {
         running: true
         repeat: true
         interval: 100
         onTriggered: {
             var data = bridge.getForecastData(root.place, root.date)
+
             if(data[2] !== -1) {
                 a1.value = data[2].toFixed(1)
                 if(data[2] !== tmp) {
@@ -179,10 +182,17 @@ Item {
                     var air = bridge.getAir(root.place, root.yy, root.mm, root.dd)
                     b2.value = flood[0]
                     if(air >= 90) air = Math.round(100 - air, 0)
-
                     b1.value = parseFloat(air)
+
+                    t_flood = b2.value
+                    t_air = b1.value
+
                 }
                 tmp = data[2]
+                if(b2.value === -1000 && b1.value === 0){
+                    b1.value = t_air
+                    b2.value = t_flood
+                }
             }
             else{
                 a1.value = "--"

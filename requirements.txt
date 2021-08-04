@@ -1,3 +1,5 @@
 requests
-PySide2
+PySide2==5.15.0
 pandas
+speechrecognition
+pyttsx3
