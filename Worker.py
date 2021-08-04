@@ -153,16 +153,20 @@ class Worker(QObject):
         # state to beak the loop
         state = True
         while(state):
-            with sr.Microphone() as source:
-                r.adjust_for_ambient_noise(source, duration=0.2)
+            try:
+                with sr.Microphone() as source:
+                    r.adjust_for_ambient_noise(source, duration=0.2)
 
-                print("listening....")
-                audio = r.listen(source)
+                    print("listening....")
+                    audio = r.listen(source)
 
-                text = r.recognize_google(audio)
+                    text = r.recognize_google(audio)
 
-                state = False
-                print("text: ", text)
+                    state = False
+                    print("text: ", text)
+            except Exception as e:
+                raise e
+
 
 
 
