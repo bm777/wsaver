@@ -19,12 +19,14 @@ class Worker(QObject):
 
     @Slot(str, result="QVariant")
     def slot_forecast(self, filename="forecast.json"):
+        # Read the json file 
         data = import_forecast(filename)
 
         return data
 
     @Slot(result="QVariant")
     def slot_towns(self):
+        # Return the list of town on the json file
         data = self.slot_forecast()
         #print(type(data))
         l = []
@@ -144,4 +146,4 @@ class Worker(QObject):
 
     @Slot(result="QVariant")
     def getTextFromVoice(self):
-        
+        #
