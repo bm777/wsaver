@@ -177,6 +177,7 @@ Item {
 
         Rectangle {id: flow_child
             x: parent.width * 0.02
+            y: parent.height - height- 1
             width: 0
             height: parent.height * 0.07
             color: "#80ff0000"
@@ -392,7 +393,7 @@ Item {
             target: flow_child
             property: "width"
             from: 0
-            to: flow.width
+            to: flow.width * 0.95
             duration: 2000
         }
         PropertyAnimation {
