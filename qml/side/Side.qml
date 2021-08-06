@@ -177,7 +177,7 @@ Item {
 
         Rectangle {id: flow_child
             width: 0
-            height: parent.height
+            height: parent.height * 0.05
             color: "#80ff0000"
             radius: parent.radius
         }
