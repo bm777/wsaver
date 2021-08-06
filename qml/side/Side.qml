@@ -181,6 +181,8 @@ Item {
                 if(lang === "English") return "En écoute ..."
             }
             font{family: "Comfortaa"; }
+            anchors.centerIn: parent
+            color: "#80000000"
         }
     }
 
