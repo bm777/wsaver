@@ -2,4 +2,5 @@ requests
 PySide2==5.15.0
 pandas
 speechrecognition
-pyttsx3
+sounddevice
+scipy

@@ -5,8 +5,8 @@ import os
 import pandas as pd
 from local_request import import_forecast, import_volumetric, get_index_and_value, select_12_days, percent_flood
 
-import speech_recognition as sr
-import pyttsx3
+
+# import pyttsx3
 
 class Worker(QObject):
     """docstring for Worker."""
@@ -144,32 +144,49 @@ class Worker(QObject):
         return [-1] * 13
 
 
-    @Slot(result="QVariant")
-    def getTextFromVoice(self):
+    @Slot(str, result="QVariant")
+    def getTextFromVoice(self, path):
         # That function return a text from a voice
         # It is a voice spkoen by the user
+        import speech_recognition as sr
         r = sr.Recognizer()
 
-        # state to beak the loop
-        state = True
-        while(state):
+        with sr.AudioFile(path) as source:
+            audio_text = r.listen(source)
             try:
-                with sr.Microphone() as source:
-                    r.adjust_for_ambient_noise(source, duration=0.2)
 
-                    print("listening....")
-                    audio = r.listen(source)
-
-                    text = r.recognize_google(audio)
-
-                    state = False
-                    print("text: ", text)
-            except Exception as e:
-                raise e
+                # using google speech recognition
+                text = r.recognize_google(audio_text)
+                print('word deteced : ', end="")
+                print(text)
+                return [text]
+            except:
+                 print('Sorry.. run again...')
+        return []
 
 
+    @Slot(result="QVariant")
+    def recordAudio(self):
+        import sounddevice as sd
+        from scipy.io.wavfile import write
+        # import wavio as wv
+
+        f = 44100
+
+        duration = 2
+        recording = sd.rec(int(duration*f), samplerate=f, channels=2)
+
+        sd.wait()
+
+        write("audio/record.wav", f, recording)
+
+        # wv.write()
+
+        return []
 
 
 if __name__ == '__main__':
     w = Worker()
-    w.getTextFromVoice()
+    # w.getTextFromVoice("audio/around.wav")
+
+    print(w.recordAudio())
