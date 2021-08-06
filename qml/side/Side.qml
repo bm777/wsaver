@@ -175,6 +175,13 @@ Item {
         radius: bg_search.radius
         visible: false
 
+        Rectangle {
+            width: 20
+            height: 20
+            color: "#80ff0000"
+            radius: parent.radius
+        }
+
         Text {
             text: {
                 if(lang === "English") return "Listening ..."
