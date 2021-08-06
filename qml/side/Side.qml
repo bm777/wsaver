@@ -170,9 +170,10 @@ Item {
     }
     Rectangle {
         anchors.fill: bg_search
-        color: "transparent"
-        border.color: "red"
+        color: "#ffffff"
+//        border.color: "red"
         radius: bg_search.radius
+        visible: false
 
         Text {
             text: {
