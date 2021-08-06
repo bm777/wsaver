@@ -168,6 +168,13 @@ Item {
         }
 
     }
+    Rectangle {
+        anchors.fill: bg_search
+        color: "transparent"
+        border.color: "red"
+        radius: bg_search.radius
+    }
+
     ///////////////////////////////////////////////////////////////////////
     // Adding search bottom side
     Rectangle {
