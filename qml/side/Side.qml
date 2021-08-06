@@ -180,6 +180,7 @@ Item {
                 if(lang === "Yoruba") return "Nfeti sile ..."
                 if(lang === "English") return "En écoute ..."
             }
+            font{family: "Comfortaa"; }
         }
     }
 
