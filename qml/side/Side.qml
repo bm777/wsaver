@@ -376,7 +376,7 @@ Item {
 
         PropertyAnimation {
             target: flow
-            property: visible
+            property: "visible"
             to: true
             duration: 1
         }
@@ -386,6 +386,12 @@ Item {
             from: 0
             to: bg_search.width
             duration: 2000
+        }
+        PropertyAnimation {
+            target: flow
+            property: "visible"
+            to: false
+            duration: 1
         }
     }
 
