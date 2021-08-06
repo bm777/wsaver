@@ -162,6 +162,7 @@ Item {
                 }
                 onClicked: {
 //                    print("inside icon of micro")
+
                 }
             }
         }
