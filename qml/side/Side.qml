@@ -161,7 +161,7 @@ Item {
                     back_search.border.color = "transparent"
                 }
                 onClicked: {
-
+//                    print("inside icon of micro")
                 }
             }
         }
