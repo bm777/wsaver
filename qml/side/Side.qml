@@ -175,7 +175,7 @@ Item {
         radius: bg_search.radius
         visible: false
 
-        Rectangle {
+        Rectangle {id: flow_child
             width: 0
             height: parent.height
             color: "#80ff0000"
@@ -388,10 +388,10 @@ Item {
             duration: 1
         }
         NumberAnimation {
-            target: flow
+            target: flow_child
             property: "width"
             from: 0
-            to: bg_search.width
+            to: flow.width
             duration: 2000
         }
         PropertyAnimation {
