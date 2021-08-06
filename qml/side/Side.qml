@@ -176,8 +176,9 @@ Item {
         visible: false
 
         Rectangle {id: flow_child
+            x: parent.width * 0.02
             width: 0
-            height: parent.height * 0.05
+            height: parent.height * 0.07
             color: "#80ff0000"
             radius: parent.radius
         }
