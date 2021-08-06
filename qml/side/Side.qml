@@ -168,7 +168,7 @@ Item {
         }
 
     }
-    Rectangle {
+    Rectangle {id: glow
         anchors.fill: bg_search
         color: "#ffffff"
 //        border.color: "red"
@@ -367,6 +367,14 @@ Item {
             to: 1.3
             easing.type: Easing.InOutQuad
         }
+    }
+
+
+    NumberAnimation {
+        target: glow
+        property: "name"
+        duration: 200
+        easing.type: Easing.InOutQuad
     }
 
 
