@@ -168,7 +168,7 @@ Item {
         }
 
     }
-    Rectangle {id: glow
+    Rectangle {id: flow
         anchors.fill: bg_search
         color: "#ffffff"
 //        border.color: "red"
