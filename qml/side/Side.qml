@@ -170,13 +170,10 @@ Item {
     }
     Rectangle {id: flow
         width: 0
-        height: bg_search.height
+        anchors.fill: bg_search
         color: "#ffffff"
-//        border.color: "red"
         radius: bg_search.radius
         visible: false
-        x: bg_search.x
-        y: bg_search.y
 
         Text {
             text: {
