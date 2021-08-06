@@ -176,8 +176,8 @@ Item {
         visible: false
 
         Rectangle {
-            width: 20
-            height: 20
+            width: 0
+            height: parent.height
             color: "#80ff0000"
             radius: parent.radius
         }
