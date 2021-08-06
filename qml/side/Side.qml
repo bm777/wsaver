@@ -162,7 +162,7 @@ Item {
                 }
                 onClicked: {
 //                    print("inside icon of micro")
-
+                    flow_animation.running = true
                 }
             }
         }
@@ -370,11 +370,23 @@ Item {
     }
 
 
-    NumberAnimation {
-        target: glow
-        property: "name"
-        duration: 200
-        easing.type: Easing.InOutQuad
+    SequentialAnimation {
+        id: flow_animation
+        running: false
+
+        PropertyAnimation {
+            target: flow
+            property: visible
+            to: true
+            duration: 1
+        }
+        NumberAnimation {
+            target: flow
+            property: "width"
+            from: 0
+            to: bg_search.width
+            duration: 2000
+        }
     }
 
 
