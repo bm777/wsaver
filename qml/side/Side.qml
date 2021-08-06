@@ -173,6 +173,14 @@ Item {
         color: "transparent"
         border.color: "red"
         radius: bg_search.radius
+
+        Text {
+            text: {
+                if(lang === "English") return "Listening ..."
+                if(lang === "Yoruba") return "Nfeti sile ..."
+                if(lang === "English") return "En écoute ..."
+            }
+        }
     }
 
     ///////////////////////////////////////////////////////////////////////
