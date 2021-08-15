@@ -4,6 +4,7 @@ import "climate"
 import "highlight"
 import "side"
 import "setting"
+import "side/commons"
 
 Window {
     title: qsTr("wsaver")
@@ -20,6 +21,7 @@ Window {
 //    property string deg: setting.deg
 //    property string lang: setting.lang    //F6F6F8
 //    property string thema: setting.thema //25294A
+
 
     Rectangle {
         anchors.fill: parent
@@ -182,6 +184,11 @@ Window {
         tmp_date: root.tmp_mm + " " + climate.dd +", "+ climate.yy
         lang: setting.lang
 //        theme: setting.thema
+    }
+
+    Test {
+        id: test
+        anchors.centerIn: parent
     }
 
 

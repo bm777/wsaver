@@ -55,5 +55,6 @@
         <file>img/ng.png</file>
         <file>qml/side/Place.qml</file>
         <file>qml/side/Mix.qml</file>
+        <file>qml/side/commons/Test.qml</file>
     </qresource>
 </RCC>
