@@ -1,5 +1,5 @@
 # wsaver
-Dashboard to show data in real time from virtual weather radiosonde of Kanda. 
+Dashboard to show data in real time from virtual weather radiosonde of [Kanda challenge](https://taikai.network/en/kanda-weather-group/challenges/kanda-weather/overview). 
 
 [click below to see the demo :) ]
 
