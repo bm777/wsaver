@@ -1,2 +1,5 @@
 .ipynb_checkpoints/
 HISTORY.md
+__pycache__/
+Cleaner.ipynb
+wind-uv.jpg
