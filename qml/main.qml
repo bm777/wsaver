@@ -4,7 +4,7 @@ import "climate"
 import "highlight"
 import "side"
 import "setting"
-import "side/commons"
+//import "side/commons"
 
 Window {
     title: qsTr("wsaver")
@@ -186,10 +186,7 @@ Window {
 //        theme: setting.thema
     }
 
-    Test {
-        id: test
-        anchors.centerIn: parent
-    }
+
 
 
 
